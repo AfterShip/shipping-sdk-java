@@ -24,9 +24,6 @@ public class PostShipperAccountsRequest extends Resource {
     @SerializedName("address")
     private AddressV3 address;
 
-    @SerializedName("settings")
-    private PostShipperAccountsRequestSettings settings;
-
     public  String getSlug() {
         return slug;
     }
@@ -65,14 +62,6 @@ public class PostShipperAccountsRequest extends Resource {
 
     public void setAddress( AddressV3 address) {
         this.address = address;
-    }
-
-    public  PostShipperAccountsRequestSettings getSettings() {
-        return settings;
-    }
-
-    public void setSettings( PostShipperAccountsRequestSettings settings) {
-        this.settings = settings;
     }
 
 }

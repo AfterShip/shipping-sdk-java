@@ -48,6 +48,9 @@ public class ItemV3 extends Resource {
     @SerializedName("barcode")
     private String barcode;
 
+    @SerializedName("regulatory_data")
+    private java.util.List<RegulatoryDataItemV3> regulatoryData;
+
     public  Integer getQuantity() {
         return quantity;
     }
@@ -150,6 +153,14 @@ public class ItemV3 extends Resource {
 
     public void setBarcode( String barcode) {
         this.barcode = barcode;
+    }
+
+    public java.util.List<RegulatoryDataItemV3>  getRegulatoryData() {
+        return regulatoryData;
+    }
+
+    public void setRegulatoryData(java.util.List<RegulatoryDataItemV3>  regulatoryData) {
+        this.regulatoryData = regulatoryData;
     }
 
 }

@@ -34,6 +34,9 @@ public enum FilesV3LabelPaperSize {
     @SerializedName("a5")
     A5("a5"),
 
+    @SerializedName("a6")
+    A6("a6"),
+
     @SerializedName("default")
     Default("default"),
 

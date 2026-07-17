@@ -22,6 +22,9 @@ public enum AddressV3TaxIdType {
     @SerializedName("pan")
     Pan("pan"),
 
+    @SerializedName("ukims")
+    Ukims("ukims"),
+
     @SerializedName("other")
     Other("other");
 

@@ -8,7 +8,10 @@ import com.google.gson.annotations.SerializedName;
 
 public enum ShipperAccountV3Type {
     @SerializedName("default")
-    Default("default");
+    Default("default"),
+
+    @SerializedName("user")
+    User("user");
 
     private final String value;
 

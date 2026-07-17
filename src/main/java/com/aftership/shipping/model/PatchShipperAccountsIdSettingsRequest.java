@@ -9,11 +9,22 @@ import com.aftership.shipping.base.Resource;
 
 public class PatchShipperAccountsIdSettingsRequest extends Resource {
 
+    @SerializedName("electronic_trade_documents_enabled")
+    private Boolean electronicTradeDocumentsEnabled;
+
     @SerializedName("commercial_invoice_letterhead")
     private String commercialInvoiceLetterhead;
 
     @SerializedName("commercial_invoice_signature")
     private String commercialInvoiceSignature;
+
+    public  Boolean getElectronicTradeDocumentsEnabled() {
+        return electronicTradeDocumentsEnabled;
+    }
+
+    public void setElectronicTradeDocumentsEnabled( Boolean electronicTradeDocumentsEnabled) {
+        this.electronicTradeDocumentsEnabled = electronicTradeDocumentsEnabled;
+    }
 
     public  String getCommercialInvoiceLetterhead() {
         return commercialInvoiceLetterhead;

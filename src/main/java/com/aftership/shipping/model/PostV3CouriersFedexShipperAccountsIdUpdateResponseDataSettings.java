@@ -7,13 +7,35 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
 
-public class PostShipperAccountsRequestSettings extends Resource {
+public class PostV3CouriersFedexShipperAccountsIdUpdateResponseDataSettings extends Resource {
+
+    @SerializedName("preferred_currency")
+    private String preferredCurrency;
+
+    @SerializedName("electronic_trade_documents_enabled")
+    private Object electronicTradeDocumentsEnabled;
 
     @SerializedName("commercial_invoice_letterhead")
     private String commercialInvoiceLetterhead;
 
     @SerializedName("commercial_invoice_signature")
     private String commercialInvoiceSignature;
+
+    public  String getPreferredCurrency() {
+        return preferredCurrency;
+    }
+
+    public void setPreferredCurrency( String preferredCurrency) {
+        this.preferredCurrency = preferredCurrency;
+    }
+
+    public  Object getElectronicTradeDocumentsEnabled() {
+        return electronicTradeDocumentsEnabled;
+    }
+
+    public void setElectronicTradeDocumentsEnabled( Object electronicTradeDocumentsEnabled) {
+        this.electronicTradeDocumentsEnabled = electronicTradeDocumentsEnabled;
+    }
 
     public  String getCommercialInvoiceLetterhead() {
         return commercialInvoiceLetterhead;

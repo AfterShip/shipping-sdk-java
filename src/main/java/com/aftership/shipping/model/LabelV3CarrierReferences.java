@@ -15,6 +15,9 @@ public class LabelV3CarrierReferences extends Resource {
     @SerializedName("pickup_location_code")
     private String pickupLocationCode;
 
+    @SerializedName("piece_tracking_numbers")
+    private java.util.List<String> pieceTrackingNumbers;
+
     public  String getPickupReference() {
         return pickupReference;
     }
@@ -29,6 +32,14 @@ public class LabelV3CarrierReferences extends Resource {
 
     public void setPickupLocationCode( String pickupLocationCode) {
         this.pickupLocationCode = pickupLocationCode;
+    }
+
+    public java.util.List<String>  getPieceTrackingNumbers() {
+        return pieceTrackingNumbers;
+    }
+
+    public void setPieceTrackingNumbers(java.util.List<String>  pieceTrackingNumbers) {
+        this.pieceTrackingNumbers = pieceTrackingNumbers;
     }
 
 }
