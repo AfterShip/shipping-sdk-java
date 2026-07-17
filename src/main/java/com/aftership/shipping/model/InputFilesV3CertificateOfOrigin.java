@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class InputFilesV3CertificateOfOrigin extends Resource {
 
-    @SerializedName("content")
-    private String content;
+  @SerializedName("content")
+  private String content;
 
-    public  String getContent() {
-        return content;
-    }
+  public String getContent() {
+    return content;
+  }
 
-    public void setContent( String content) {
-        this.content = content;
-    }
-
+  public void setContent(String content) {
+    this.content = content;
+  }
 }

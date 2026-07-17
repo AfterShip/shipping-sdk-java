@@ -4,53 +4,52 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class DimensionV3 extends Resource {
 
-    @SerializedName("width")
-    private Float width;
+  @SerializedName("width")
+  private Float width;
 
-    @SerializedName("height")
-    private Float height;
+  @SerializedName("height")
+  private Float height;
 
-    @SerializedName("depth")
-    private Float depth;
+  @SerializedName("depth")
+  private Float depth;
 
-    @SerializedName("unit")
-    private DimensionV3Unit unit;
+  @SerializedName("unit")
+  private DimensionV3Unit unit;
 
-    public  Float getWidth() {
-        return width;
-    }
+  public Float getWidth() {
+    return width;
+  }
 
-    public void setWidth( Float width) {
-        this.width = width;
-    }
+  public void setWidth(Float width) {
+    this.width = width;
+  }
 
-    public  Float getHeight() {
-        return height;
-    }
+  public Float getHeight() {
+    return height;
+  }
 
-    public void setHeight( Float height) {
-        this.height = height;
-    }
+  public void setHeight(Float height) {
+    this.height = height;
+  }
 
-    public  Float getDepth() {
-        return depth;
-    }
+  public Float getDepth() {
+    return depth;
+  }
 
-    public void setDepth( Float depth) {
-        this.depth = depth;
-    }
+  public void setDepth(Float depth) {
+    this.depth = depth;
+  }
 
-    public  DimensionV3Unit getUnit() {
-        return unit;
-    }
+  public DimensionV3Unit getUnit() {
+    return unit;
+  }
 
-    public void setUnit( DimensionV3Unit unit) {
-        this.unit = unit;
-    }
-
+  public void setUnit(DimensionV3Unit unit) {
+    this.unit = unit;
+  }
 }

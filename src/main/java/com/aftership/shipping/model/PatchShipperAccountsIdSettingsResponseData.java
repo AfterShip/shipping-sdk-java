@@ -4,31 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PatchShipperAccountsIdSettingsResponseData extends Resource {
 
-    @SerializedName("commercial_invoice_signature")
-    private String commercialInvoiceSignature;
+  @SerializedName("electronic_trade_documents_enabled")
+  private Boolean electronicTradeDocumentsEnabled;
 
-    @SerializedName("commercial_invoice_letterhead")
-    private String commercialInvoiceLetterhead;
+  @SerializedName("commercial_invoice_signature")
+  private String commercialInvoiceSignature;
 
-    public  String getCommercialInvoiceSignature() {
-        return commercialInvoiceSignature;
-    }
+  @SerializedName("commercial_invoice_letterhead")
+  private String commercialInvoiceLetterhead;
 
-    public void setCommercialInvoiceSignature( String commercialInvoiceSignature) {
-        this.commercialInvoiceSignature = commercialInvoiceSignature;
-    }
+  public Boolean getElectronicTradeDocumentsEnabled() {
+    return electronicTradeDocumentsEnabled;
+  }
 
-    public  String getCommercialInvoiceLetterhead() {
-        return commercialInvoiceLetterhead;
-    }
+  public void setElectronicTradeDocumentsEnabled(Boolean electronicTradeDocumentsEnabled) {
+    this.electronicTradeDocumentsEnabled = electronicTradeDocumentsEnabled;
+  }
 
-    public void setCommercialInvoiceLetterhead( String commercialInvoiceLetterhead) {
-        this.commercialInvoiceLetterhead = commercialInvoiceLetterhead;
-    }
+  public String getCommercialInvoiceSignature() {
+    return commercialInvoiceSignature;
+  }
 
+  public void setCommercialInvoiceSignature(String commercialInvoiceSignature) {
+    this.commercialInvoiceSignature = commercialInvoiceSignature;
+  }
+
+  public String getCommercialInvoiceLetterhead() {
+    return commercialInvoiceLetterhead;
+  }
+
+  public void setCommercialInvoiceLetterhead(String commercialInvoiceLetterhead) {
+    this.commercialInvoiceLetterhead = commercialInvoiceLetterhead;
+  }
 }

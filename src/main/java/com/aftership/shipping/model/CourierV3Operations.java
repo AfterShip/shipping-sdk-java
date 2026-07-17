@@ -4,53 +4,52 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class CourierV3Operations extends Resource {
 
-    @SerializedName("post@labels")
-    private Boolean post_labels;
+  @SerializedName("post@labels")
+  private Boolean post_labels;
 
-    @SerializedName("post@cancel-labels")
-    private Boolean post_cancelLabels;
+  @SerializedName("post@cancel-labels")
+  private Boolean post_cancelLabels;
 
-    @SerializedName("post@rates")
-    private Boolean post_rates;
+  @SerializedName("post@rates")
+  private Boolean post_rates;
 
-    @SerializedName("post@manifests")
-    private Boolean post_manifests;
+  @SerializedName("post@manifests")
+  private Boolean post_manifests;
 
-    public  Boolean getPostLabels() {
-        return post_labels;
-    }
+  public Boolean getPostLabels() {
+    return post_labels;
+  }
 
-    public void setPostLabels( Boolean post_labels) {
-        this.post_labels = post_labels;
-    }
+  public void setPostLabels(Boolean post_labels) {
+    this.post_labels = post_labels;
+  }
 
-    public  Boolean getPostCancelLabels() {
-        return post_cancelLabels;
-    }
+  public Boolean getPostCancelLabels() {
+    return post_cancelLabels;
+  }
 
-    public void setPostCancelLabels( Boolean post_cancelLabels) {
-        this.post_cancelLabels = post_cancelLabels;
-    }
+  public void setPostCancelLabels(Boolean post_cancelLabels) {
+    this.post_cancelLabels = post_cancelLabels;
+  }
 
-    public  Boolean getPostRates() {
-        return post_rates;
-    }
+  public Boolean getPostRates() {
+    return post_rates;
+  }
 
-    public void setPostRates( Boolean post_rates) {
-        this.post_rates = post_rates;
-    }
+  public void setPostRates(Boolean post_rates) {
+    this.post_rates = post_rates;
+  }
 
-    public  Boolean getPostManifests() {
-        return post_manifests;
-    }
+  public Boolean getPostManifests() {
+    return post_manifests;
+  }
 
-    public void setPostManifests( Boolean post_manifests) {
-        this.post_manifests = post_manifests;
-    }
-
+  public void setPostManifests(Boolean post_manifests) {
+    this.post_manifests = post_manifests;
+  }
 }

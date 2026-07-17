@@ -4,86 +4,85 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ManifestV3 extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("status")
-    private String status;
+  @SerializedName("status")
+  private String status;
 
-    @SerializedName("shipper_account")
-    private ManifestV3ShipperAccount shipperAccount;
+  @SerializedName("shipper_account")
+  private ManifestV3ShipperAccount shipperAccount;
 
-    @SerializedName("labels")
-    private java.util.List<ManifestV3Labels> labels;
+  @SerializedName("labels")
+  private java.util.List<ManifestV3Labels> labels;
 
-    @SerializedName("files")
-    private FilesV3 files;
+  @SerializedName("files")
+  private FilesV3 files;
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  String getStatus() {
-        return status;
-    }
+  public String getStatus() {
+    return status;
+  }
 
-    public void setStatus( String status) {
-        this.status = status;
-    }
+  public void setStatus(String status) {
+    this.status = status;
+  }
 
-    public  ManifestV3ShipperAccount getShipperAccount() {
-        return shipperAccount;
-    }
+  public ManifestV3ShipperAccount getShipperAccount() {
+    return shipperAccount;
+  }
 
-    public void setShipperAccount( ManifestV3ShipperAccount shipperAccount) {
-        this.shipperAccount = shipperAccount;
-    }
+  public void setShipperAccount(ManifestV3ShipperAccount shipperAccount) {
+    this.shipperAccount = shipperAccount;
+  }
 
-    public java.util.List<ManifestV3Labels>  getLabels() {
-        return labels;
-    }
+  public java.util.List<ManifestV3Labels> getLabels() {
+    return labels;
+  }
 
-    public void setLabels(java.util.List<ManifestV3Labels>  labels) {
-        this.labels = labels;
-    }
+  public void setLabels(java.util.List<ManifestV3Labels> labels) {
+    this.labels = labels;
+  }
 
-    public  FilesV3 getFiles() {
-        return files;
-    }
+  public FilesV3 getFiles() {
+    return files;
+  }
 
-    public void setFiles( FilesV3 files) {
-        this.files = files;
-    }
+  public void setFiles(FilesV3 files) {
+    this.files = files;
+  }
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 }

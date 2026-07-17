@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostAddressValidationsRequest extends Resource {
 
-    @SerializedName("address")
-    private AddressV3 address;
+  @SerializedName("address")
+  private AddressV3 address;
 
-    public  AddressV3 getAddress() {
-        return address;
-    }
+  public AddressV3 getAddress() {
+    return address;
+  }
 
-    public void setAddress( AddressV3 address) {
-        this.address = address;
-    }
-
+  public void setAddress(AddressV3 address) {
+    this.address = address;
+  }
 }

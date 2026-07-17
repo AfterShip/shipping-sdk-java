@@ -8,65 +8,66 @@ import com.aftership.shipping.base.Creator;
 import com.aftership.shipping.constant.ErrorEnum;
 import com.aftership.shipping.exception.ApiException;
 import com.aftership.shipping.http.*;
+import com.aftership.shipping.http.Request;
+import com.aftership.shipping.model.PickupV3;
+import com.aftership.shipping.model.PostPickupsRequest;
+import com.aftership.shipping.model.PostPickupsResponse;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.util.HashMap;
 import java.util.Map;
-import com.aftership.shipping.http.Request;
-import com.aftership.shipping.model.PostPickupsResponse;
-import com.aftership.shipping.model.PickupV3;
-import com.aftership.shipping.model.PostPickupsRequest;
 
 public class PostPickupsCreator extends Creator<PostPickupsResponse> {
-    private final Map<String, String> headerParams= new HashMap<>(8);
+  private final Map<String, String> headerParams = new HashMap<>(8);
 
-    public PostPickupsCreator addHeaderParam(final String name, final String value) {
-        if (value == null || value.equals("null")) {
-            return this;
-        }
-
-        if (!headerParams.containsKey(name)) {
-            headerParams.put(name, value);
-        }
-        return this;
+  public PostPickupsCreator addHeaderParam(final String name, final String value) {
+    if (value == null || value.equals("null")) {
+      return this;
     }
 
-    private void setHeaderParams(final Request request) {
-        for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
-            request.addHeaderParam(entry.getKey(), entry.getValue());
-        }
+    if (!headerParams.containsKey(name)) {
+      headerParams.put(name, value);
     }
-    private PostPickupsRequest postPickupsRequest;
+    return this;
+  }
 
-    public PostPickupsCreator setPostPickupsRequest(PostPickupsRequest postPickupsRequest) {
-        this.postPickupsRequest = postPickupsRequest;
-        return this;
+  private void setHeaderParams(final Request request) {
+    for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
+      request.addHeaderParam(entry.getKey(), entry.getValue());
     }
+  }
 
-    @Override
-    public PostPickupsResponse create(AfterShipClient client) throws Exception {
-        String path = "/postmen/v3/pickups";
-        Request request = new Request(HttpMethod.POST, path);
-        request.setBody((new Gson()).toJson(postPickupsRequest));
+  private PostPickupsRequest postPickupsRequest;
 
-        setHeaderParams(request);
-        Response response = client.request(request);
-        AfterShipResponse<PickupV3> responseData = new Gson().fromJson(response.getContent(), new TypeToken<AfterShipResponse<PickupV3>>() {
-            }.getType());
-        if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
-            throw new ApiException(
-                    responseData.getMeta().getCode(),
-                    responseData.getMeta().getMessage(),
-                    ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
-                    response.getStatusCode(),
-                    response.getContent(),
-                    response.getHeaders()
-            );
-        }
-        PostPickupsResponse result = new PostPickupsResponse();
-        result.setData(responseData.getData());
-        result.setResponseHeader(response.getResponseHeader());
-        return result;
+  public PostPickupsCreator setPostPickupsRequest(PostPickupsRequest postPickupsRequest) {
+    this.postPickupsRequest = postPickupsRequest;
+    return this;
+  }
+
+  @Override
+  public PostPickupsResponse create(AfterShipClient client) throws Exception {
+    String path = "/postmen/v3/pickups";
+    Request request = new Request(HttpMethod.POST, path);
+    request.setBody((new Gson()).toJson(postPickupsRequest));
+
+    setHeaderParams(request);
+    Response response = client.request(request);
+    AfterShipResponse<PickupV3> responseData =
+        new Gson()
+            .fromJson(
+                response.getContent(), new TypeToken<AfterShipResponse<PickupV3>>() {}.getType());
+    if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
+      throw new ApiException(
+          responseData.getMeta().getCode(),
+          responseData.getMeta().getMessage(),
+          ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
+          response.getStatusCode(),
+          response.getContent(),
+          response.getHeaders());
     }
-
+    PostPickupsResponse result = new PostPickupsResponse();
+    result.setData(responseData.getData());
+    result.setResponseHeader(response.getResponseHeader());
+    return result;
+  }
 }

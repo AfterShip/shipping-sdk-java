@@ -7,24 +7,24 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum PostLabelsRequestFileType {
-    @SerializedName("pdf")
-    Pdf("pdf"),
+  @SerializedName("pdf")
+  Pdf("pdf"),
 
-    @SerializedName("zpl")
-    Zpl("zpl");
+  @SerializedName("zpl")
+  Zpl("zpl");
 
-    private final String value;
+  private final String value;
 
-    PostLabelsRequestFileType(final String value) {
-        this.value = value;
-    }
+  PostLabelsRequestFileType(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

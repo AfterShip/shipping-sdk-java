@@ -7,24 +7,24 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum LocationV3DistanceUnit {
-    @SerializedName("km")
-    Km("km"),
+  @SerializedName("km")
+  Km("km"),
 
-    @SerializedName("mi")
-    Mi("mi");
+  @SerializedName("mi")
+  Mi("mi");
 
-    private final String value;
+  private final String value;
 
-    LocationV3DistanceUnit(final String value) {
-        this.value = value;
-    }
+  LocationV3DistanceUnit(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

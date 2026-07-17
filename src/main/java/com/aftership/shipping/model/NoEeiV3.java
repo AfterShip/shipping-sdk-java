@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class NoEeiV3 extends Resource {
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("ftr_exemption")
-    private NoEeiV3FtrExemption ftrExemption;
+  @SerializedName("ftr_exemption")
+  private NoEeiV3FtrExemption ftrExemption;
 
-    public  String getType() {
-        return type;
-    }
+  public String getType() {
+    return type;
+  }
 
-    public void setType( String type) {
-        this.type = type;
-    }
+  public void setType(String type) {
+    this.type = type;
+  }
 
-    public  NoEeiV3FtrExemption getFtrExemption() {
-        return ftrExemption;
-    }
+  public NoEeiV3FtrExemption getFtrExemption() {
+    return ftrExemption;
+  }
 
-    public void setFtrExemption( NoEeiV3FtrExemption ftrExemption) {
-        this.ftrExemption = ftrExemption;
-    }
-
+  public void setFtrExemption(NoEeiV3FtrExemption ftrExemption) {
+    this.ftrExemption = ftrExemption;
+  }
 }

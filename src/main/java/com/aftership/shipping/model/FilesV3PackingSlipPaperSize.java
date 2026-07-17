@@ -7,21 +7,21 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum FilesV3PackingSlipPaperSize {
-    @SerializedName("a4")
-    A4("a4");
+  @SerializedName("a4")
+  A4("a4");
 
-    private final String value;
+  private final String value;
 
-    FilesV3PackingSlipPaperSize(final String value) {
-        this.value = value;
-    }
+  FilesV3PackingSlipPaperSize(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostCancelPickupsRequest extends Resource {
 
-    @SerializedName("pickup")
-    private PostCancelPickupsRequestPickup pickup;
+  @SerializedName("pickup")
+  private PostCancelPickupsRequestPickup pickup;
 
-    public  PostCancelPickupsRequestPickup getPickup() {
-        return pickup;
-    }
+  public PostCancelPickupsRequestPickup getPickup() {
+    return pickup;
+  }
 
-    public void setPickup( PostCancelPickupsRequestPickup pickup) {
-        this.pickup = pickup;
-    }
-
+  public void setPickup(PostCancelPickupsRequestPickup pickup) {
+    this.pickup = pickup;
+  }
 }

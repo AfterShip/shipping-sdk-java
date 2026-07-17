@@ -8,65 +8,66 @@ import com.aftership.shipping.base.Creator;
 import com.aftership.shipping.constant.ErrorEnum;
 import com.aftership.shipping.exception.ApiException;
 import com.aftership.shipping.http.*;
+import com.aftership.shipping.http.Request;
+import com.aftership.shipping.model.LabelV3;
+import com.aftership.shipping.model.PostLabelsRequest;
+import com.aftership.shipping.model.PostLabelsResponse;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.util.HashMap;
 import java.util.Map;
-import com.aftership.shipping.http.Request;
-import com.aftership.shipping.model.PostLabelsResponse;
-import com.aftership.shipping.model.LabelV3;
-import com.aftership.shipping.model.PostLabelsRequest;
 
 public class PostLabelsCreator extends Creator<PostLabelsResponse> {
-    private final Map<String, String> headerParams= new HashMap<>(8);
+  private final Map<String, String> headerParams = new HashMap<>(8);
 
-    public PostLabelsCreator addHeaderParam(final String name, final String value) {
-        if (value == null || value.equals("null")) {
-            return this;
-        }
-
-        if (!headerParams.containsKey(name)) {
-            headerParams.put(name, value);
-        }
-        return this;
+  public PostLabelsCreator addHeaderParam(final String name, final String value) {
+    if (value == null || value.equals("null")) {
+      return this;
     }
 
-    private void setHeaderParams(final Request request) {
-        for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
-            request.addHeaderParam(entry.getKey(), entry.getValue());
-        }
+    if (!headerParams.containsKey(name)) {
+      headerParams.put(name, value);
     }
-    private PostLabelsRequest postLabelsRequest;
+    return this;
+  }
 
-    public PostLabelsCreator setPostLabelsRequest(PostLabelsRequest postLabelsRequest) {
-        this.postLabelsRequest = postLabelsRequest;
-        return this;
+  private void setHeaderParams(final Request request) {
+    for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
+      request.addHeaderParam(entry.getKey(), entry.getValue());
     }
+  }
 
-    @Override
-    public PostLabelsResponse create(AfterShipClient client) throws Exception {
-        String path = "/postmen/v3/labels";
-        Request request = new Request(HttpMethod.POST, path);
-        request.setBody((new Gson()).toJson(postLabelsRequest));
+  private PostLabelsRequest postLabelsRequest;
 
-        setHeaderParams(request);
-        Response response = client.request(request);
-        AfterShipResponse<LabelV3> responseData = new Gson().fromJson(response.getContent(), new TypeToken<AfterShipResponse<LabelV3>>() {
-            }.getType());
-        if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
-            throw new ApiException(
-                    responseData.getMeta().getCode(),
-                    responseData.getMeta().getMessage(),
-                    ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
-                    response.getStatusCode(),
-                    response.getContent(),
-                    response.getHeaders()
-            );
-        }
-        PostLabelsResponse result = new PostLabelsResponse();
-        result.setData(responseData.getData());
-        result.setResponseHeader(response.getResponseHeader());
-        return result;
+  public PostLabelsCreator setPostLabelsRequest(PostLabelsRequest postLabelsRequest) {
+    this.postLabelsRequest = postLabelsRequest;
+    return this;
+  }
+
+  @Override
+  public PostLabelsResponse create(AfterShipClient client) throws Exception {
+    String path = "/postmen/v3/labels";
+    Request request = new Request(HttpMethod.POST, path);
+    request.setBody((new Gson()).toJson(postLabelsRequest));
+
+    setHeaderParams(request);
+    Response response = client.request(request);
+    AfterShipResponse<LabelV3> responseData =
+        new Gson()
+            .fromJson(
+                response.getContent(), new TypeToken<AfterShipResponse<LabelV3>>() {}.getType());
+    if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
+      throw new ApiException(
+          responseData.getMeta().getCode(),
+          responseData.getMeta().getMessage(),
+          ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
+          response.getStatusCode(),
+          response.getContent(),
+          response.getHeaders());
     }
-
+    PostLabelsResponse result = new PostLabelsResponse();
+    result.setData(responseData.getData());
+    result.setResponseHeader(response.getResponseHeader());
+    return result;
+  }
 }

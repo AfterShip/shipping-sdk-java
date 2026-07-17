@@ -7,25 +7,31 @@ package com.aftership.shipping.shipper_accounts;
 import com.aftership.shipping.base.Resource;
 
 public class ShipperAccountsResource extends Resource {
-    public static GetShipperAccountsFetcher getShipperAccounts() {
-        return new GetShipperAccountsFetcher();
-    }
-    public static PostShipperAccountsCreator postShipperAccounts() {
-        return new PostShipperAccountsCreator();
-    }
-    public static GetShipperAccountsIdFetcher getShipperAccountsId() {
-        return new GetShipperAccountsIdFetcher();
-    }
-    public static DeleteShipperAccountsIdDeleter deleteShipperAccountsId() {
-        return new DeleteShipperAccountsIdDeleter();
-    }
-    public static PutShipperAccountsIdInfoUpdater putShipperAccountsIdInfo() {
-        return new PutShipperAccountsIdInfoUpdater();
-    }
-    public static PatchShipperAccountsIdCredentialsUpdater patchShipperAccountsIdCredentials() {
-        return new PatchShipperAccountsIdCredentialsUpdater();
-    }
-    public static PatchShipperAccountsIdSettingsUpdater patchShipperAccountsIdSettings() {
-        return new PatchShipperAccountsIdSettingsUpdater();
-    }
+  public static GetShipperAccountsFetcher getShipperAccounts() {
+    return new GetShipperAccountsFetcher();
+  }
+
+  public static PostShipperAccountsCreator postShipperAccounts() {
+    return new PostShipperAccountsCreator();
+  }
+
+  public static GetShipperAccountsIdFetcher getShipperAccountsId() {
+    return new GetShipperAccountsIdFetcher();
+  }
+
+  public static DeleteShipperAccountsIdDeleter deleteShipperAccountsId() {
+    return new DeleteShipperAccountsIdDeleter();
+  }
+
+  public static PutShipperAccountsIdInfoUpdater putShipperAccountsIdInfo() {
+    return new PutShipperAccountsIdInfoUpdater();
+  }
+
+  public static PatchShipperAccountsIdCredentialsUpdater patchShipperAccountsIdCredentials() {
+    return new PatchShipperAccountsIdCredentialsUpdater();
+  }
+
+  public static PatchShipperAccountsIdSettingsUpdater patchShipperAccountsIdSettings() {
+    return new PatchShipperAccountsIdSettingsUpdater();
+  }
 }

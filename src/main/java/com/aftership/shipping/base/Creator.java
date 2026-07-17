@@ -4,14 +4,14 @@
  */
 package com.aftership.shipping.base;
 
-import com.aftership.shipping.http.AfterShipClient;
 import com.aftership.shipping.ShippingSdk;
+import com.aftership.shipping.http.AfterShipClient;
 
 public abstract class Creator<T extends Resource> {
 
-    public T create() throws Exception {
-        return create(ShippingSdk.getRestClient());
-    }
+  public T create() throws Exception {
+    return create(ShippingSdk.getRestClient());
+  }
 
-    public abstract T create(final AfterShipClient client) throws Exception;
+  public abstract T create(final AfterShipClient client) throws Exception;
 }

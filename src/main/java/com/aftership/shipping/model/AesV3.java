@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class AesV3 extends Resource {
 
-    @SerializedName("type")
-    private AesV3Type type;
+  @SerializedName("type")
+  private AesV3Type type;
 
-    @SerializedName("itn_number")
-    private String itnNumber;
+  @SerializedName("itn_number")
+  private String itnNumber;
 
-    public  AesV3Type getType() {
-        return type;
-    }
+  public AesV3Type getType() {
+    return type;
+  }
 
-    public void setType( AesV3Type type) {
-        this.type = type;
-    }
+  public void setType(AesV3Type type) {
+    this.type = type;
+  }
 
-    public  String getItnNumber() {
-        return itnNumber;
-    }
+  public String getItnNumber() {
+    return itnNumber;
+  }
 
-    public void setItnNumber( String itnNumber) {
-        this.itnNumber = itnNumber;
-    }
-
+  public void setItnNumber(String itnNumber) {
+    this.itnNumber = itnNumber;
+  }
 }

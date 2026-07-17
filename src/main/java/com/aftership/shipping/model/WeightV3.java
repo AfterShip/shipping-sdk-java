@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class WeightV3 extends Resource {
 
-    @SerializedName("unit")
-    private WeightV3Unit unit;
+  @SerializedName("unit")
+  private WeightV3Unit unit;
 
-    @SerializedName("value")
-    private Float value;
+  @SerializedName("value")
+  private Float value;
 
-    public  WeightV3Unit getUnit() {
-        return unit;
-    }
+  public WeightV3Unit getUnit() {
+    return unit;
+  }
 
-    public void setUnit( WeightV3Unit unit) {
-        this.unit = unit;
-    }
+  public void setUnit(WeightV3Unit unit) {
+    this.unit = unit;
+  }
 
-    public  Float getValue() {
-        return value;
-    }
+  public Float getValue() {
+    return value;
+  }
 
-    public void setValue( Float value) {
-        this.value = value;
-    }
-
+  public void setValue(Float value) {
+    this.value = value;
+  }
 }

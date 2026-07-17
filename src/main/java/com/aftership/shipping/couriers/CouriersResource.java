@@ -7,7 +7,7 @@ package com.aftership.shipping.couriers;
 import com.aftership.shipping.base.Resource;
 
 public class CouriersResource extends Resource {
-    public static GetCouriersFetcher getCouriers() {
-        return new GetCouriersFetcher();
-    }
+  public static GetCouriersFetcher getCouriers() {
+    return new GetCouriersFetcher();
+  }
 }

@@ -4,152 +4,162 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ItemV3 extends Resource {
 
-    @SerializedName("quantity")
-    private Integer quantity;
+  @SerializedName("quantity")
+  private Integer quantity;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @SerializedName("description_cn")
-    private String descriptionCn;
+  @SerializedName("description_cn")
+  private String descriptionCn;
 
-    @SerializedName("price")
-    private MoneyV3 price;
+  @SerializedName("price")
+  private MoneyV3 price;
 
-    @SerializedName("item_id")
-    private String itemId;
+  @SerializedName("item_id")
+  private String itemId;
 
-    @SerializedName("origin_country")
-    private String originCountry;
+  @SerializedName("origin_country")
+  private String originCountry;
 
-    @SerializedName("weight")
-    private WeightV3 weight;
+  @SerializedName("weight")
+  private WeightV3 weight;
 
-    @SerializedName("sku")
-    private String sku;
+  @SerializedName("sku")
+  private String sku;
 
-    @SerializedName("hs_code")
-    private String hsCode;
+  @SerializedName("hs_code")
+  private String hsCode;
 
-    @SerializedName("outbound_hs_code")
-    private String outboundHsCode;
+  @SerializedName("outbound_hs_code")
+  private String outboundHsCode;
 
-    @SerializedName("return_reason")
-    private String returnReason;
+  @SerializedName("return_reason")
+  private String returnReason;
 
-    @SerializedName("dimension")
-    private DimensionV3 dimension;
+  @SerializedName("dimension")
+  private DimensionV3 dimension;
 
-    @SerializedName("barcode")
-    private String barcode;
+  @SerializedName("barcode")
+  private String barcode;
 
-    public  Integer getQuantity() {
-        return quantity;
-    }
+  @SerializedName("regulatory_data")
+  private java.util.List<RegulatoryDataItemV3> regulatoryData;
 
-    public void setQuantity( Integer quantity) {
-        this.quantity = quantity;
-    }
+  public Integer getQuantity() {
+    return quantity;
+  }
 
-    public  String getDescription() {
-        return description;
-    }
+  public void setQuantity(Integer quantity) {
+    this.quantity = quantity;
+  }
 
-    public void setDescription( String description) {
-        this.description = description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public  String getDescriptionCn() {
-        return descriptionCn;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setDescriptionCn( String descriptionCn) {
-        this.descriptionCn = descriptionCn;
-    }
+  public String getDescriptionCn() {
+    return descriptionCn;
+  }
 
-    public  MoneyV3 getPrice() {
-        return price;
-    }
+  public void setDescriptionCn(String descriptionCn) {
+    this.descriptionCn = descriptionCn;
+  }
 
-    public void setPrice( MoneyV3 price) {
-        this.price = price;
-    }
+  public MoneyV3 getPrice() {
+    return price;
+  }
 
-    public  String getItemId() {
-        return itemId;
-    }
+  public void setPrice(MoneyV3 price) {
+    this.price = price;
+  }
 
-    public void setItemId( String itemId) {
-        this.itemId = itemId;
-    }
+  public String getItemId() {
+    return itemId;
+  }
 
-    public  String getOriginCountry() {
-        return originCountry;
-    }
+  public void setItemId(String itemId) {
+    this.itemId = itemId;
+  }
 
-    public void setOriginCountry( String originCountry) {
-        this.originCountry = originCountry;
-    }
+  public String getOriginCountry() {
+    return originCountry;
+  }
 
-    public  WeightV3 getWeight() {
-        return weight;
-    }
+  public void setOriginCountry(String originCountry) {
+    this.originCountry = originCountry;
+  }
 
-    public void setWeight( WeightV3 weight) {
-        this.weight = weight;
-    }
+  public WeightV3 getWeight() {
+    return weight;
+  }
 
-    public  String getSku() {
-        return sku;
-    }
+  public void setWeight(WeightV3 weight) {
+    this.weight = weight;
+  }
 
-    public void setSku( String sku) {
-        this.sku = sku;
-    }
+  public String getSku() {
+    return sku;
+  }
 
-    public  String getHsCode() {
-        return hsCode;
-    }
+  public void setSku(String sku) {
+    this.sku = sku;
+  }
 
-    public void setHsCode( String hsCode) {
-        this.hsCode = hsCode;
-    }
+  public String getHsCode() {
+    return hsCode;
+  }
 
-    public  String getOutboundHsCode() {
-        return outboundHsCode;
-    }
+  public void setHsCode(String hsCode) {
+    this.hsCode = hsCode;
+  }
 
-    public void setOutboundHsCode( String outboundHsCode) {
-        this.outboundHsCode = outboundHsCode;
-    }
+  public String getOutboundHsCode() {
+    return outboundHsCode;
+  }
 
-    public  String getReturnReason() {
-        return returnReason;
-    }
+  public void setOutboundHsCode(String outboundHsCode) {
+    this.outboundHsCode = outboundHsCode;
+  }
 
-    public void setReturnReason( String returnReason) {
-        this.returnReason = returnReason;
-    }
+  public String getReturnReason() {
+    return returnReason;
+  }
 
-    public  DimensionV3 getDimension() {
-        return dimension;
-    }
+  public void setReturnReason(String returnReason) {
+    this.returnReason = returnReason;
+  }
 
-    public void setDimension( DimensionV3 dimension) {
-        this.dimension = dimension;
-    }
+  public DimensionV3 getDimension() {
+    return dimension;
+  }
 
-    public  String getBarcode() {
-        return barcode;
-    }
+  public void setDimension(DimensionV3 dimension) {
+    this.dimension = dimension;
+  }
 
-    public void setBarcode( String barcode) {
-        this.barcode = barcode;
-    }
+  public String getBarcode() {
+    return barcode;
+  }
 
+  public void setBarcode(String barcode) {
+    this.barcode = barcode;
+  }
+
+  public java.util.List<RegulatoryDataItemV3> getRegulatoryData() {
+    return regulatoryData;
+  }
+
+  public void setRegulatoryData(java.util.List<RegulatoryDataItemV3> regulatoryData) {
+    this.regulatoryData = regulatoryData;
+  }
 }

@@ -7,13 +7,15 @@ package com.aftership.shipping.manifests;
 import com.aftership.shipping.base.Resource;
 
 public class ManifestsResource extends Resource {
-    public static GetManifestsFetcher getManifests() {
-        return new GetManifestsFetcher();
-    }
-    public static PostManifestsCreator postManifests() {
-        return new PostManifestsCreator();
-    }
-    public static GetManifestFetcher getManifest() {
-        return new GetManifestFetcher();
-    }
+  public static GetManifestsFetcher getManifests() {
+    return new GetManifestsFetcher();
+  }
+
+  public static PostManifestsCreator postManifests() {
+    return new PostManifestsCreator();
+  }
+
+  public static GetManifestFetcher getManifest() {
+    return new GetManifestFetcher();
+  }
 }

@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class AddressV3Location extends Resource {
 
-    @SerializedName("lat")
-    private Float lat;
+  @SerializedName("lat")
+  private Float lat;
 
-    @SerializedName("lng")
-    private Float lng;
+  @SerializedName("lng")
+  private Float lng;
 
-    public  Float getLat() {
-        return lat;
-    }
+  public Float getLat() {
+    return lat;
+  }
 
-    public void setLat( Float lat) {
-        this.lat = lat;
-    }
+  public void setLat(Float lat) {
+    this.lat = lat;
+  }
 
-    public  Float getLng() {
-        return lng;
-    }
+  public Float getLng() {
+    return lng;
+  }
 
-    public void setLng( Float lng) {
-        this.lng = lng;
-    }
-
+  public void setLng(Float lng) {
+    this.lng = lng;
+  }
 }

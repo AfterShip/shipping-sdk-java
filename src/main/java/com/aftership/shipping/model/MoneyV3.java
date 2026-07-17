@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class MoneyV3 extends Resource {
 
-    @SerializedName("currency")
-    private MoneyV3Currency currency;
+  @SerializedName("currency")
+  private MoneyV3Currency currency;
 
-    @SerializedName("amount")
-    private Float amount;
+  @SerializedName("amount")
+  private Float amount;
 
-    public  MoneyV3Currency getCurrency() {
-        return currency;
-    }
+  public MoneyV3Currency getCurrency() {
+    return currency;
+  }
 
-    public void setCurrency( MoneyV3Currency currency) {
-        this.currency = currency;
-    }
+  public void setCurrency(MoneyV3Currency currency) {
+    this.currency = currency;
+  }
 
-    public  Float getAmount() {
-        return amount;
-    }
+  public Float getAmount() {
+    return amount;
+  }
 
-    public void setAmount( Float amount) {
-        this.amount = amount;
-    }
-
+  public void setAmount(Float amount) {
+    this.amount = amount;
+  }
 }

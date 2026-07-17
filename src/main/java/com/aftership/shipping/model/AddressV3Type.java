@@ -7,24 +7,24 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum AddressV3Type {
-    @SerializedName("residential")
-    Residential("residential"),
+  @SerializedName("residential")
+  Residential("residential"),
 
-    @SerializedName("business")
-    Business("business");
+  @SerializedName("business")
+  Business("business");
 
-    private final String value;
+  private final String value;
 
-    AddressV3Type(final String value) {
-        this.value = value;
-    }
+  AddressV3Type(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

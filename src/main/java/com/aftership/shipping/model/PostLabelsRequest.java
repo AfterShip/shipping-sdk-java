@@ -4,207 +4,217 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostLabelsRequest extends Resource {
 
-    @SerializedName("billing")
-    private BillingV3 billing;
+  @SerializedName("billing")
+  private BillingV3 billing;
 
-    @SerializedName("customs")
-    private CustomsV3 customs;
+  @SerializedName("customs")
+  private CustomsV3 customs;
 
-    @SerializedName("return_shipment")
-    private Boolean returnShipment;
+  @SerializedName("return_shipment")
+  private Boolean returnShipment;
 
-    @SerializedName("is_document")
-    private Boolean isDocument;
+  @SerializedName("is_document")
+  private Boolean isDocument;
 
-    @SerializedName("service_type")
-    private String serviceType;
+  @SerializedName("service_type")
+  private String serviceType;
 
-    @SerializedName("paper_size")
-    private String paperSize;
+  @SerializedName("paper_size")
+  private String paperSize;
 
-    @SerializedName("shipper_account")
-    private PostLabelsRequestShipperAccount shipperAccount;
+  @SerializedName("shipper_account")
+  private PostLabelsRequestShipperAccount shipperAccount;
 
-    @SerializedName("references")
-    private java.util.List<String> references;
+  @SerializedName("references")
+  private java.util.List<String> references;
 
-    @SerializedName("shipment")
-    private ShipmentV3 shipment;
+  @SerializedName("shipment")
+  private ShipmentV3 shipment;
 
-    @SerializedName("invoice")
-    private InvoiceV3 invoice;
+  @SerializedName("invoice")
+  private InvoiceV3 invoice;
 
-    @SerializedName("service_options")
-    private java.util.List<Object> serviceOptions;
+  @SerializedName("service_options")
+  private java.util.List<Object> serviceOptions;
 
-    @SerializedName("file_type")
-    private PostLabelsRequestFileType fileType;
+  @SerializedName("file_type")
+  private PostLabelsRequestFileType fileType;
 
-    @SerializedName("ship_date")
-    private String shipDate;
+  @SerializedName("ship_date")
+  private String shipDate;
 
-    @SerializedName("order_number")
-    private String orderNumber;
+  @SerializedName("order_number")
+  private String orderNumber;
 
-    @SerializedName("order_id")
-    private String orderId;
+  @SerializedName("order_id")
+  private String orderId;
 
-    @SerializedName("custom_fields")
-    private java.util.Map<String,String> customFields;
+  @SerializedName("custom_fields")
+  private java.util.Map<String, String> customFields;
 
-    @SerializedName("files")
-    private InputFilesV3 files;
+  @SerializedName("files")
+  private InputFilesV3 files;
 
-    @SerializedName("print_options")
-    private PostLabelsRequestPrintOptions printOptions;
+  @SerializedName("print_options")
+  private PostLabelsRequestPrintOptions printOptions;
 
-    public  BillingV3 getBilling() {
-        return billing;
-    }
+  @SerializedName("automatic")
+  private Boolean automatic;
 
-    public void setBilling( BillingV3 billing) {
-        this.billing = billing;
-    }
+  public BillingV3 getBilling() {
+    return billing;
+  }
 
-    public  CustomsV3 getCustoms() {
-        return customs;
-    }
+  public void setBilling(BillingV3 billing) {
+    this.billing = billing;
+  }
 
-    public void setCustoms( CustomsV3 customs) {
-        this.customs = customs;
-    }
+  public CustomsV3 getCustoms() {
+    return customs;
+  }
 
-    public  Boolean getReturnShipment() {
-        return returnShipment;
-    }
+  public void setCustoms(CustomsV3 customs) {
+    this.customs = customs;
+  }
 
-    public void setReturnShipment( Boolean returnShipment) {
-        this.returnShipment = returnShipment;
-    }
+  public Boolean getReturnShipment() {
+    return returnShipment;
+  }
 
-    public  Boolean getIsDocument() {
-        return isDocument;
-    }
+  public void setReturnShipment(Boolean returnShipment) {
+    this.returnShipment = returnShipment;
+  }
 
-    public void setIsDocument( Boolean isDocument) {
-        this.isDocument = isDocument;
-    }
+  public Boolean getIsDocument() {
+    return isDocument;
+  }
 
-    public  String getServiceType() {
-        return serviceType;
-    }
+  public void setIsDocument(Boolean isDocument) {
+    this.isDocument = isDocument;
+  }
 
-    public void setServiceType( String serviceType) {
-        this.serviceType = serviceType;
-    }
+  public String getServiceType() {
+    return serviceType;
+  }
 
-    public  String getPaperSize() {
-        return paperSize;
-    }
+  public void setServiceType(String serviceType) {
+    this.serviceType = serviceType;
+  }
 
-    public void setPaperSize( String paperSize) {
-        this.paperSize = paperSize;
-    }
+  public String getPaperSize() {
+    return paperSize;
+  }
 
-    public  PostLabelsRequestShipperAccount getShipperAccount() {
-        return shipperAccount;
-    }
+  public void setPaperSize(String paperSize) {
+    this.paperSize = paperSize;
+  }
 
-    public void setShipperAccount( PostLabelsRequestShipperAccount shipperAccount) {
-        this.shipperAccount = shipperAccount;
-    }
+  public PostLabelsRequestShipperAccount getShipperAccount() {
+    return shipperAccount;
+  }
 
-    public java.util.List<String>  getReferences() {
-        return references;
-    }
+  public void setShipperAccount(PostLabelsRequestShipperAccount shipperAccount) {
+    this.shipperAccount = shipperAccount;
+  }
 
-    public void setReferences(java.util.List<String>  references) {
-        this.references = references;
-    }
+  public java.util.List<String> getReferences() {
+    return references;
+  }
 
-    public  ShipmentV3 getShipment() {
-        return shipment;
-    }
+  public void setReferences(java.util.List<String> references) {
+    this.references = references;
+  }
 
-    public void setShipment( ShipmentV3 shipment) {
-        this.shipment = shipment;
-    }
+  public ShipmentV3 getShipment() {
+    return shipment;
+  }
 
-    public  InvoiceV3 getInvoice() {
-        return invoice;
-    }
+  public void setShipment(ShipmentV3 shipment) {
+    this.shipment = shipment;
+  }
 
-    public void setInvoice( InvoiceV3 invoice) {
-        this.invoice = invoice;
-    }
+  public InvoiceV3 getInvoice() {
+    return invoice;
+  }
 
-    public java.util.List<Object>  getServiceOptions() {
-        return serviceOptions;
-    }
+  public void setInvoice(InvoiceV3 invoice) {
+    this.invoice = invoice;
+  }
 
-    public void setServiceOptions(java.util.List<Object>  serviceOptions) {
-        this.serviceOptions = serviceOptions;
-    }
+  public java.util.List<Object> getServiceOptions() {
+    return serviceOptions;
+  }
 
-    public  PostLabelsRequestFileType getFileType() {
-        return fileType;
-    }
+  public void setServiceOptions(java.util.List<Object> serviceOptions) {
+    this.serviceOptions = serviceOptions;
+  }
 
-    public void setFileType( PostLabelsRequestFileType fileType) {
-        this.fileType = fileType;
-    }
+  public PostLabelsRequestFileType getFileType() {
+    return fileType;
+  }
 
-    public  String getShipDate() {
-        return shipDate;
-    }
+  public void setFileType(PostLabelsRequestFileType fileType) {
+    this.fileType = fileType;
+  }
 
-    public void setShipDate( String shipDate) {
-        this.shipDate = shipDate;
-    }
+  public String getShipDate() {
+    return shipDate;
+  }
 
-    public  String getOrderNumber() {
-        return orderNumber;
-    }
+  public void setShipDate(String shipDate) {
+    this.shipDate = shipDate;
+  }
 
-    public void setOrderNumber( String orderNumber) {
-        this.orderNumber = orderNumber;
-    }
+  public String getOrderNumber() {
+    return orderNumber;
+  }
 
-    public  String getOrderId() {
-        return orderId;
-    }
+  public void setOrderNumber(String orderNumber) {
+    this.orderNumber = orderNumber;
+  }
 
-    public void setOrderId( String orderId) {
-        this.orderId = orderId;
-    }
+  public String getOrderId() {
+    return orderId;
+  }
 
-    public  java.util.Map<String,String> getCustomFields() {
-        return customFields;
-    }
+  public void setOrderId(String orderId) {
+    this.orderId = orderId;
+  }
 
-    public void setCustomFields( java.util.Map<String,String> customFields) {
-        this.customFields = customFields;
-    }
+  public java.util.Map<String, String> getCustomFields() {
+    return customFields;
+  }
 
-    public  InputFilesV3 getFiles() {
-        return files;
-    }
+  public void setCustomFields(java.util.Map<String, String> customFields) {
+    this.customFields = customFields;
+  }
 
-    public void setFiles( InputFilesV3 files) {
-        this.files = files;
-    }
+  public InputFilesV3 getFiles() {
+    return files;
+  }
 
-    public  PostLabelsRequestPrintOptions getPrintOptions() {
-        return printOptions;
-    }
+  public void setFiles(InputFilesV3 files) {
+    this.files = files;
+  }
 
-    public void setPrintOptions( PostLabelsRequestPrintOptions printOptions) {
-        this.printOptions = printOptions;
-    }
+  public PostLabelsRequestPrintOptions getPrintOptions() {
+    return printOptions;
+  }
 
+  public void setPrintOptions(PostLabelsRequestPrintOptions printOptions) {
+    this.printOptions = printOptions;
+  }
+
+  public Boolean getAutomatic() {
+    return automatic;
+  }
+
+  public void setAutomatic(Boolean automatic) {
+    this.automatic = automatic;
+  }
 }

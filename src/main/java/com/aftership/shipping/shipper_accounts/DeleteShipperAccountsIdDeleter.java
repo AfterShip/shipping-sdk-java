@@ -8,66 +8,68 @@ import com.aftership.shipping.base.Deleter;
 import com.aftership.shipping.constant.ErrorEnum;
 import com.aftership.shipping.exception.ApiException;
 import com.aftership.shipping.http.*;
+import com.aftership.shipping.http.Request;
+import com.aftership.shipping.model.DeleteShipperAccountsIdResponse;
+import com.aftership.shipping.model.DeleteShipperAccountsIdResponseData;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.util.HashMap;
 import java.util.Map;
-import com.aftership.shipping.http.Request;
-import com.aftership.shipping.model.DeleteShipperAccountsIdResponse;
-import com.aftership.shipping.model.DeleteShipperAccountsIdResponseData;
 
 public class DeleteShipperAccountsIdDeleter extends Deleter<DeleteShipperAccountsIdResponse> {
-    private final Map<String, String> headerParams= new HashMap<>(8);
+  private final Map<String, String> headerParams = new HashMap<>(8);
 
-    public DeleteShipperAccountsIdDeleter addHeaderParam(final String name, final String value) {
-        if (value == null || value.equals("null")) {
-            return this;
-        }
-
-        if (!headerParams.containsKey(name)) {
-            headerParams.put(name, value);
-        }
-        return this;
+  public DeleteShipperAccountsIdDeleter addHeaderParam(final String name, final String value) {
+    if (value == null || value.equals("null")) {
+      return this;
     }
 
-    private void setHeaderParams(final Request request) {
-        for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
-            request.addHeaderParam(entry.getKey(), entry.getValue());
-        }
+    if (!headerParams.containsKey(name)) {
+      headerParams.put(name, value);
     }
-    private String id;
+    return this;
+  }
 
-
-    public DeleteShipperAccountsIdDeleter setId(String id) {
-        this.id = id;
-        return this;
+  private void setHeaderParams(final Request request) {
+    for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
+      request.addHeaderParam(entry.getKey(), entry.getValue());
     }
+  }
 
-    @Override
-    public DeleteShipperAccountsIdResponse delete(AfterShipClient client) throws Exception {
-        if (id == null || id.isEmpty()) {
-            throw new ApiException(ErrorEnum.BAD_REQUEST.name(), "Invalid request: `id` is invalid");
-        }
-        String path = String.format("/postmen/v3/shipper-accounts/%s", id);
-        Request request = new Request(HttpMethod.DELETE, path);
-        setHeaderParams(request);
-        Response response = client.request(request);
-        AfterShipResponse<DeleteShipperAccountsIdResponseData> responseData = new Gson().fromJson(response.getContent(), new TypeToken<AfterShipResponse<DeleteShipperAccountsIdResponseData>>() {
-            }.getType());
-        if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
-            throw new ApiException(
-                    responseData.getMeta().getCode(),
-                    responseData.getMeta().getMessage(),
-                    ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
-                    response.getStatusCode(),
-                    response.getContent(),
-                    response.getHeaders()
-            );
-        }
-        DeleteShipperAccountsIdResponse result = new DeleteShipperAccountsIdResponse();
-        result.setData(responseData.getData());
-        result.setResponseHeader(response.getResponseHeader());
-        return result;
+  private String id;
+
+  public DeleteShipperAccountsIdDeleter setId(String id) {
+    this.id = id;
+    return this;
+  }
+
+  @Override
+  public DeleteShipperAccountsIdResponse delete(AfterShipClient client) throws Exception {
+    if (id == null || id.isEmpty()) {
+      throw new ApiException(ErrorEnum.BAD_REQUEST.name(), "Invalid request: `id` is invalid");
     }
-
+    String path = String.format("/postmen/v3/shipper-accounts/%s", id);
+    Request request = new Request(HttpMethod.DELETE, path);
+    setHeaderParams(request);
+    Response response = client.request(request);
+    AfterShipResponse<DeleteShipperAccountsIdResponseData> responseData =
+        new Gson()
+            .fromJson(
+                response.getContent(),
+                new TypeToken<
+                    AfterShipResponse<DeleteShipperAccountsIdResponseData>>() {}.getType());
+    if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
+      throw new ApiException(
+          responseData.getMeta().getCode(),
+          responseData.getMeta().getMessage(),
+          ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
+          response.getStatusCode(),
+          response.getContent(),
+          response.getHeaders());
+    }
+    DeleteShipperAccountsIdResponse result = new DeleteShipperAccountsIdResponse();
+    result.setData(responseData.getData());
+    result.setResponseHeader(response.getResponseHeader());
+    return result;
+  }
 }

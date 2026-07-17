@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostLabelsRequestPrintOptionsQrCode extends Resource {
 
-    @SerializedName("enabled")
-    private Boolean enabled;
+  @SerializedName("enabled")
+  private Boolean enabled;
 
-    public  Boolean getEnabled() {
-        return enabled;
-    }
+  public Boolean getEnabled() {
+    return enabled;
+  }
 
-    public void setEnabled( Boolean enabled) {
-        this.enabled = enabled;
-    }
-
+  public void setEnabled(Boolean enabled) {
+    this.enabled = enabled;
+  }
 }

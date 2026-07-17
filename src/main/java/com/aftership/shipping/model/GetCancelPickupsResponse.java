@@ -4,30 +4,27 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
-import java.util.List;
-import java.util.Map;
 
 public class GetCancelPickupsResponse extends Resource {
 
-    private java.util.Map<String, java.util.List<String>> responseHeader;
+  private java.util.Map<String, java.util.List<String>> responseHeader;
 
-    private GetCancelPickupsResponseData data;
+  private GetCancelPickupsResponseData data;
 
-    public java.util.Map<String, java.util.List<String>> getResponseHeader() {
-        return responseHeader;
-    }
+  public java.util.Map<String, java.util.List<String>> getResponseHeader() {
+    return responseHeader;
+  }
 
-    public void setResponseHeader(java.util.Map<String, java.util.List<String>> responseHeader) {
-        this.responseHeader = responseHeader;
-    }
+  public void setResponseHeader(java.util.Map<String, java.util.List<String>> responseHeader) {
+    this.responseHeader = responseHeader;
+  }
 
-    public GetCancelPickupsResponseData getData() {
-        return data;
-    }
+  public GetCancelPickupsResponseData getData() {
+    return data;
+  }
 
-    public void setData(GetCancelPickupsResponseData data) {
-        this.data = data;
-    }
+  public void setData(GetCancelPickupsResponseData data) {
+    this.data = data;
+  }
 }

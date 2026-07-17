@@ -7,7 +7,7 @@ package com.aftership.shipping.address_validations_beta;
 import com.aftership.shipping.base.Resource;
 
 public class AddressValidationsBetaResource extends Resource {
-    public static PostAddressValidationsCreator postAddressValidations() {
-        return new PostAddressValidationsCreator();
-    }
+  public static PostAddressValidationsCreator postAddressValidations() {
+    return new PostAddressValidationsCreator();
+  }
 }

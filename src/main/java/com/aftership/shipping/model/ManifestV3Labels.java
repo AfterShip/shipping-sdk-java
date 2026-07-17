@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ManifestV3Labels extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("manifested")
-    private Boolean manifested;
+  @SerializedName("manifested")
+  private Boolean manifested;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  Boolean getManifested() {
-        return manifested;
-    }
+  public Boolean getManifested() {
+    return manifested;
+  }
 
-    public void setManifested( Boolean manifested) {
-        this.manifested = manifested;
-    }
-
+  public void setManifested(Boolean manifested) {
+    this.manifested = manifested;
+  }
 }

@@ -7,13 +7,15 @@ package com.aftership.shipping.labels;
 import com.aftership.shipping.base.Resource;
 
 public class LabelsResource extends Resource {
-    public static GetLabelsFetcher getLabels() {
-        return new GetLabelsFetcher();
-    }
-    public static PostLabelsCreator postLabels() {
-        return new PostLabelsCreator();
-    }
-    public static GetLabelFetcher getLabel() {
-        return new GetLabelFetcher();
-    }
+  public static GetLabelsFetcher getLabels() {
+    return new GetLabelsFetcher();
+  }
+
+  public static PostLabelsCreator postLabels() {
+    return new PostLabelsCreator();
+  }
+
+  public static GetLabelFetcher getLabel() {
+    return new GetLabelFetcher();
+  }
 }

@@ -7,7 +7,7 @@ package com.aftership.shipping.locations;
 import com.aftership.shipping.base.Resource;
 
 public class LocationsResource extends Resource {
-    public static GetLocationsFetcher getLocations() {
-        return new GetLocationsFetcher();
-    }
+  public static GetLocationsFetcher getLocations() {
+    return new GetLocationsFetcher();
+  }
 }

@@ -7,51 +7,54 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum FilesV3LabelPaperSize {
-    @SerializedName("3x5")
-    _3x5("3x5"),
+  @SerializedName("3x5")
+  _3x5("3x5"),
 
-    @SerializedName("4x4")
-    _4x4("4x4"),
+  @SerializedName("4x4")
+  _4x4("4x4"),
 
-    @SerializedName("4x5")
-    _4x5("4x5"),
+  @SerializedName("4x5")
+  _4x5("4x5"),
 
-    @SerializedName("4x6")
-    _4x6("4x6"),
+  @SerializedName("4x6")
+  _4x6("4x6"),
 
-    @SerializedName("4x6.75")
-    _4x6_75("4x6.75"),
+  @SerializedName("4x6.75")
+  _4x6_75("4x6.75"),
 
-    @SerializedName("4x7")
-    _4x7("4x7"),
+  @SerializedName("4x7")
+  _4x7("4x7"),
 
-    @SerializedName("4x8")
-    _4x8("4x8"),
+  @SerializedName("4x8")
+  _4x8("4x8"),
 
-    @SerializedName("a4")
-    A4("a4"),
+  @SerializedName("a4")
+  A4("a4"),
 
-    @SerializedName("a5")
-    A5("a5"),
+  @SerializedName("a5")
+  A5("a5"),
 
-    @SerializedName("default")
-    Default("default"),
+  @SerializedName("a6")
+  A6("a6"),
 
-    @SerializedName("8.5x6.3")
-    _8_5x6_3("8.5x6.3");
+  @SerializedName("default")
+  Default("default"),
 
-    private final String value;
+  @SerializedName("8.5x6.3")
+  _8_5x6_3("8.5x6.3");
 
-    FilesV3LabelPaperSize(final String value) {
-        this.value = value;
-    }
+  private final String value;
 
-    public String getValue() {
-        return value;
-    }
+  FilesV3LabelPaperSize(final String value) {
+    this.value = value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  public String getValue() {
+    return value;
+  }
+
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

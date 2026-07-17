@@ -4,42 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ManifestV3ShipperAccount extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("slug")
-    private String slug;
+  @SerializedName("slug")
+  private String slug;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  String getSlug() {
-        return slug;
-    }
+  public String getSlug() {
+    return slug;
+  }
 
-    public void setSlug( String slug) {
-        this.slug = slug;
-    }
+  public void setSlug(String slug) {
+    this.slug = slug;
+  }
 
-    public  String getDescription() {
-        return description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setDescription( String description) {
-        this.description = description;
-    }
-
+  public void setDescription(String description) {
+    this.description = description;
+  }
 }

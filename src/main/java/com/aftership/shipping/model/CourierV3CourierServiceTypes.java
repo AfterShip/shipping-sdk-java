@@ -4,53 +4,52 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class CourierV3CourierServiceTypes extends Resource {
 
-    @SerializedName("service_type")
-    private String serviceType;
+  @SerializedName("service_type")
+  private String serviceType;
 
-    @SerializedName("service_name")
-    private String serviceName;
+  @SerializedName("service_name")
+  private String serviceName;
 
-    @SerializedName("is_domestic")
-    private String isDomestic;
+  @SerializedName("is_domestic")
+  private String isDomestic;
 
-    @SerializedName("ship_from.country")
-    private String shipFromCountry;
+  @SerializedName("ship_from.country")
+  private String shipFromCountry;
 
-    public  String getServiceType() {
-        return serviceType;
-    }
+  public String getServiceType() {
+    return serviceType;
+  }
 
-    public void setServiceType( String serviceType) {
-        this.serviceType = serviceType;
-    }
+  public void setServiceType(String serviceType) {
+    this.serviceType = serviceType;
+  }
 
-    public  String getServiceName() {
-        return serviceName;
-    }
+  public String getServiceName() {
+    return serviceName;
+  }
 
-    public void setServiceName( String serviceName) {
-        this.serviceName = serviceName;
-    }
+  public void setServiceName(String serviceName) {
+    this.serviceName = serviceName;
+  }
 
-    public  String getIsDomestic() {
-        return isDomestic;
-    }
+  public String getIsDomestic() {
+    return isDomestic;
+  }
 
-    public void setIsDomestic( String isDomestic) {
-        this.isDomestic = isDomestic;
-    }
+  public void setIsDomestic(String isDomestic) {
+    this.isDomestic = isDomestic;
+  }
 
-    public  String getShipFromCountry() {
-        return shipFromCountry;
-    }
+  public String getShipFromCountry() {
+    return shipFromCountry;
+  }
 
-    public void setShipFromCountry( String shipFromCountry) {
-        this.shipFromCountry = shipFromCountry;
-    }
-
+  public void setShipFromCountry(String shipFromCountry) {
+    this.shipFromCountry = shipFromCountry;
+  }
 }

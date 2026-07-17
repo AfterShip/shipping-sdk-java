@@ -7,30 +7,30 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum AddressV3IdentificationType {
-    @SerializedName("mil")
-    Mil("mil"),
+  @SerializedName("mil")
+  Mil("mil"),
 
-    @SerializedName("nid")
-    Nid("nid"),
+  @SerializedName("nid")
+  Nid("nid"),
 
-    @SerializedName("pas")
-    Pas("pas"),
+  @SerializedName("pas")
+  Pas("pas"),
 
-    @SerializedName("other")
-    Other("other");
+  @SerializedName("other")
+  Other("other");
 
-    private final String value;
+  private final String value;
 
-    AddressV3IdentificationType(final String value) {
-        this.value = value;
-    }
+  AddressV3IdentificationType(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

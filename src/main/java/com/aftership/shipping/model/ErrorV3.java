@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ErrorV3 extends Resource {
 
-    @SerializedName("path")
-    private String path;
+  @SerializedName("path")
+  private String path;
 
-    @SerializedName("info")
-    private String info;
+  @SerializedName("info")
+  private String info;
 
-    public  String getPath() {
-        return path;
-    }
+  public String getPath() {
+    return path;
+  }
 
-    public void setPath( String path) {
-        this.path = path;
-    }
+  public void setPath(String path) {
+    this.path = path;
+  }
 
-    public  String getInfo() {
-        return info;
-    }
+  public String getInfo() {
+    return info;
+  }
 
-    public void setInfo( String info) {
-        this.info = info;
-    }
-
+  public void setInfo(String info) {
+    this.info = info;
+  }
 }

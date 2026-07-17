@@ -7,27 +7,27 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum CancelLabelV3Status {
-    @SerializedName("cancelling")
-    Cancelling("cancelling"),
+  @SerializedName("cancelling")
+  Cancelling("cancelling"),
 
-    @SerializedName("cancelled")
-    Cancelled("cancelled"),
+  @SerializedName("cancelled")
+  Cancelled("cancelled"),
 
-    @SerializedName("failed")
-    Failed("failed");
+  @SerializedName("failed")
+  Failed("failed");
 
-    private final String value;
+  private final String value;
 
-    CancelLabelV3Status(final String value) {
-        this.value = value;
-    }
+  CancelLabelV3Status(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

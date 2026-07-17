@@ -4,53 +4,52 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PickupParcelV3 extends Resource {
 
-    @SerializedName("weight")
-    private WeightV3 weight;
+  @SerializedName("weight")
+  private WeightV3 weight;
 
-    @SerializedName("quantity")
-    private Integer quantity;
+  @SerializedName("quantity")
+  private Integer quantity;
 
-    @SerializedName("service_type")
-    private String serviceType;
+  @SerializedName("service_type")
+  private String serviceType;
 
-    @SerializedName("dimension")
-    private DimensionV3 dimension;
+  @SerializedName("dimension")
+  private DimensionV3 dimension;
 
-    public  WeightV3 getWeight() {
-        return weight;
-    }
+  public WeightV3 getWeight() {
+    return weight;
+  }
 
-    public void setWeight( WeightV3 weight) {
-        this.weight = weight;
-    }
+  public void setWeight(WeightV3 weight) {
+    this.weight = weight;
+  }
 
-    public  Integer getQuantity() {
-        return quantity;
-    }
+  public Integer getQuantity() {
+    return quantity;
+  }
 
-    public void setQuantity( Integer quantity) {
-        this.quantity = quantity;
-    }
+  public void setQuantity(Integer quantity) {
+    this.quantity = quantity;
+  }
 
-    public  String getServiceType() {
-        return serviceType;
-    }
+  public String getServiceType() {
+    return serviceType;
+  }
 
-    public void setServiceType( String serviceType) {
-        this.serviceType = serviceType;
-    }
+  public void setServiceType(String serviceType) {
+    this.serviceType = serviceType;
+  }
 
-    public  DimensionV3 getDimension() {
-        return dimension;
-    }
+  public DimensionV3 getDimension() {
+    return dimension;
+  }
 
-    public void setDimension( DimensionV3 dimension) {
-        this.dimension = dimension;
-    }
-
+  public void setDimension(DimensionV3 dimension) {
+    this.dimension = dimension;
+  }
 }

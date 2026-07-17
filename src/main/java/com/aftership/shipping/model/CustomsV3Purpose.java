@@ -7,39 +7,39 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum CustomsV3Purpose {
-    @SerializedName("gift")
-    Gift("gift"),
+  @SerializedName("gift")
+  Gift("gift"),
 
-    @SerializedName("merchandise")
-    Merchandise("merchandise"),
+  @SerializedName("merchandise")
+  Merchandise("merchandise"),
 
-    @SerializedName("personal")
-    Personal("personal"),
+  @SerializedName("personal")
+  Personal("personal"),
 
-    @SerializedName("sample")
-    Sample("sample"),
+  @SerializedName("sample")
+  Sample("sample"),
 
-    @SerializedName("return")
-    Return("return"),
+  @SerializedName("return")
+  Return("return"),
 
-    @SerializedName("repair")
-    Repair("repair"),
+  @SerializedName("repair")
+  Repair("repair"),
 
-    @SerializedName("non-merchandise")
-    NonMerchandise("non-merchandise");
+  @SerializedName("non-merchandise")
+  NonMerchandise("non-merchandise");
 
-    private final String value;
+  private final String value;
 
-    CustomsV3Purpose(final String value) {
-        this.value = value;
-    }
+  CustomsV3Purpose(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

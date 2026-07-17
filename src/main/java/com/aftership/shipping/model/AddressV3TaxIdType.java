@@ -7,36 +7,39 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum AddressV3TaxIdType {
-    @SerializedName("vat")
-    Vat("vat"),
+  @SerializedName("vat")
+  Vat("vat"),
 
-    @SerializedName("gst")
-    Gst("gst"),
+  @SerializedName("gst")
+  Gst("gst"),
 
-    @SerializedName("eori")
-    Eori("eori"),
+  @SerializedName("eori")
+  Eori("eori"),
 
-    @SerializedName("ioss")
-    Ioss("ioss"),
+  @SerializedName("ioss")
+  Ioss("ioss"),
 
-    @SerializedName("pan")
-    Pan("pan"),
+  @SerializedName("pan")
+  Pan("pan"),
 
-    @SerializedName("other")
-    Other("other");
+  @SerializedName("ukims")
+  Ukims("ukims"),
 
-    private final String value;
+  @SerializedName("other")
+  Other("other");
 
-    AddressV3TaxIdType(final String value) {
-        this.value = value;
-    }
+  private final String value;
 
-    public String getValue() {
-        return value;
-    }
+  AddressV3TaxIdType(final String value) {
+    this.value = value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  public String getValue() {
+    return value;
+  }
+
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

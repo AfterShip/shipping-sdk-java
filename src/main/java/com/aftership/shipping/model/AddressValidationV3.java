@@ -4,75 +4,74 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class AddressValidationV3 extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("status")
-    private AddressValidationV3Status status;
+  @SerializedName("status")
+  private AddressValidationV3Status status;
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    @SerializedName("address")
-    private AddressV3 address;
+  @SerializedName("address")
+  private AddressV3 address;
 
-    @SerializedName("recommended_address")
-    private AddressV3 recommendedAddress;
+  @SerializedName("recommended_address")
+  private AddressV3 recommendedAddress;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  AddressValidationV3Status getStatus() {
-        return status;
-    }
+  public AddressValidationV3Status getStatus() {
+    return status;
+  }
 
-    public void setStatus( AddressValidationV3Status status) {
-        this.status = status;
-    }
+  public void setStatus(AddressValidationV3Status status) {
+    this.status = status;
+  }
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 
-    public  AddressV3 getAddress() {
-        return address;
-    }
+  public AddressV3 getAddress() {
+    return address;
+  }
 
-    public void setAddress( AddressV3 address) {
-        this.address = address;
-    }
+  public void setAddress(AddressV3 address) {
+    this.address = address;
+  }
 
-    public  AddressV3 getRecommendedAddress() {
-        return recommendedAddress;
-    }
+  public AddressV3 getRecommendedAddress() {
+    return recommendedAddress;
+  }
 
-    public void setRecommendedAddress( AddressV3 recommendedAddress) {
-        this.recommendedAddress = recommendedAddress;
-    }
-
+  public void setRecommendedAddress(AddressV3 recommendedAddress) {
+    this.recommendedAddress = recommendedAddress;
+  }
 }

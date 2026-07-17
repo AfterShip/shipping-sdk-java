@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostCancelLabelsRequest extends Resource {
 
-    @SerializedName("label")
-    private PostCancelLabelsRequestLabel label;
+  @SerializedName("label")
+  private PostCancelLabelsRequestLabel label;
 
-    public  PostCancelLabelsRequestLabel getLabel() {
-        return label;
-    }
+  public PostCancelLabelsRequestLabel getLabel() {
+    return label;
+  }
 
-    public void setLabel( PostCancelLabelsRequestLabel label) {
-        this.label = label;
-    }
-
+  public void setLabel(PostCancelLabelsRequestLabel label) {
+    this.label = label;
+  }
 }

@@ -4,42 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class LocationV3BusinessHours extends Resource {
 
-    @SerializedName("day_of_week")
-    private LocationV3BusinessHoursDayOfWeek dayOfWeek;
+  @SerializedName("day_of_week")
+  private LocationV3BusinessHoursDayOfWeek dayOfWeek;
 
-    @SerializedName("open_time")
-    private String openTime;
+  @SerializedName("open_time")
+  private String openTime;
 
-    @SerializedName("close_time")
-    private String closeTime;
+  @SerializedName("close_time")
+  private String closeTime;
 
-    public  LocationV3BusinessHoursDayOfWeek getDayOfWeek() {
-        return dayOfWeek;
-    }
+  public LocationV3BusinessHoursDayOfWeek getDayOfWeek() {
+    return dayOfWeek;
+  }
 
-    public void setDayOfWeek( LocationV3BusinessHoursDayOfWeek dayOfWeek) {
-        this.dayOfWeek = dayOfWeek;
-    }
+  public void setDayOfWeek(LocationV3BusinessHoursDayOfWeek dayOfWeek) {
+    this.dayOfWeek = dayOfWeek;
+  }
 
-    public  String getOpenTime() {
-        return openTime;
-    }
+  public String getOpenTime() {
+    return openTime;
+  }
 
-    public void setOpenTime( String openTime) {
-        this.openTime = openTime;
-    }
+  public void setOpenTime(String openTime) {
+    this.openTime = openTime;
+  }
 
-    public  String getCloseTime() {
-        return closeTime;
-    }
+  public String getCloseTime() {
+    return closeTime;
+  }
 
-    public void setCloseTime( String closeTime) {
-        this.closeTime = closeTime;
-    }
-
+  public void setCloseTime(String closeTime) {
+    this.closeTime = closeTime;
+  }
 }

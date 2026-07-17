@@ -7,21 +7,24 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum ShipperAccountV3Type {
-    @SerializedName("default")
-    Default("default");
+  @SerializedName("default")
+  Default("default"),
 
-    private final String value;
+  @SerializedName("user")
+  User("user");
 
-    ShipperAccountV3Type(final String value) {
-        this.value = value;
-    }
+  private final String value;
 
-    public String getValue() {
-        return value;
-    }
+  ShipperAccountV3Type(final String value) {
+    this.value = value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  public String getValue() {
+    return value;
+  }
+
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

@@ -7,33 +7,33 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum PickupV3Status {
-    @SerializedName("creating")
-    Creating("creating"),
+  @SerializedName("creating")
+  Creating("creating"),
 
-    @SerializedName("created")
-    Created("created"),
+  @SerializedName("created")
+  Created("created"),
 
-    @SerializedName("failed")
-    Failed("failed"),
+  @SerializedName("failed")
+  Failed("failed"),
 
-    @SerializedName("cancelling")
-    Cancelling("cancelling"),
+  @SerializedName("cancelling")
+  Cancelling("cancelling"),
 
-    @SerializedName("cancelled")
-    Cancelled("cancelled");
+  @SerializedName("cancelled")
+  Cancelled("cancelled");
 
-    private final String value;
+  private final String value;
 
-    PickupV3Status(final String value) {
-        this.value = value;
-    }
+  PickupV3Status(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

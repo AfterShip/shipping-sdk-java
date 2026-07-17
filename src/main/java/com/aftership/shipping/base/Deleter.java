@@ -4,14 +4,14 @@
  */
 package com.aftership.shipping.base;
 
-import com.aftership.shipping.http.AfterShipClient;
 import com.aftership.shipping.ShippingSdk;
+import com.aftership.shipping.http.AfterShipClient;
 
 public abstract class Deleter<T extends Resource> {
 
-    public T delete() throws Exception {
-        return delete(ShippingSdk.getRestClient());
-    }
+  public T delete() throws Exception {
+    return delete(ShippingSdk.getRestClient());
+  }
 
-    public abstract T delete(final AfterShipClient client) throws Exception;
+  public abstract T delete(final AfterShipClient client) throws Exception;
 }

@@ -4,64 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class GetCancelLabelsResponseData extends Resource {
 
-    @SerializedName("next_token")
-    private String nextToken;
+  @SerializedName("next_token")
+  private String nextToken;
 
-    @SerializedName("limit")
-    private Integer limit;
+  @SerializedName("limit")
+  private Integer limit;
 
-    @SerializedName("created_at_min")
-    private String createdAtMin;
+  @SerializedName("created_at_min")
+  private String createdAtMin;
 
-    @SerializedName("created_at_max")
-    private String createdAtMax;
+  @SerializedName("created_at_max")
+  private String createdAtMax;
 
-    @SerializedName("cancel_labels")
-    private java.util.List<CancelLabelV3> cancelLabels;
+  @SerializedName("cancel_labels")
+  private java.util.List<CancelLabelV3> cancelLabels;
 
-    public  String getNextToken() {
-        return nextToken;
-    }
+  public String getNextToken() {
+    return nextToken;
+  }
 
-    public void setNextToken( String nextToken) {
-        this.nextToken = nextToken;
-    }
+  public void setNextToken(String nextToken) {
+    this.nextToken = nextToken;
+  }
 
-    public  Integer getLimit() {
-        return limit;
-    }
+  public Integer getLimit() {
+    return limit;
+  }
 
-    public void setLimit( Integer limit) {
-        this.limit = limit;
-    }
+  public void setLimit(Integer limit) {
+    this.limit = limit;
+  }
 
-    public  String getCreatedAtMin() {
-        return createdAtMin;
-    }
+  public String getCreatedAtMin() {
+    return createdAtMin;
+  }
 
-    public void setCreatedAtMin( String createdAtMin) {
-        this.createdAtMin = createdAtMin;
-    }
+  public void setCreatedAtMin(String createdAtMin) {
+    this.createdAtMin = createdAtMin;
+  }
 
-    public  String getCreatedAtMax() {
-        return createdAtMax;
-    }
+  public String getCreatedAtMax() {
+    return createdAtMax;
+  }
 
-    public void setCreatedAtMax( String createdAtMax) {
-        this.createdAtMax = createdAtMax;
-    }
+  public void setCreatedAtMax(String createdAtMax) {
+    this.createdAtMax = createdAtMax;
+  }
 
-    public java.util.List<CancelLabelV3>  getCancelLabels() {
-        return cancelLabels;
-    }
+  public java.util.List<CancelLabelV3> getCancelLabels() {
+    return cancelLabels;
+  }
 
-    public void setCancelLabels(java.util.List<CancelLabelV3>  cancelLabels) {
-        this.cancelLabels = cancelLabels;
-    }
-
+  public void setCancelLabels(java.util.List<CancelLabelV3> cancelLabels) {
+    this.cancelLabels = cancelLabels;
+  }
 }

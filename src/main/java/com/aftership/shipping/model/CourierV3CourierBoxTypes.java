@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class CourierV3CourierBoxTypes extends Resource {
 
-    @SerializedName("box_name")
-    private String boxName;
+  @SerializedName("box_name")
+  private String boxName;
 
-    @SerializedName("box_type")
-    private String boxType;
+  @SerializedName("box_type")
+  private String boxType;
 
-    public  String getBoxName() {
-        return boxName;
-    }
+  public String getBoxName() {
+    return boxName;
+  }
 
-    public void setBoxName( String boxName) {
-        this.boxName = boxName;
-    }
+  public void setBoxName(String boxName) {
+    this.boxName = boxName;
+  }
 
-    public  String getBoxType() {
-        return boxType;
-    }
+  public String getBoxType() {
+    return boxType;
+  }
 
-    public void setBoxType( String boxType) {
-        this.boxType = boxType;
-    }
-
+  public void setBoxType(String boxType) {
+    this.boxType = boxType;
+  }
 }

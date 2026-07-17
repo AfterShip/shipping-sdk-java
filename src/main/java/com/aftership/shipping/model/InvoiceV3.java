@@ -4,75 +4,74 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class InvoiceV3 extends Resource {
 
-    @SerializedName("date")
-    private String date;
+  @SerializedName("date")
+  private String date;
 
-    @SerializedName("number")
-    private String number;
+  @SerializedName("number")
+  private String number;
 
-    @SerializedName("type")
-    private InvoiceV3Type type;
+  @SerializedName("type")
+  private InvoiceV3Type type;
 
-    @SerializedName("number_of_copies")
-    private Integer numberOfCopies;
+  @SerializedName("number_of_copies")
+  private Integer numberOfCopies;
 
-    @SerializedName("signature_name")
-    private String signatureName;
+  @SerializedName("signature_name")
+  private String signatureName;
 
-    @SerializedName("declaration_statement")
-    private String declarationStatement;
+  @SerializedName("declaration_statement")
+  private String declarationStatement;
 
-    public  String getDate() {
-        return date;
-    }
+  public String getDate() {
+    return date;
+  }
 
-    public void setDate( String date) {
-        this.date = date;
-    }
+  public void setDate(String date) {
+    this.date = date;
+  }
 
-    public  String getNumber() {
-        return number;
-    }
+  public String getNumber() {
+    return number;
+  }
 
-    public void setNumber( String number) {
-        this.number = number;
-    }
+  public void setNumber(String number) {
+    this.number = number;
+  }
 
-    public  InvoiceV3Type getType() {
-        return type;
-    }
+  public InvoiceV3Type getType() {
+    return type;
+  }
 
-    public void setType( InvoiceV3Type type) {
-        this.type = type;
-    }
+  public void setType(InvoiceV3Type type) {
+    this.type = type;
+  }
 
-    public  Integer getNumberOfCopies() {
-        return numberOfCopies;
-    }
+  public Integer getNumberOfCopies() {
+    return numberOfCopies;
+  }
 
-    public void setNumberOfCopies( Integer numberOfCopies) {
-        this.numberOfCopies = numberOfCopies;
-    }
+  public void setNumberOfCopies(Integer numberOfCopies) {
+    this.numberOfCopies = numberOfCopies;
+  }
 
-    public  String getSignatureName() {
-        return signatureName;
-    }
+  public String getSignatureName() {
+    return signatureName;
+  }
 
-    public void setSignatureName( String signatureName) {
-        this.signatureName = signatureName;
-    }
+  public void setSignatureName(String signatureName) {
+    this.signatureName = signatureName;
+  }
 
-    public  String getDeclarationStatement() {
-        return declarationStatement;
-    }
+  public String getDeclarationStatement() {
+    return declarationStatement;
+  }
 
-    public void setDeclarationStatement( String declarationStatement) {
-        this.declarationStatement = declarationStatement;
-    }
-
+  public void setDeclarationStatement(String declarationStatement) {
+    this.declarationStatement = declarationStatement;
+  }
 }

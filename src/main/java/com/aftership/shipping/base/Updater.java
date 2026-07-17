@@ -4,14 +4,14 @@
  */
 package com.aftership.shipping.base;
 
-import com.aftership.shipping.http.AfterShipClient;
 import com.aftership.shipping.ShippingSdk;
+import com.aftership.shipping.http.AfterShipClient;
 
 public abstract class Updater<T extends Resource> {
 
-    public T update() throws Exception {
-        return update(ShippingSdk.getRestClient());
-    }
+  public T update() throws Exception {
+    return update(ShippingSdk.getRestClient());
+  }
 
-    public abstract T update(final AfterShipClient client) throws Exception;
+  public abstract T update(final AfterShipClient client) throws Exception;
 }

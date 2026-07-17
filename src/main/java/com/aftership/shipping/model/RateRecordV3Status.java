@@ -7,27 +7,27 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum RateRecordV3Status {
-    @SerializedName("calculating")
-    Calculating("calculating"),
+  @SerializedName("calculating")
+  Calculating("calculating"),
 
-    @SerializedName("calculated")
-    Calculated("calculated"),
+  @SerializedName("calculated")
+  Calculated("calculated"),
 
-    @SerializedName("failed")
-    Failed("failed");
+  @SerializedName("failed")
+  Failed("failed");
 
-    private final String value;
+  private final String value;
 
-    RateRecordV3Status(final String value) {
-        this.value = value;
-    }
+  RateRecordV3Status(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

@@ -4,42 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class FilesV3CustomsDeclaration extends Resource {
 
-    @SerializedName("paper_size")
-    private FilesV3CustomsDeclarationPaperSize paperSize;
+  @SerializedName("paper_size")
+  private FilesV3CustomsDeclarationPaperSize paperSize;
 
-    @SerializedName("url")
-    private String url;
+  @SerializedName("url")
+  private String url;
 
-    @SerializedName("file_type")
-    private FilesV3CustomsDeclarationFileType fileType;
+  @SerializedName("file_type")
+  private FilesV3CustomsDeclarationFileType fileType;
 
-    public  FilesV3CustomsDeclarationPaperSize getPaperSize() {
-        return paperSize;
-    }
+  public FilesV3CustomsDeclarationPaperSize getPaperSize() {
+    return paperSize;
+  }
 
-    public void setPaperSize( FilesV3CustomsDeclarationPaperSize paperSize) {
-        this.paperSize = paperSize;
-    }
+  public void setPaperSize(FilesV3CustomsDeclarationPaperSize paperSize) {
+    this.paperSize = paperSize;
+  }
 
-    public  String getUrl() {
-        return url;
-    }
+  public String getUrl() {
+    return url;
+  }
 
-    public void setUrl( String url) {
-        this.url = url;
-    }
+  public void setUrl(String url) {
+    this.url = url;
+  }
 
-    public  FilesV3CustomsDeclarationFileType getFileType() {
-        return fileType;
-    }
+  public FilesV3CustomsDeclarationFileType getFileType() {
+    return fileType;
+  }
 
-    public void setFileType( FilesV3CustomsDeclarationFileType fileType) {
-        this.fileType = fileType;
-    }
-
+  public void setFileType(FilesV3CustomsDeclarationFileType fileType) {
+    this.fileType = fileType;
+  }
 }

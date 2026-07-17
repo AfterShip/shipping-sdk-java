@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class GetCouriersResponseData extends Resource {
 
-    @SerializedName("couriers")
-    private java.util.List<CourierV3> couriers;
+  @SerializedName("couriers")
+  private java.util.List<CourierV3> couriers;
 
-    public java.util.List<CourierV3>  getCouriers() {
-        return couriers;
-    }
+  public java.util.List<CourierV3> getCouriers() {
+    return couriers;
+  }
 
-    public void setCouriers(java.util.List<CourierV3>  couriers) {
-        this.couriers = couriers;
-    }
-
+  public void setCouriers(java.util.List<CourierV3> couriers) {
+    this.couriers = couriers;
+  }
 }

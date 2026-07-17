@@ -7,24 +7,24 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum AddressValidationV3Status {
-    @SerializedName("valid")
-    Valid("valid"),
+  @SerializedName("valid")
+  Valid("valid"),
 
-    @SerializedName("invalid")
-    Invalid("invalid");
+  @SerializedName("invalid")
+  Invalid("invalid");
 
-    private final String value;
+  private final String value;
 
-    AddressValidationV3Status(final String value) {
-        this.value = value;
-    }
+  AddressValidationV3Status(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

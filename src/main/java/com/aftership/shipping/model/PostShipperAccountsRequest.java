@@ -4,75 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostShipperAccountsRequest extends Resource {
 
-    @SerializedName("slug")
-    private String slug;
+  @SerializedName("slug")
+  private String slug;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @SerializedName("timezone")
-    private String timezone;
+  @SerializedName("timezone")
+  private String timezone;
 
-    @SerializedName("credentials")
-    private Object credentials;
+  @SerializedName("credentials")
+  private Object credentials;
 
-    @SerializedName("address")
-    private AddressV3 address;
+  @SerializedName("address")
+  private AddressV3 address;
 
-    @SerializedName("settings")
-    private PostShipperAccountsRequestSettings settings;
+  public String getSlug() {
+    return slug;
+  }
 
-    public  String getSlug() {
-        return slug;
-    }
+  public void setSlug(String slug) {
+    this.slug = slug;
+  }
 
-    public void setSlug( String slug) {
-        this.slug = slug;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public  String getDescription() {
-        return description;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setDescription( String description) {
-        this.description = description;
-    }
+  public String getTimezone() {
+    return timezone;
+  }
 
-    public  String getTimezone() {
-        return timezone;
-    }
+  public void setTimezone(String timezone) {
+    this.timezone = timezone;
+  }
 
-    public void setTimezone( String timezone) {
-        this.timezone = timezone;
-    }
+  public Object getCredentials() {
+    return credentials;
+  }
 
-    public  Object getCredentials() {
-        return credentials;
-    }
+  public void setCredentials(Object credentials) {
+    this.credentials = credentials;
+  }
 
-    public void setCredentials( Object credentials) {
-        this.credentials = credentials;
-    }
+  public AddressV3 getAddress() {
+    return address;
+  }
 
-    public  AddressV3 getAddress() {
-        return address;
-    }
-
-    public void setAddress( AddressV3 address) {
-        this.address = address;
-    }
-
-    public  PostShipperAccountsRequestSettings getSettings() {
-        return settings;
-    }
-
-    public void setSettings( PostShipperAccountsRequestSettings settings) {
-        this.settings = settings;
-    }
-
+  public void setAddress(AddressV3 address) {
+    this.address = address;
+  }
 }

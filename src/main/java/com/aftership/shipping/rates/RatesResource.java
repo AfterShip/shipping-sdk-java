@@ -7,13 +7,15 @@ package com.aftership.shipping.rates;
 import com.aftership.shipping.base.Resource;
 
 public class RatesResource extends Resource {
-    public static GetRatesFetcher getRates() {
-        return new GetRatesFetcher();
-    }
-    public static PostRatesCreator postRates() {
-        return new PostRatesCreator();
-    }
-    public static GetRateFetcher getRate() {
-        return new GetRateFetcher();
-    }
+  public static GetRatesFetcher getRates() {
+    return new GetRatesFetcher();
+  }
+
+  public static PostRatesCreator postRates() {
+    return new PostRatesCreator();
+  }
+
+  public static GetRateFetcher getRate() {
+    return new GetRateFetcher();
+  }
 }

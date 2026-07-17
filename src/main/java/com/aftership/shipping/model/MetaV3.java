@@ -4,53 +4,52 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class MetaV3 extends Resource {
 
-    @SerializedName("code")
-    private Integer code;
+  @SerializedName("code")
+  private Integer code;
 
-    @SerializedName("message")
-    private String message;
+  @SerializedName("message")
+  private String message;
 
-    @SerializedName("details")
-    private java.util.List<ErrorV3> details;
+  @SerializedName("details")
+  private java.util.List<ErrorV3> details;
 
-    @SerializedName("retryable")
-    private Boolean retryable;
+  @SerializedName("retryable")
+  private Boolean retryable;
 
-    public  Integer getCode() {
-        return code;
-    }
+  public Integer getCode() {
+    return code;
+  }
 
-    public void setCode( Integer code) {
-        this.code = code;
-    }
+  public void setCode(Integer code) {
+    this.code = code;
+  }
 
-    public  String getMessage() {
-        return message;
-    }
+  public String getMessage() {
+    return message;
+  }
 
-    public void setMessage( String message) {
-        this.message = message;
-    }
+  public void setMessage(String message) {
+    this.message = message;
+  }
 
-    public java.util.List<ErrorV3>  getDetails() {
-        return details;
-    }
+  public java.util.List<ErrorV3> getDetails() {
+    return details;
+  }
 
-    public void setDetails(java.util.List<ErrorV3>  details) {
-        this.details = details;
-    }
+  public void setDetails(java.util.List<ErrorV3> details) {
+    this.details = details;
+  }
 
-    public  Boolean getRetryable() {
-        return retryable;
-    }
+  public Boolean getRetryable() {
+    return retryable;
+  }
 
-    public void setRetryable( Boolean retryable) {
-        this.retryable = retryable;
-    }
-
+  public void setRetryable(Boolean retryable) {
+    this.retryable = retryable;
+  }
 }

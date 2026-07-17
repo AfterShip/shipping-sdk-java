@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class CustomsV3AdditionalCharges extends Resource {
 
-    @SerializedName("type")
-    private CustomsV3AdditionalChargesType type;
+  @SerializedName("type")
+  private CustomsV3AdditionalChargesType type;
 
-    @SerializedName("charge")
-    private MoneyV3 charge;
+  @SerializedName("charge")
+  private MoneyV3 charge;
 
-    public  CustomsV3AdditionalChargesType getType() {
-        return type;
-    }
+  public CustomsV3AdditionalChargesType getType() {
+    return type;
+  }
 
-    public void setType( CustomsV3AdditionalChargesType type) {
-        this.type = type;
-    }
+  public void setType(CustomsV3AdditionalChargesType type) {
+    this.type = type;
+  }
 
-    public  MoneyV3 getCharge() {
-        return charge;
-    }
+  public MoneyV3 getCharge() {
+    return charge;
+  }
 
-    public void setCharge( MoneyV3 charge) {
-        this.charge = charge;
-    }
-
+  public void setCharge(MoneyV3 charge) {
+    this.charge = charge;
+  }
 }

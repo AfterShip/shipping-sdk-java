@@ -7,13 +7,15 @@ package com.aftership.shipping.cancel_labels;
 import com.aftership.shipping.base.Resource;
 
 public class CancelLabelsResource extends Resource {
-    public static GetCancelLabelsFetcher getCancelLabels() {
-        return new GetCancelLabelsFetcher();
-    }
-    public static PostCancelLabelsCreator postCancelLabels() {
-        return new PostCancelLabelsCreator();
-    }
-    public static GetCancelLabelFetcher getCancelLabel() {
-        return new GetCancelLabelFetcher();
-    }
+  public static GetCancelLabelsFetcher getCancelLabels() {
+    return new GetCancelLabelsFetcher();
+  }
+
+  public static PostCancelLabelsCreator postCancelLabels() {
+    return new PostCancelLabelsCreator();
+  }
+
+  public static GetCancelLabelFetcher getCancelLabel() {
+    return new GetCancelLabelFetcher();
+  }
 }

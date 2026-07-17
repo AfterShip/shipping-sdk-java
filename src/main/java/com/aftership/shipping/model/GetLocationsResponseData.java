@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class GetLocationsResponseData extends Resource {
 
-    @SerializedName("locations")
-    private java.util.List<LocationV3> locations;
+  @SerializedName("locations")
+  private java.util.List<LocationV3> locations;
 
-    @SerializedName("drop_off_link")
-    private String dropOffLink;
+  @SerializedName("drop_off_link")
+  private String dropOffLink;
 
-    public java.util.List<LocationV3>  getLocations() {
-        return locations;
-    }
+  public java.util.List<LocationV3> getLocations() {
+    return locations;
+  }
 
-    public void setLocations(java.util.List<LocationV3>  locations) {
-        this.locations = locations;
-    }
+  public void setLocations(java.util.List<LocationV3> locations) {
+    this.locations = locations;
+  }
 
-    public  String getDropOffLink() {
-        return dropOffLink;
-    }
+  public String getDropOffLink() {
+    return dropOffLink;
+  }
 
-    public void setDropOffLink( String dropOffLink) {
-        this.dropOffLink = dropOffLink;
-    }
-
+  public void setDropOffLink(String dropOffLink) {
+    this.dropOffLink = dropOffLink;
+  }
 }

@@ -4,75 +4,74 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class FilesV3 extends Resource {
 
-    @SerializedName("label")
-    private FilesV3Label label;
+  @SerializedName("label")
+  private FilesV3Label label;
 
-    @SerializedName("qr_code")
-    private FilesV3QrCode qrCode;
+  @SerializedName("qr_code")
+  private FilesV3QrCode qrCode;
 
-    @SerializedName("invoice")
-    private FilesV3Invoice invoice;
+  @SerializedName("invoice")
+  private FilesV3Invoice invoice;
 
-    @SerializedName("customs_declaration")
-    private FilesV3CustomsDeclaration customsDeclaration;
+  @SerializedName("customs_declaration")
+  private FilesV3CustomsDeclaration customsDeclaration;
 
-    @SerializedName("packing_slip")
-    private FilesV3PackingSlip packingSlip;
+  @SerializedName("packing_slip")
+  private FilesV3PackingSlip packingSlip;
 
-    @SerializedName("manifest")
-    private FilesV3Manifest manifest;
+  @SerializedName("manifest")
+  private FilesV3Manifest manifest;
 
-    public  FilesV3Label getLabel() {
-        return label;
-    }
+  public FilesV3Label getLabel() {
+    return label;
+  }
 
-    public void setLabel( FilesV3Label label) {
-        this.label = label;
-    }
+  public void setLabel(FilesV3Label label) {
+    this.label = label;
+  }
 
-    public  FilesV3QrCode getQrCode() {
-        return qrCode;
-    }
+  public FilesV3QrCode getQrCode() {
+    return qrCode;
+  }
 
-    public void setQrCode( FilesV3QrCode qrCode) {
-        this.qrCode = qrCode;
-    }
+  public void setQrCode(FilesV3QrCode qrCode) {
+    this.qrCode = qrCode;
+  }
 
-    public  FilesV3Invoice getInvoice() {
-        return invoice;
-    }
+  public FilesV3Invoice getInvoice() {
+    return invoice;
+  }
 
-    public void setInvoice( FilesV3Invoice invoice) {
-        this.invoice = invoice;
-    }
+  public void setInvoice(FilesV3Invoice invoice) {
+    this.invoice = invoice;
+  }
 
-    public  FilesV3CustomsDeclaration getCustomsDeclaration() {
-        return customsDeclaration;
-    }
+  public FilesV3CustomsDeclaration getCustomsDeclaration() {
+    return customsDeclaration;
+  }
 
-    public void setCustomsDeclaration( FilesV3CustomsDeclaration customsDeclaration) {
-        this.customsDeclaration = customsDeclaration;
-    }
+  public void setCustomsDeclaration(FilesV3CustomsDeclaration customsDeclaration) {
+    this.customsDeclaration = customsDeclaration;
+  }
 
-    public  FilesV3PackingSlip getPackingSlip() {
-        return packingSlip;
-    }
+  public FilesV3PackingSlip getPackingSlip() {
+    return packingSlip;
+  }
 
-    public void setPackingSlip( FilesV3PackingSlip packingSlip) {
-        this.packingSlip = packingSlip;
-    }
+  public void setPackingSlip(FilesV3PackingSlip packingSlip) {
+    this.packingSlip = packingSlip;
+  }
 
-    public  FilesV3Manifest getManifest() {
-        return manifest;
-    }
+  public FilesV3Manifest getManifest() {
+    return manifest;
+  }
 
-    public void setManifest( FilesV3Manifest manifest) {
-        this.manifest = manifest;
-    }
-
+  public void setManifest(FilesV3Manifest manifest) {
+    this.manifest = manifest;
+  }
 }

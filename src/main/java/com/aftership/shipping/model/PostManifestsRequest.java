@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostManifestsRequest extends Resource {
 
-    @SerializedName("shipper_account")
-    private PostManifestsRequestShipperAccount shipperAccount;
+  @SerializedName("shipper_account")
+  private PostManifestsRequestShipperAccount shipperAccount;
 
-    @SerializedName("label_ids")
-    private java.util.List<String> labelIds;
+  @SerializedName("label_ids")
+  private java.util.List<String> labelIds;
 
-    public  PostManifestsRequestShipperAccount getShipperAccount() {
-        return shipperAccount;
-    }
+  public PostManifestsRequestShipperAccount getShipperAccount() {
+    return shipperAccount;
+  }
 
-    public void setShipperAccount( PostManifestsRequestShipperAccount shipperAccount) {
-        this.shipperAccount = shipperAccount;
-    }
+  public void setShipperAccount(PostManifestsRequestShipperAccount shipperAccount) {
+    this.shipperAccount = shipperAccount;
+  }
 
-    public java.util.List<String>  getLabelIds() {
-        return labelIds;
-    }
+  public java.util.List<String> getLabelIds() {
+    return labelIds;
+  }
 
-    public void setLabelIds(java.util.List<String>  labelIds) {
-        this.labelIds = labelIds;
-    }
-
+  public void setLabelIds(java.util.List<String> labelIds) {
+    this.labelIds = labelIds;
+  }
 }

@@ -7,36 +7,36 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum DimensionV3Unit {
-    @SerializedName("cm")
-    Cm("cm"),
+  @SerializedName("cm")
+  Cm("cm"),
 
-    @SerializedName("in")
-    In("in"),
+  @SerializedName("in")
+  In("in"),
 
-    @SerializedName("mm")
-    Mm("mm"),
+  @SerializedName("mm")
+  Mm("mm"),
 
-    @SerializedName("m")
-    M("m"),
+  @SerializedName("m")
+  M("m"),
 
-    @SerializedName("ft")
-    Ft("ft"),
+  @SerializedName("ft")
+  Ft("ft"),
 
-    @SerializedName("yd")
-    Yd("yd");
+  @SerializedName("yd")
+  Yd("yd");
 
-    private final String value;
+  private final String value;
 
-    DimensionV3Unit(final String value) {
-        this.value = value;
-    }
+  DimensionV3Unit(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

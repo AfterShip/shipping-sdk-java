@@ -4,75 +4,74 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostCancelLabelsResponseData extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("status")
-    private PostCancelLabelsResponseDataStatus status;
+  @SerializedName("status")
+  private PostCancelLabelsResponseDataStatus status;
 
-    @SerializedName("refund_status")
-    private String refundStatus;
+  @SerializedName("refund_status")
+  private String refundStatus;
 
-    @SerializedName("label")
-    private PostCancelLabelsResponseDataLabel label;
+  @SerializedName("label")
+  private PostCancelLabelsResponseDataLabel label;
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  PostCancelLabelsResponseDataStatus getStatus() {
-        return status;
-    }
+  public PostCancelLabelsResponseDataStatus getStatus() {
+    return status;
+  }
 
-    public void setStatus( PostCancelLabelsResponseDataStatus status) {
-        this.status = status;
-    }
+  public void setStatus(PostCancelLabelsResponseDataStatus status) {
+    this.status = status;
+  }
 
-    public  String getRefundStatus() {
-        return refundStatus;
-    }
+  public String getRefundStatus() {
+    return refundStatus;
+  }
 
-    public void setRefundStatus( String refundStatus) {
-        this.refundStatus = refundStatus;
-    }
+  public void setRefundStatus(String refundStatus) {
+    this.refundStatus = refundStatus;
+  }
 
-    public  PostCancelLabelsResponseDataLabel getLabel() {
-        return label;
-    }
+  public PostCancelLabelsResponseDataLabel getLabel() {
+    return label;
+  }
 
-    public void setLabel( PostCancelLabelsResponseDataLabel label) {
-        this.label = label;
-    }
+  public void setLabel(PostCancelLabelsResponseDataLabel label) {
+    this.label = label;
+  }
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 }

@@ -4,20 +4,19 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostLabelsRequestPrintOptions extends Resource {
 
-    @SerializedName("qr_code")
-    private PostLabelsRequestPrintOptionsQrCode qrCode;
+  @SerializedName("qr_code")
+  private PostLabelsRequestPrintOptionsQrCode qrCode;
 
-    public  PostLabelsRequestPrintOptionsQrCode getQrCode() {
-        return qrCode;
-    }
+  public PostLabelsRequestPrintOptionsQrCode getQrCode() {
+    return qrCode;
+  }
 
-    public void setQrCode( PostLabelsRequestPrintOptionsQrCode qrCode) {
-        this.qrCode = qrCode;
-    }
-
+  public void setQrCode(PostLabelsRequestPrintOptionsQrCode qrCode) {
+    this.qrCode = qrCode;
+  }
 }

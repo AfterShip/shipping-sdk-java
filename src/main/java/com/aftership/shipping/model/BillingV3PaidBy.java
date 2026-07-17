@@ -7,27 +7,27 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum BillingV3PaidBy {
-    @SerializedName("shipper")
-    Shipper("shipper"),
+  @SerializedName("shipper")
+  Shipper("shipper"),
 
-    @SerializedName("third_party")
-    ThirdParty("third_party"),
+  @SerializedName("third_party")
+  ThirdParty("third_party"),
 
-    @SerializedName("recipient")
-    Recipient("recipient");
+  @SerializedName("recipient")
+  Recipient("recipient");
 
-    private final String value;
+  private final String value;
 
-    BillingV3PaidBy(final String value) {
-        this.value = value;
-    }
+  BillingV3PaidBy(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

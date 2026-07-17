@@ -4,64 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class GetManifestsResponseData extends Resource {
 
-    @SerializedName("next_token")
-    private String nextToken;
+  @SerializedName("next_token")
+  private String nextToken;
 
-    @SerializedName("limit")
-    private Integer limit;
+  @SerializedName("limit")
+  private Integer limit;
 
-    @SerializedName("created_at_min")
-    private String createdAtMin;
+  @SerializedName("created_at_min")
+  private String createdAtMin;
 
-    @SerializedName("created_at_max")
-    private String createdAtMax;
+  @SerializedName("created_at_max")
+  private String createdAtMax;
 
-    @SerializedName("manifests")
-    private java.util.List<ManifestV3> manifests;
+  @SerializedName("manifests")
+  private java.util.List<ManifestV3> manifests;
 
-    public  String getNextToken() {
-        return nextToken;
-    }
+  public String getNextToken() {
+    return nextToken;
+  }
 
-    public void setNextToken( String nextToken) {
-        this.nextToken = nextToken;
-    }
+  public void setNextToken(String nextToken) {
+    this.nextToken = nextToken;
+  }
 
-    public  Integer getLimit() {
-        return limit;
-    }
+  public Integer getLimit() {
+    return limit;
+  }
 
-    public void setLimit( Integer limit) {
-        this.limit = limit;
-    }
+  public void setLimit(Integer limit) {
+    this.limit = limit;
+  }
 
-    public  String getCreatedAtMin() {
-        return createdAtMin;
-    }
+  public String getCreatedAtMin() {
+    return createdAtMin;
+  }
 
-    public void setCreatedAtMin( String createdAtMin) {
-        this.createdAtMin = createdAtMin;
-    }
+  public void setCreatedAtMin(String createdAtMin) {
+    this.createdAtMin = createdAtMin;
+  }
 
-    public  String getCreatedAtMax() {
-        return createdAtMax;
-    }
+  public String getCreatedAtMax() {
+    return createdAtMax;
+  }
 
-    public void setCreatedAtMax( String createdAtMax) {
-        this.createdAtMax = createdAtMax;
-    }
+  public void setCreatedAtMax(String createdAtMax) {
+    this.createdAtMax = createdAtMax;
+  }
 
-    public java.util.List<ManifestV3>  getManifests() {
-        return manifests;
-    }
+  public java.util.List<ManifestV3> getManifests() {
+    return manifests;
+  }
 
-    public void setManifests(java.util.List<ManifestV3>  manifests) {
-        this.manifests = manifests;
-    }
-
+  public void setManifests(java.util.List<ManifestV3> manifests) {
+    this.manifests = manifests;
+  }
 }

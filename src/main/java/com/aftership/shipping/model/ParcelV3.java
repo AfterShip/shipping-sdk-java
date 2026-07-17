@@ -4,64 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ParcelV3 extends Resource {
 
-    @SerializedName("box_type")
-    private String boxType;
+  @SerializedName("box_type")
+  private String boxType;
 
-    @SerializedName("dimension")
-    private DimensionV3 dimension;
+  @SerializedName("dimension")
+  private DimensionV3 dimension;
 
-    @SerializedName("items")
-    private java.util.List<ItemV3> items;
+  @SerializedName("items")
+  private java.util.List<ItemV3> items;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @SerializedName("weight")
-    private WeightV3 weight;
+  @SerializedName("weight")
+  private WeightV3 weight;
 
-    public  String getBoxType() {
-        return boxType;
-    }
+  public String getBoxType() {
+    return boxType;
+  }
 
-    public void setBoxType( String boxType) {
-        this.boxType = boxType;
-    }
+  public void setBoxType(String boxType) {
+    this.boxType = boxType;
+  }
 
-    public  DimensionV3 getDimension() {
-        return dimension;
-    }
+  public DimensionV3 getDimension() {
+    return dimension;
+  }
 
-    public void setDimension( DimensionV3 dimension) {
-        this.dimension = dimension;
-    }
+  public void setDimension(DimensionV3 dimension) {
+    this.dimension = dimension;
+  }
 
-    public java.util.List<ItemV3>  getItems() {
-        return items;
-    }
+  public java.util.List<ItemV3> getItems() {
+    return items;
+  }
 
-    public void setItems(java.util.List<ItemV3>  items) {
-        this.items = items;
-    }
+  public void setItems(java.util.List<ItemV3> items) {
+    this.items = items;
+  }
 
-    public  String getDescription() {
-        return description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setDescription( String description) {
-        this.description = description;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public  WeightV3 getWeight() {
-        return weight;
-    }
+  public WeightV3 getWeight() {
+    return weight;
+  }
 
-    public void setWeight( WeightV3 weight) {
-        this.weight = weight;
-    }
-
+  public void setWeight(WeightV3 weight) {
+    this.weight = weight;
+  }
 }

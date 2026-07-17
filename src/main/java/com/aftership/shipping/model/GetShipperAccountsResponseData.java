@@ -4,42 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class GetShipperAccountsResponseData extends Resource {
 
-    @SerializedName("next_token")
-    private String nextToken;
+  @SerializedName("next_token")
+  private String nextToken;
 
-    @SerializedName("limit")
-    private Integer limit;
+  @SerializedName("limit")
+  private Integer limit;
 
-    @SerializedName("shipper_accounts")
-    private java.util.List<ShipperAccountV3> shipperAccounts;
+  @SerializedName("shipper_accounts")
+  private java.util.List<ShipperAccountV3> shipperAccounts;
 
-    public  String getNextToken() {
-        return nextToken;
-    }
+  public String getNextToken() {
+    return nextToken;
+  }
 
-    public void setNextToken( String nextToken) {
-        this.nextToken = nextToken;
-    }
+  public void setNextToken(String nextToken) {
+    this.nextToken = nextToken;
+  }
 
-    public  Integer getLimit() {
-        return limit;
-    }
+  public Integer getLimit() {
+    return limit;
+  }
 
-    public void setLimit( Integer limit) {
-        this.limit = limit;
-    }
+  public void setLimit(Integer limit) {
+    this.limit = limit;
+  }
 
-    public java.util.List<ShipperAccountV3>  getShipperAccounts() {
-        return shipperAccounts;
-    }
+  public java.util.List<ShipperAccountV3> getShipperAccounts() {
+    return shipperAccounts;
+  }
 
-    public void setShipperAccounts(java.util.List<ShipperAccountV3>  shipperAccounts) {
-        this.shipperAccounts = shipperAccounts;
-    }
-
+  public void setShipperAccounts(java.util.List<ShipperAccountV3> shipperAccounts) {
+    this.shipperAccounts = shipperAccounts;
+  }
 }

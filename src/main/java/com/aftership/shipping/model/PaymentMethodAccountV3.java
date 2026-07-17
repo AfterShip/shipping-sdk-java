@@ -4,53 +4,52 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PaymentMethodAccountV3 extends Resource {
 
-    @SerializedName("type")
-    private String type;
+  @SerializedName("type")
+  private String type;
 
-    @SerializedName("account_number")
-    private String accountNumber;
+  @SerializedName("account_number")
+  private String accountNumber;
 
-    @SerializedName("postal_code")
-    private String postalCode;
+  @SerializedName("postal_code")
+  private String postalCode;
 
-    @SerializedName("country")
-    private PaymentMethodAccountV3Country country;
+  @SerializedName("country")
+  private PaymentMethodAccountV3Country country;
 
-    public  String getType() {
-        return type;
-    }
+  public String getType() {
+    return type;
+  }
 
-    public void setType( String type) {
-        this.type = type;
-    }
+  public void setType(String type) {
+    this.type = type;
+  }
 
-    public  String getAccountNumber() {
-        return accountNumber;
-    }
+  public String getAccountNumber() {
+    return accountNumber;
+  }
 
-    public void setAccountNumber( String accountNumber) {
-        this.accountNumber = accountNumber;
-    }
+  public void setAccountNumber(String accountNumber) {
+    this.accountNumber = accountNumber;
+  }
 
-    public  String getPostalCode() {
-        return postalCode;
-    }
+  public String getPostalCode() {
+    return postalCode;
+  }
 
-    public void setPostalCode( String postalCode) {
-        this.postalCode = postalCode;
-    }
+  public void setPostalCode(String postalCode) {
+    this.postalCode = postalCode;
+  }
 
-    public  PaymentMethodAccountV3Country getCountry() {
-        return country;
-    }
+  public PaymentMethodAccountV3Country getCountry() {
+    return country;
+  }
 
-    public void setCountry( PaymentMethodAccountV3Country country) {
-        this.country = country;
-    }
-
+  public void setCountry(PaymentMethodAccountV3Country country) {
+    this.country = country;
+  }
 }

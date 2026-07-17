@@ -4,64 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostCancelPickupsResponseData extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("status")
-    private PostCancelPickupsResponseDataStatus status;
+  @SerializedName("status")
+  private PostCancelPickupsResponseDataStatus status;
 
-    @SerializedName("pickup")
-    private PostCancelPickupsResponseDataPickup pickup;
+  @SerializedName("pickup")
+  private PostCancelPickupsResponseDataPickup pickup;
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  PostCancelPickupsResponseDataStatus getStatus() {
-        return status;
-    }
+  public PostCancelPickupsResponseDataStatus getStatus() {
+    return status;
+  }
 
-    public void setStatus( PostCancelPickupsResponseDataStatus status) {
-        this.status = status;
-    }
+  public void setStatus(PostCancelPickupsResponseDataStatus status) {
+    this.status = status;
+  }
 
-    public  PostCancelPickupsResponseDataPickup getPickup() {
-        return pickup;
-    }
+  public PostCancelPickupsResponseDataPickup getPickup() {
+    return pickup;
+  }
 
-    public void setPickup( PostCancelPickupsResponseDataPickup pickup) {
-        this.pickup = pickup;
-    }
+  public void setPickup(PostCancelPickupsResponseDataPickup pickup) {
+    this.pickup = pickup;
+  }
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 }

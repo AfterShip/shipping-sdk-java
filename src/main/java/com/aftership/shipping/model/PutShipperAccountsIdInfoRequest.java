@@ -4,42 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PutShipperAccountsIdInfoRequest extends Resource {
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @SerializedName("timezone")
-    private String timezone;
+  @SerializedName("timezone")
+  private String timezone;
 
-    @SerializedName("address")
-    private AddressV3 address;
+  @SerializedName("address")
+  private AddressV3 address;
 
-    public  String getDescription() {
-        return description;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public void setDescription( String description) {
-        this.description = description;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public  String getTimezone() {
-        return timezone;
-    }
+  public String getTimezone() {
+    return timezone;
+  }
 
-    public void setTimezone( String timezone) {
-        this.timezone = timezone;
-    }
+  public void setTimezone(String timezone) {
+    this.timezone = timezone;
+  }
 
-    public  AddressV3 getAddress() {
-        return address;
-    }
+  public AddressV3 getAddress() {
+    return address;
+  }
 
-    public void setAddress( AddressV3 address) {
-        this.address = address;
-    }
-
+  public void setAddress(AddressV3 address) {
+    this.address = address;
+  }
 }

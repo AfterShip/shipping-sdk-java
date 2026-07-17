@@ -4,30 +4,27 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
-import java.util.List;
-import java.util.Map;
 
 public class GetRatesResponse extends Resource {
 
-    private java.util.Map<String, java.util.List<String>> responseHeader;
+  private java.util.Map<String, java.util.List<String>> responseHeader;
 
-    private GetRatesResponseData data;
+  private GetRatesResponseData data;
 
-    public java.util.Map<String, java.util.List<String>> getResponseHeader() {
-        return responseHeader;
-    }
+  public java.util.Map<String, java.util.List<String>> getResponseHeader() {
+    return responseHeader;
+  }
 
-    public void setResponseHeader(java.util.Map<String, java.util.List<String>> responseHeader) {
-        this.responseHeader = responseHeader;
-    }
+  public void setResponseHeader(java.util.Map<String, java.util.List<String>> responseHeader) {
+    this.responseHeader = responseHeader;
+  }
 
-    public GetRatesResponseData getData() {
-        return data;
-    }
+  public GetRatesResponseData getData() {
+    return data;
+  }
 
-    public void setData(GetRatesResponseData data) {
-        this.data = data;
-    }
+  public void setData(GetRatesResponseData data) {
+    this.data = data;
+  }
 }

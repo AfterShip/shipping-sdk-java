@@ -4,130 +4,140 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class LocationV3 extends Resource {
 
-    @SerializedName("location_id")
-    private String locationId;
+  @SerializedName("location_id")
+  private String locationId;
 
-    @SerializedName("name")
-    private String name;
+  @SerializedName("name")
+  private String name;
 
-    @SerializedName("distance")
-    private Float distance;
+  @SerializedName("distance")
+  private Float distance;
 
-    @SerializedName("distance_unit")
-    private LocationV3DistanceUnit distanceUnit;
+  @SerializedName("distance_unit")
+  private LocationV3DistanceUnit distanceUnit;
 
-    @SerializedName("phone")
-    private String phone;
+  @SerializedName("phone")
+  private String phone;
 
-    @SerializedName("services")
-    private java.util.List<String> services;
+  @SerializedName("services")
+  private java.util.List<String> services;
 
-    @SerializedName("address")
-    private LocationV3Address address;
+  @SerializedName("address")
+  private LocationV3Address address;
 
-    @SerializedName("business_hours")
-    private java.util.List<LocationV3BusinessHours> businessHours;
+  @SerializedName("business_hours")
+  private java.util.List<LocationV3BusinessHours> businessHours;
 
-    @SerializedName("instructions")
-    private String instructions;
+  @SerializedName("instructions")
+  private String instructions;
 
-    @SerializedName("location_type")
-    private String locationType;
+  @SerializedName("location_type")
+  private String locationType;
 
-    @SerializedName("business_classification")
-    private String businessClassification;
+  @SerializedName("business_classification")
+  private String businessClassification;
 
-    public  String getLocationId() {
-        return locationId;
-    }
+  @SerializedName("courier_specific")
+  private LocationV3CourierSpecific courierSpecific;
 
-    public void setLocationId( String locationId) {
-        this.locationId = locationId;
-    }
+  public String getLocationId() {
+    return locationId;
+  }
 
-    public  String getName() {
-        return name;
-    }
+  public void setLocationId(String locationId) {
+    this.locationId = locationId;
+  }
 
-    public void setName( String name) {
-        this.name = name;
-    }
+  public String getName() {
+    return name;
+  }
 
-    public  Float getDistance() {
-        return distance;
-    }
+  public void setName(String name) {
+    this.name = name;
+  }
 
-    public void setDistance( Float distance) {
-        this.distance = distance;
-    }
+  public Float getDistance() {
+    return distance;
+  }
 
-    public  LocationV3DistanceUnit getDistanceUnit() {
-        return distanceUnit;
-    }
+  public void setDistance(Float distance) {
+    this.distance = distance;
+  }
 
-    public void setDistanceUnit( LocationV3DistanceUnit distanceUnit) {
-        this.distanceUnit = distanceUnit;
-    }
+  public LocationV3DistanceUnit getDistanceUnit() {
+    return distanceUnit;
+  }
 
-    public  String getPhone() {
-        return phone;
-    }
+  public void setDistanceUnit(LocationV3DistanceUnit distanceUnit) {
+    this.distanceUnit = distanceUnit;
+  }
 
-    public void setPhone( String phone) {
-        this.phone = phone;
-    }
+  public String getPhone() {
+    return phone;
+  }
 
-    public java.util.List<String>  getServices() {
-        return services;
-    }
+  public void setPhone(String phone) {
+    this.phone = phone;
+  }
 
-    public void setServices(java.util.List<String>  services) {
-        this.services = services;
-    }
+  public java.util.List<String> getServices() {
+    return services;
+  }
 
-    public  LocationV3Address getAddress() {
-        return address;
-    }
+  public void setServices(java.util.List<String> services) {
+    this.services = services;
+  }
 
-    public void setAddress( LocationV3Address address) {
-        this.address = address;
-    }
+  public LocationV3Address getAddress() {
+    return address;
+  }
 
-    public java.util.List<LocationV3BusinessHours>  getBusinessHours() {
-        return businessHours;
-    }
+  public void setAddress(LocationV3Address address) {
+    this.address = address;
+  }
 
-    public void setBusinessHours(java.util.List<LocationV3BusinessHours>  businessHours) {
-        this.businessHours = businessHours;
-    }
+  public java.util.List<LocationV3BusinessHours> getBusinessHours() {
+    return businessHours;
+  }
 
-    public  String getInstructions() {
-        return instructions;
-    }
+  public void setBusinessHours(java.util.List<LocationV3BusinessHours> businessHours) {
+    this.businessHours = businessHours;
+  }
 
-    public void setInstructions( String instructions) {
-        this.instructions = instructions;
-    }
+  public String getInstructions() {
+    return instructions;
+  }
 
-    public  String getLocationType() {
-        return locationType;
-    }
+  public void setInstructions(String instructions) {
+    this.instructions = instructions;
+  }
 
-    public void setLocationType( String locationType) {
-        this.locationType = locationType;
-    }
+  public String getLocationType() {
+    return locationType;
+  }
 
-    public  String getBusinessClassification() {
-        return businessClassification;
-    }
+  public void setLocationType(String locationType) {
+    this.locationType = locationType;
+  }
 
-    public void setBusinessClassification( String businessClassification) {
-        this.businessClassification = businessClassification;
-    }
+  public String getBusinessClassification() {
+    return businessClassification;
+  }
 
+  public void setBusinessClassification(String businessClassification) {
+    this.businessClassification = businessClassification;
+  }
+
+  public LocationV3CourierSpecific getCourierSpecific() {
+    return courierSpecific;
+  }
+
+  public void setCourierSpecific(LocationV3CourierSpecific courierSpecific) {
+    this.courierSpecific = courierSpecific;
+  }
 }

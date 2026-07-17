@@ -7,27 +7,27 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum CustomsV3AdditionalChargesType {
-    @SerializedName("insurance")
-    Insurance("insurance"),
+  @SerializedName("insurance")
+  Insurance("insurance"),
 
-    @SerializedName("freight")
-    Freight("freight"),
+  @SerializedName("freight")
+  Freight("freight"),
 
-    @SerializedName("other")
-    Other("other");
+  @SerializedName("other")
+  Other("other");
 
-    private final String value;
+  private final String value;
 
-    CustomsV3AdditionalChargesType(final String value) {
-        this.value = value;
-    }
+  CustomsV3AdditionalChargesType(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

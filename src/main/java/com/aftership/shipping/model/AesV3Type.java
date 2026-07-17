@@ -7,21 +7,21 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum AesV3Type {
-    @SerializedName("aes")
-    Aes("aes");
+  @SerializedName("aes")
+  Aes("aes");
 
-    private final String value;
+  private final String value;
 
-    AesV3Type(final String value) {
-        this.value = value;
-    }
+  AesV3Type(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

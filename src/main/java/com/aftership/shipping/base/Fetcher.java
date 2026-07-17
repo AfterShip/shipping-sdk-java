@@ -9,9 +9,9 @@ import com.aftership.shipping.http.AfterShipClient;
 
 public abstract class Fetcher<T extends Resource> {
 
-    public T fetch() throws Exception {
-        return fetch(ShippingSdk.getRestClient());
-    }
+  public T fetch() throws Exception {
+    return fetch(ShippingSdk.getRestClient());
+  }
 
-    public abstract T fetch(final AfterShipClient client) throws Exception;
+  public abstract T fetch(final AfterShipClient client) throws Exception;
 }

@@ -4,42 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class InputFilesV3 extends Resource {
 
-    @SerializedName("certificate_of_origin")
-    private InputFilesV3CertificateOfOrigin certificateOfOrigin;
+  @SerializedName("certificate_of_origin")
+  private InputFilesV3CertificateOfOrigin certificateOfOrigin;
 
-    @SerializedName("commercial_invoice")
-    private InputFilesV3CommercialInvoice commercialInvoice;
+  @SerializedName("commercial_invoice")
+  private InputFilesV3CommercialInvoice commercialInvoice;
 
-    @SerializedName("customs_declaration ")
-    private InputFilesV3CustomsDeclaration customsDeclaration;
+  @SerializedName("customs_declaration ")
+  private InputFilesV3CustomsDeclaration customsDeclaration;
 
-    public  InputFilesV3CertificateOfOrigin getCertificateOfOrigin() {
-        return certificateOfOrigin;
-    }
+  public InputFilesV3CertificateOfOrigin getCertificateOfOrigin() {
+    return certificateOfOrigin;
+  }
 
-    public void setCertificateOfOrigin( InputFilesV3CertificateOfOrigin certificateOfOrigin) {
-        this.certificateOfOrigin = certificateOfOrigin;
-    }
+  public void setCertificateOfOrigin(InputFilesV3CertificateOfOrigin certificateOfOrigin) {
+    this.certificateOfOrigin = certificateOfOrigin;
+  }
 
-    public  InputFilesV3CommercialInvoice getCommercialInvoice() {
-        return commercialInvoice;
-    }
+  public InputFilesV3CommercialInvoice getCommercialInvoice() {
+    return commercialInvoice;
+  }
 
-    public void setCommercialInvoice( InputFilesV3CommercialInvoice commercialInvoice) {
-        this.commercialInvoice = commercialInvoice;
-    }
+  public void setCommercialInvoice(InputFilesV3CommercialInvoice commercialInvoice) {
+    this.commercialInvoice = commercialInvoice;
+  }
 
-    public  InputFilesV3CustomsDeclaration getCustomsDeclaration() {
-        return customsDeclaration;
-    }
+  public InputFilesV3CustomsDeclaration getCustomsDeclaration() {
+    return customsDeclaration;
+  }
 
-    public void setCustomsDeclaration( InputFilesV3CustomsDeclaration customsDeclaration) {
-        this.customsDeclaration = customsDeclaration;
-    }
-
+  public void setCustomsDeclaration(InputFilesV3CustomsDeclaration customsDeclaration) {
+    this.customsDeclaration = customsDeclaration;
+  }
 }

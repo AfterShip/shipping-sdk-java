@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class CustomsV3Passport extends Resource {
 
-    @SerializedName("number")
-    private String number;
+  @SerializedName("number")
+  private String number;
 
-    @SerializedName("issue_date")
-    private String issueDate;
+  @SerializedName("issue_date")
+  private String issueDate;
 
-    public  String getNumber() {
-        return number;
-    }
+  public String getNumber() {
+    return number;
+  }
 
-    public void setNumber( String number) {
-        this.number = number;
-    }
+  public void setNumber(String number) {
+    this.number = number;
+  }
 
-    public  String getIssueDate() {
-        return issueDate;
-    }
+  public String getIssueDate() {
+    return issueDate;
+  }
 
-    public void setIssueDate( String issueDate) {
-        this.issueDate = issueDate;
-    }
-
+  public void setIssueDate(String issueDate) {
+    this.issueDate = issueDate;
+  }
 }

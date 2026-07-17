@@ -8,119 +8,121 @@ import com.aftership.shipping.base.Fetcher;
 import com.aftership.shipping.constant.ErrorEnum;
 import com.aftership.shipping.exception.ApiException;
 import com.aftership.shipping.http.*;
+import com.aftership.shipping.http.Request;
+import com.aftership.shipping.model.GetManifestsResponse;
+import com.aftership.shipping.model.GetManifestsResponseData;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.util.HashMap;
 import java.util.Map;
-import com.aftership.shipping.http.Request;
-import com.aftership.shipping.model.GetManifestsResponse;
-import com.aftership.shipping.model.GetManifestsResponseData;
 
 public class GetManifestsFetcher extends Fetcher<GetManifestsResponse> {
-    private final Map<String, String> headerParams= new HashMap<>(8);
+  private final Map<String, String> headerParams = new HashMap<>(8);
 
-    public GetManifestsFetcher addHeaderParam(final String name, final String value) {
-        if (value == null || value.equals("null")) {
-            return this;
-        }
-
-        if (!headerParams.containsKey(name)) {
-            headerParams.put(name, value);
-        }
-        return this;
+  public GetManifestsFetcher addHeaderParam(final String name, final String value) {
+    if (value == null || value.equals("null")) {
+      return this;
     }
 
-    private void setHeaderParams(final Request request) {
-        for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
-            request.addHeaderParam(entry.getKey(), entry.getValue());
-        }
+    if (!headerParams.containsKey(name)) {
+      headerParams.put(name, value);
     }
-     private String shipperAccountId;
+    return this;
+  }
 
-     private String status;
-
-     private String limit;
-
-     private String createdAtMin;
-
-     private String createdAtMax;
-
-     private String nextToken;
-
-
-    public GetManifestsFetcher setShipperAccountId(String shipperAccountId) {
-        this.shipperAccountId = shipperAccountId;
-        return this;
+  private void setHeaderParams(final Request request) {
+    for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
+      request.addHeaderParam(entry.getKey(), entry.getValue());
     }
+  }
 
-    public GetManifestsFetcher setStatus(String status) {
-        this.status = status;
-        return this;
-    }
+  private String shipperAccountId;
 
-    public GetManifestsFetcher setLimit(String limit) {
-        this.limit = limit;
-        return this;
-    }
+  private String status;
 
-    public GetManifestsFetcher setCreatedAtMin(String createdAtMin) {
-        this.createdAtMin = createdAtMin;
-        return this;
-    }
+  private String limit;
 
-    public GetManifestsFetcher setCreatedAtMax(String createdAtMax) {
-        this.createdAtMax = createdAtMax;
-        return this;
-    }
+  private String createdAtMin;
 
-    public GetManifestsFetcher setNextToken(String nextToken) {
-        this.nextToken = nextToken;
-        return this;
-    }
+  private String createdAtMax;
 
-    @Override
-    public GetManifestsResponse fetch(AfterShipClient client) throws Exception {
-        String path = "/postmen/v3/manifests";
-        Request request = new Request(HttpMethod.GET, path);
-        addQueryParams(request);
-        setHeaderParams(request);
-        Response response = client.request(request);
-        AfterShipResponse<GetManifestsResponseData> responseData = new Gson().fromJson(response.getContent(), new TypeToken<AfterShipResponse<GetManifestsResponseData>>() {
-            }.getType());
-        if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
-            throw new ApiException(
-                    responseData.getMeta().getCode(),
-                    responseData.getMeta().getMessage(),
-                    ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
-                    response.getStatusCode(),
-                    response.getContent(),
-                    response.getHeaders()
-            );
-        }
-        GetManifestsResponse result = new GetManifestsResponse();
-        result.setData(responseData.getData());
-        result.setResponseHeader(response.getResponseHeader());
-        return result;
-    }
+  private String nextToken;
 
-    private void addQueryParams(final Request request) {
-        if (shipperAccountId != null) {
-            request.addQueryParam("shipper_account_id", shipperAccountId);
-        }
-        if (status != null) {
-            request.addQueryParam("status", status);
-        }
-        if (limit != null) {
-            request.addQueryParam("limit", limit);
-        }
-        if (createdAtMin != null) {
-            request.addQueryParam("created_at_min", createdAtMin);
-        }
-        if (createdAtMax != null) {
-            request.addQueryParam("created_at_max", createdAtMax);
-        }
-        if (nextToken != null) {
-            request.addQueryParam("next_token", nextToken);
-        }
+  public GetManifestsFetcher setShipperAccountId(String shipperAccountId) {
+    this.shipperAccountId = shipperAccountId;
+    return this;
+  }
+
+  public GetManifestsFetcher setStatus(String status) {
+    this.status = status;
+    return this;
+  }
+
+  public GetManifestsFetcher setLimit(String limit) {
+    this.limit = limit;
+    return this;
+  }
+
+  public GetManifestsFetcher setCreatedAtMin(String createdAtMin) {
+    this.createdAtMin = createdAtMin;
+    return this;
+  }
+
+  public GetManifestsFetcher setCreatedAtMax(String createdAtMax) {
+    this.createdAtMax = createdAtMax;
+    return this;
+  }
+
+  public GetManifestsFetcher setNextToken(String nextToken) {
+    this.nextToken = nextToken;
+    return this;
+  }
+
+  @Override
+  public GetManifestsResponse fetch(AfterShipClient client) throws Exception {
+    String path = "/postmen/v3/manifests";
+    Request request = new Request(HttpMethod.GET, path);
+    addQueryParams(request);
+    setHeaderParams(request);
+    Response response = client.request(request);
+    AfterShipResponse<GetManifestsResponseData> responseData =
+        new Gson()
+            .fromJson(
+                response.getContent(),
+                new TypeToken<AfterShipResponse<GetManifestsResponseData>>() {}.getType());
+    if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
+      throw new ApiException(
+          responseData.getMeta().getCode(),
+          responseData.getMeta().getMessage(),
+          ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
+          response.getStatusCode(),
+          response.getContent(),
+          response.getHeaders());
     }
+    GetManifestsResponse result = new GetManifestsResponse();
+    result.setData(responseData.getData());
+    result.setResponseHeader(response.getResponseHeader());
+    return result;
+  }
+
+  private void addQueryParams(final Request request) {
+    if (shipperAccountId != null) {
+      request.addQueryParam("shipper_account_id", shipperAccountId);
+    }
+    if (status != null) {
+      request.addQueryParam("status", status);
+    }
+    if (limit != null) {
+      request.addQueryParam("limit", limit);
+    }
+    if (createdAtMin != null) {
+      request.addQueryParam("created_at_min", createdAtMin);
+    }
+    if (createdAtMax != null) {
+      request.addQueryParam("created_at_max", createdAtMax);
+    }
+    if (nextToken != null) {
+      request.addQueryParam("next_token", nextToken);
+    }
+  }
 }

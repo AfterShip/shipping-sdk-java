@@ -8,65 +8,67 @@ import com.aftership.shipping.base.Creator;
 import com.aftership.shipping.constant.ErrorEnum;
 import com.aftership.shipping.exception.ApiException;
 import com.aftership.shipping.http.*;
+import com.aftership.shipping.http.Request;
+import com.aftership.shipping.model.PostRatesRequest;
+import com.aftership.shipping.model.PostRatesResponse;
+import com.aftership.shipping.model.RateRecordV3;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import java.util.HashMap;
 import java.util.Map;
-import com.aftership.shipping.http.Request;
-import com.aftership.shipping.model.PostRatesResponse;
-import com.aftership.shipping.model.RateRecordV3;
-import com.aftership.shipping.model.PostRatesRequest;
 
 public class PostRatesCreator extends Creator<PostRatesResponse> {
-    private final Map<String, String> headerParams= new HashMap<>(8);
+  private final Map<String, String> headerParams = new HashMap<>(8);
 
-    public PostRatesCreator addHeaderParam(final String name, final String value) {
-        if (value == null || value.equals("null")) {
-            return this;
-        }
-
-        if (!headerParams.containsKey(name)) {
-            headerParams.put(name, value);
-        }
-        return this;
+  public PostRatesCreator addHeaderParam(final String name, final String value) {
+    if (value == null || value.equals("null")) {
+      return this;
     }
 
-    private void setHeaderParams(final Request request) {
-        for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
-            request.addHeaderParam(entry.getKey(), entry.getValue());
-        }
+    if (!headerParams.containsKey(name)) {
+      headerParams.put(name, value);
     }
-    private PostRatesRequest postRatesRequest;
+    return this;
+  }
 
-    public PostRatesCreator setPostRatesRequest(PostRatesRequest postRatesRequest) {
-        this.postRatesRequest = postRatesRequest;
-        return this;
+  private void setHeaderParams(final Request request) {
+    for (final Map.Entry<String, String> entry : headerParams.entrySet()) {
+      request.addHeaderParam(entry.getKey(), entry.getValue());
     }
+  }
 
-    @Override
-    public PostRatesResponse create(AfterShipClient client) throws Exception {
-        String path = "/postmen/v3/rates";
-        Request request = new Request(HttpMethod.POST, path);
-        request.setBody((new Gson()).toJson(postRatesRequest));
+  private PostRatesRequest postRatesRequest;
 
-        setHeaderParams(request);
-        Response response = client.request(request);
-        AfterShipResponse<RateRecordV3> responseData = new Gson().fromJson(response.getContent(), new TypeToken<AfterShipResponse<RateRecordV3>>() {
-            }.getType());
-        if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
-            throw new ApiException(
-                    responseData.getMeta().getCode(),
-                    responseData.getMeta().getMessage(),
-                    ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
-                    response.getStatusCode(),
-                    response.getContent(),
-                    response.getHeaders()
-            );
-        }
-        PostRatesResponse result = new PostRatesResponse();
-        result.setData(responseData.getData());
-        result.setResponseHeader(response.getResponseHeader());
-        return result;
+  public PostRatesCreator setPostRatesRequest(PostRatesRequest postRatesRequest) {
+    this.postRatesRequest = postRatesRequest;
+    return this;
+  }
+
+  @Override
+  public PostRatesResponse create(AfterShipClient client) throws Exception {
+    String path = "/postmen/v3/rates";
+    Request request = new Request(HttpMethod.POST, path);
+    request.setBody((new Gson()).toJson(postRatesRequest));
+
+    setHeaderParams(request);
+    Response response = client.request(request);
+    AfterShipResponse<RateRecordV3> responseData =
+        new Gson()
+            .fromJson(
+                response.getContent(),
+                new TypeToken<AfterShipResponse<RateRecordV3>>() {}.getType());
+    if (responseData.getMeta() != null && responseData.getMeta().getCode() > 299) {
+      throw new ApiException(
+          responseData.getMeta().getCode(),
+          responseData.getMeta().getMessage(),
+          ErrorEnum.getCode(response.getStatusCode(), responseData.getMeta().getCode()),
+          response.getStatusCode(),
+          response.getContent(),
+          response.getHeaders());
     }
-
+    PostRatesResponse result = new PostRatesResponse();
+    result.setData(responseData.getData());
+    result.setResponseHeader(response.getResponseHeader());
+    return result;
+  }
 }

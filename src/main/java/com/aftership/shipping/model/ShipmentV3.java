@@ -4,86 +4,85 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ShipmentV3 extends Resource {
 
-    @SerializedName("tax_total")
-    private MoneyV3 taxTotal;
+  @SerializedName("tax_total")
+  private MoneyV3 taxTotal;
 
-    @SerializedName("ship_from")
-    private AddressV3 shipFrom;
+  @SerializedName("ship_from")
+  private AddressV3 shipFrom;
 
-    @SerializedName("ship_from_display")
-    private AddressV3 shipFromDisplay;
+  @SerializedName("ship_from_display")
+  private AddressV3 shipFromDisplay;
 
-    @SerializedName("ship_to")
-    private AddressV3 shipTo;
+  @SerializedName("ship_to")
+  private AddressV3 shipTo;
 
-    @SerializedName("parcels")
-    private java.util.List<ParcelV3> parcels;
+  @SerializedName("parcels")
+  private java.util.List<ParcelV3> parcels;
 
-    @SerializedName("return_to")
-    private AddressV3 returnTo;
+  @SerializedName("return_to")
+  private AddressV3 returnTo;
 
-    @SerializedName("delivery_instructions")
-    private String deliveryInstructions;
+  @SerializedName("delivery_instructions")
+  private String deliveryInstructions;
 
-    public  MoneyV3 getTaxTotal() {
-        return taxTotal;
-    }
+  public MoneyV3 getTaxTotal() {
+    return taxTotal;
+  }
 
-    public void setTaxTotal( MoneyV3 taxTotal) {
-        this.taxTotal = taxTotal;
-    }
+  public void setTaxTotal(MoneyV3 taxTotal) {
+    this.taxTotal = taxTotal;
+  }
 
-    public  AddressV3 getShipFrom() {
-        return shipFrom;
-    }
+  public AddressV3 getShipFrom() {
+    return shipFrom;
+  }
 
-    public void setShipFrom( AddressV3 shipFrom) {
-        this.shipFrom = shipFrom;
-    }
+  public void setShipFrom(AddressV3 shipFrom) {
+    this.shipFrom = shipFrom;
+  }
 
-    public  AddressV3 getShipFromDisplay() {
-        return shipFromDisplay;
-    }
+  public AddressV3 getShipFromDisplay() {
+    return shipFromDisplay;
+  }
 
-    public void setShipFromDisplay( AddressV3 shipFromDisplay) {
-        this.shipFromDisplay = shipFromDisplay;
-    }
+  public void setShipFromDisplay(AddressV3 shipFromDisplay) {
+    this.shipFromDisplay = shipFromDisplay;
+  }
 
-    public  AddressV3 getShipTo() {
-        return shipTo;
-    }
+  public AddressV3 getShipTo() {
+    return shipTo;
+  }
 
-    public void setShipTo( AddressV3 shipTo) {
-        this.shipTo = shipTo;
-    }
+  public void setShipTo(AddressV3 shipTo) {
+    this.shipTo = shipTo;
+  }
 
-    public java.util.List<ParcelV3>  getParcels() {
-        return parcels;
-    }
+  public java.util.List<ParcelV3> getParcels() {
+    return parcels;
+  }
 
-    public void setParcels(java.util.List<ParcelV3>  parcels) {
-        this.parcels = parcels;
-    }
+  public void setParcels(java.util.List<ParcelV3> parcels) {
+    this.parcels = parcels;
+  }
 
-    public  AddressV3 getReturnTo() {
-        return returnTo;
-    }
+  public AddressV3 getReturnTo() {
+    return returnTo;
+  }
 
-    public void setReturnTo( AddressV3 returnTo) {
-        this.returnTo = returnTo;
-    }
+  public void setReturnTo(AddressV3 returnTo) {
+    this.returnTo = returnTo;
+  }
 
-    public  String getDeliveryInstructions() {
-        return deliveryInstructions;
-    }
+  public String getDeliveryInstructions() {
+    return deliveryInstructions;
+  }
 
-    public void setDeliveryInstructions( String deliveryInstructions) {
-        this.deliveryInstructions = deliveryInstructions;
-    }
-
+  public void setDeliveryInstructions(String deliveryInstructions) {
+    this.deliveryInstructions = deliveryInstructions;
+  }
 }

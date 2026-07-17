@@ -7,771 +7,771 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum PaymentMethodAccountV3Country {
-    @SerializedName("ABW")
-    Abw("ABW"),
+  @SerializedName("ABW")
+  Abw("ABW"),
 
-    @SerializedName("AFG")
-    Afg("AFG"),
+  @SerializedName("AFG")
+  Afg("AFG"),
 
-    @SerializedName("AGO")
-    Ago("AGO"),
+  @SerializedName("AGO")
+  Ago("AGO"),
 
-    @SerializedName("AIA")
-    Aia("AIA"),
+  @SerializedName("AIA")
+  Aia("AIA"),
 
-    @SerializedName("ALA")
-    Ala("ALA"),
+  @SerializedName("ALA")
+  Ala("ALA"),
 
-    @SerializedName("ALB")
-    Alb("ALB"),
+  @SerializedName("ALB")
+  Alb("ALB"),
 
-    @SerializedName("AND")
-    And("AND"),
+  @SerializedName("AND")
+  And("AND"),
 
-    @SerializedName("ANT")
-    Ant("ANT"),
+  @SerializedName("ANT")
+  Ant("ANT"),
 
-    @SerializedName("ARE")
-    Are("ARE"),
+  @SerializedName("ARE")
+  Are("ARE"),
 
-    @SerializedName("ARG")
-    Arg("ARG"),
+  @SerializedName("ARG")
+  Arg("ARG"),
 
-    @SerializedName("ARM")
-    Arm("ARM"),
+  @SerializedName("ARM")
+  Arm("ARM"),
 
-    @SerializedName("ASM")
-    Asm("ASM"),
+  @SerializedName("ASM")
+  Asm("ASM"),
 
-    @SerializedName("ATA")
-    Ata("ATA"),
+  @SerializedName("ATA")
+  Ata("ATA"),
 
-    @SerializedName("ATF")
-    Atf("ATF"),
+  @SerializedName("ATF")
+  Atf("ATF"),
 
-    @SerializedName("ATG")
-    Atg("ATG"),
+  @SerializedName("ATG")
+  Atg("ATG"),
 
-    @SerializedName("AUS")
-    Aus("AUS"),
+  @SerializedName("AUS")
+  Aus("AUS"),
 
-    @SerializedName("AUT")
-    Aut("AUT"),
+  @SerializedName("AUT")
+  Aut("AUT"),
 
-    @SerializedName("AZE")
-    Aze("AZE"),
+  @SerializedName("AZE")
+  Aze("AZE"),
 
-    @SerializedName("BDI")
-    Bdi("BDI"),
+  @SerializedName("BDI")
+  Bdi("BDI"),
 
-    @SerializedName("BEL")
-    Bel("BEL"),
+  @SerializedName("BEL")
+  Bel("BEL"),
 
-    @SerializedName("BEN")
-    Ben("BEN"),
+  @SerializedName("BEN")
+  Ben("BEN"),
 
-    @SerializedName("BES")
-    Bes("BES"),
+  @SerializedName("BES")
+  Bes("BES"),
 
-    @SerializedName("BFA")
-    Bfa("BFA"),
+  @SerializedName("BFA")
+  Bfa("BFA"),
 
-    @SerializedName("BGD")
-    Bgd("BGD"),
+  @SerializedName("BGD")
+  Bgd("BGD"),
 
-    @SerializedName("BGR")
-    Bgr("BGR"),
+  @SerializedName("BGR")
+  Bgr("BGR"),
 
-    @SerializedName("BHR")
-    Bhr("BHR"),
+  @SerializedName("BHR")
+  Bhr("BHR"),
 
-    @SerializedName("BHS")
-    Bhs("BHS"),
+  @SerializedName("BHS")
+  Bhs("BHS"),
 
-    @SerializedName("BIH")
-    Bih("BIH"),
+  @SerializedName("BIH")
+  Bih("BIH"),
 
-    @SerializedName("BLM")
-    Blm("BLM"),
+  @SerializedName("BLM")
+  Blm("BLM"),
 
-    @SerializedName("BLR")
-    Blr("BLR"),
+  @SerializedName("BLR")
+  Blr("BLR"),
 
-    @SerializedName("BLZ")
-    Blz("BLZ"),
+  @SerializedName("BLZ")
+  Blz("BLZ"),
 
-    @SerializedName("BMU")
-    Bmu("BMU"),
+  @SerializedName("BMU")
+  Bmu("BMU"),
 
-    @SerializedName("BOL")
-    Bol("BOL"),
+  @SerializedName("BOL")
+  Bol("BOL"),
 
-    @SerializedName("BRA")
-    Bra("BRA"),
+  @SerializedName("BRA")
+  Bra("BRA"),
 
-    @SerializedName("BRB")
-    Brb("BRB"),
+  @SerializedName("BRB")
+  Brb("BRB"),
 
-    @SerializedName("BRN")
-    Brn("BRN"),
+  @SerializedName("BRN")
+  Brn("BRN"),
 
-    @SerializedName("BTN")
-    Btn("BTN"),
+  @SerializedName("BTN")
+  Btn("BTN"),
 
-    @SerializedName("BVT")
-    Bvt("BVT"),
+  @SerializedName("BVT")
+  Bvt("BVT"),
 
-    @SerializedName("BWA")
-    Bwa("BWA"),
+  @SerializedName("BWA")
+  Bwa("BWA"),
 
-    @SerializedName("CAF")
-    Caf("CAF"),
+  @SerializedName("CAF")
+  Caf("CAF"),
 
-    @SerializedName("CAN")
-    Can("CAN"),
+  @SerializedName("CAN")
+  Can("CAN"),
 
-    @SerializedName("CCK")
-    Cck("CCK"),
+  @SerializedName("CCK")
+  Cck("CCK"),
 
-    @SerializedName("CHE")
-    Che("CHE"),
+  @SerializedName("CHE")
+  Che("CHE"),
 
-    @SerializedName("CHL")
-    Chl("CHL"),
+  @SerializedName("CHL")
+  Chl("CHL"),
 
-    @SerializedName("CHN")
-    Chn("CHN"),
+  @SerializedName("CHN")
+  Chn("CHN"),
 
-    @SerializedName("CIV")
-    Civ("CIV"),
+  @SerializedName("CIV")
+  Civ("CIV"),
 
-    @SerializedName("CMR")
-    Cmr("CMR"),
+  @SerializedName("CMR")
+  Cmr("CMR"),
 
-    @SerializedName("COD")
-    Cod("COD"),
+  @SerializedName("COD")
+  Cod("COD"),
 
-    @SerializedName("COG")
-    Cog("COG"),
+  @SerializedName("COG")
+  Cog("COG"),
 
-    @SerializedName("COK")
-    Cok("COK"),
+  @SerializedName("COK")
+  Cok("COK"),
 
-    @SerializedName("COL")
-    Col("COL"),
+  @SerializedName("COL")
+  Col("COL"),
 
-    @SerializedName("COM")
-    Com("COM"),
+  @SerializedName("COM")
+  Com("COM"),
 
-    @SerializedName("CPV")
-    Cpv("CPV"),
+  @SerializedName("CPV")
+  Cpv("CPV"),
 
-    @SerializedName("CRI")
-    Cri("CRI"),
+  @SerializedName("CRI")
+  Cri("CRI"),
 
-    @SerializedName("CUB")
-    Cub("CUB"),
+  @SerializedName("CUB")
+  Cub("CUB"),
 
-    @SerializedName("CUW")
-    Cuw("CUW"),
+  @SerializedName("CUW")
+  Cuw("CUW"),
 
-    @SerializedName("CXR")
-    Cxr("CXR"),
+  @SerializedName("CXR")
+  Cxr("CXR"),
 
-    @SerializedName("CYM")
-    Cym("CYM"),
+  @SerializedName("CYM")
+  Cym("CYM"),
 
-    @SerializedName("CYP")
-    Cyp("CYP"),
+  @SerializedName("CYP")
+  Cyp("CYP"),
 
-    @SerializedName("CZE")
-    Cze("CZE"),
+  @SerializedName("CZE")
+  Cze("CZE"),
 
-    @SerializedName("DEU")
-    Deu("DEU"),
+  @SerializedName("DEU")
+  Deu("DEU"),
 
-    @SerializedName("DJI")
-    Dji("DJI"),
+  @SerializedName("DJI")
+  Dji("DJI"),
 
-    @SerializedName("DMA")
-    Dma("DMA"),
+  @SerializedName("DMA")
+  Dma("DMA"),
 
-    @SerializedName("DNK")
-    Dnk("DNK"),
+  @SerializedName("DNK")
+  Dnk("DNK"),
 
-    @SerializedName("DOM")
-    Dom("DOM"),
+  @SerializedName("DOM")
+  Dom("DOM"),
 
-    @SerializedName("DZA")
-    Dza("DZA"),
+  @SerializedName("DZA")
+  Dza("DZA"),
 
-    @SerializedName("ECU")
-    Ecu("ECU"),
+  @SerializedName("ECU")
+  Ecu("ECU"),
 
-    @SerializedName("EGY")
-    Egy("EGY"),
+  @SerializedName("EGY")
+  Egy("EGY"),
 
-    @SerializedName("ERI")
-    Eri("ERI"),
+  @SerializedName("ERI")
+  Eri("ERI"),
 
-    @SerializedName("ESH")
-    Esh("ESH"),
+  @SerializedName("ESH")
+  Esh("ESH"),
 
-    @SerializedName("ESP")
-    Esp("ESP"),
+  @SerializedName("ESP")
+  Esp("ESP"),
 
-    @SerializedName("EST")
-    Est("EST"),
+  @SerializedName("EST")
+  Est("EST"),
 
-    @SerializedName("ETH")
-    Eth("ETH"),
+  @SerializedName("ETH")
+  Eth("ETH"),
 
-    @SerializedName("FIN")
-    Fin("FIN"),
+  @SerializedName("FIN")
+  Fin("FIN"),
 
-    @SerializedName("FJI")
-    Fji("FJI"),
+  @SerializedName("FJI")
+  Fji("FJI"),
 
-    @SerializedName("FLK")
-    Flk("FLK"),
+  @SerializedName("FLK")
+  Flk("FLK"),
 
-    @SerializedName("FRA")
-    Fra("FRA"),
+  @SerializedName("FRA")
+  Fra("FRA"),
 
-    @SerializedName("FRO")
-    Fro("FRO"),
+  @SerializedName("FRO")
+  Fro("FRO"),
 
-    @SerializedName("FSM")
-    Fsm("FSM"),
+  @SerializedName("FSM")
+  Fsm("FSM"),
 
-    @SerializedName("GAB")
-    Gab("GAB"),
+  @SerializedName("GAB")
+  Gab("GAB"),
 
-    @SerializedName("GBR")
-    Gbr("GBR"),
+  @SerializedName("GBR")
+  Gbr("GBR"),
 
-    @SerializedName("GEO")
-    Geo("GEO"),
+  @SerializedName("GEO")
+  Geo("GEO"),
 
-    @SerializedName("GGY")
-    Ggy("GGY"),
+  @SerializedName("GGY")
+  Ggy("GGY"),
 
-    @SerializedName("GHA")
-    Gha("GHA"),
+  @SerializedName("GHA")
+  Gha("GHA"),
 
-    @SerializedName("GIB")
-    Gib("GIB"),
+  @SerializedName("GIB")
+  Gib("GIB"),
 
-    @SerializedName("GIN")
-    Gin("GIN"),
+  @SerializedName("GIN")
+  Gin("GIN"),
 
-    @SerializedName("GLP")
-    Glp("GLP"),
+  @SerializedName("GLP")
+  Glp("GLP"),
 
-    @SerializedName("GMB")
-    Gmb("GMB"),
+  @SerializedName("GMB")
+  Gmb("GMB"),
 
-    @SerializedName("GNB")
-    Gnb("GNB"),
+  @SerializedName("GNB")
+  Gnb("GNB"),
 
-    @SerializedName("GNQ")
-    Gnq("GNQ"),
+  @SerializedName("GNQ")
+  Gnq("GNQ"),
 
-    @SerializedName("GRC")
-    Grc("GRC"),
+  @SerializedName("GRC")
+  Grc("GRC"),
 
-    @SerializedName("GRD")
-    Grd("GRD"),
+  @SerializedName("GRD")
+  Grd("GRD"),
 
-    @SerializedName("GRL")
-    Grl("GRL"),
+  @SerializedName("GRL")
+  Grl("GRL"),
 
-    @SerializedName("GTM")
-    Gtm("GTM"),
+  @SerializedName("GTM")
+  Gtm("GTM"),
 
-    @SerializedName("GUF")
-    Guf("GUF"),
+  @SerializedName("GUF")
+  Guf("GUF"),
 
-    @SerializedName("GUM")
-    Gum("GUM"),
+  @SerializedName("GUM")
+  Gum("GUM"),
 
-    @SerializedName("GUY")
-    Guy("GUY"),
+  @SerializedName("GUY")
+  Guy("GUY"),
 
-    @SerializedName("HKG")
-    Hkg("HKG"),
+  @SerializedName("HKG")
+  Hkg("HKG"),
 
-    @SerializedName("HMD")
-    Hmd("HMD"),
+  @SerializedName("HMD")
+  Hmd("HMD"),
 
-    @SerializedName("HND")
-    Hnd("HND"),
+  @SerializedName("HND")
+  Hnd("HND"),
 
-    @SerializedName("HRV")
-    Hrv("HRV"),
+  @SerializedName("HRV")
+  Hrv("HRV"),
 
-    @SerializedName("HTI")
-    Hti("HTI"),
+  @SerializedName("HTI")
+  Hti("HTI"),
 
-    @SerializedName("HUN")
-    Hun("HUN"),
+  @SerializedName("HUN")
+  Hun("HUN"),
 
-    @SerializedName("IDN")
-    Idn("IDN"),
+  @SerializedName("IDN")
+  Idn("IDN"),
 
-    @SerializedName("IMN")
-    Imn("IMN"),
+  @SerializedName("IMN")
+  Imn("IMN"),
 
-    @SerializedName("IND")
-    Ind("IND"),
+  @SerializedName("IND")
+  Ind("IND"),
 
-    @SerializedName("IOT")
-    Iot("IOT"),
+  @SerializedName("IOT")
+  Iot("IOT"),
 
-    @SerializedName("IRL")
-    Irl("IRL"),
+  @SerializedName("IRL")
+  Irl("IRL"),
 
-    @SerializedName("IRN")
-    Irn("IRN"),
+  @SerializedName("IRN")
+  Irn("IRN"),
 
-    @SerializedName("IRQ")
-    Irq("IRQ"),
+  @SerializedName("IRQ")
+  Irq("IRQ"),
 
-    @SerializedName("ISL")
-    Isl("ISL"),
+  @SerializedName("ISL")
+  Isl("ISL"),
 
-    @SerializedName("ISR")
-    Isr("ISR"),
+  @SerializedName("ISR")
+  Isr("ISR"),
 
-    @SerializedName("ITA")
-    Ita("ITA"),
+  @SerializedName("ITA")
+  Ita("ITA"),
 
-    @SerializedName("JAM")
-    Jam("JAM"),
+  @SerializedName("JAM")
+  Jam("JAM"),
 
-    @SerializedName("JEY")
-    Jey("JEY"),
+  @SerializedName("JEY")
+  Jey("JEY"),
 
-    @SerializedName("JOR")
-    Jor("JOR"),
+  @SerializedName("JOR")
+  Jor("JOR"),
 
-    @SerializedName("JPN")
-    Jpn("JPN"),
+  @SerializedName("JPN")
+  Jpn("JPN"),
 
-    @SerializedName("KAZ")
-    Kaz("KAZ"),
+  @SerializedName("KAZ")
+  Kaz("KAZ"),
 
-    @SerializedName("KEN")
-    Ken("KEN"),
+  @SerializedName("KEN")
+  Ken("KEN"),
 
-    @SerializedName("KGZ")
-    Kgz("KGZ"),
+  @SerializedName("KGZ")
+  Kgz("KGZ"),
 
-    @SerializedName("KHM")
-    Khm("KHM"),
+  @SerializedName("KHM")
+  Khm("KHM"),
 
-    @SerializedName("KIR")
-    Kir("KIR"),
+  @SerializedName("KIR")
+  Kir("KIR"),
 
-    @SerializedName("KNA")
-    Kna("KNA"),
+  @SerializedName("KNA")
+  Kna("KNA"),
 
-    @SerializedName("KOR")
-    Kor("KOR"),
+  @SerializedName("KOR")
+  Kor("KOR"),
 
-    @SerializedName("KWT")
-    Kwt("KWT"),
+  @SerializedName("KWT")
+  Kwt("KWT"),
 
-    @SerializedName("LAO")
-    Lao("LAO"),
+  @SerializedName("LAO")
+  Lao("LAO"),
 
-    @SerializedName("LBN")
-    Lbn("LBN"),
+  @SerializedName("LBN")
+  Lbn("LBN"),
 
-    @SerializedName("LBR")
-    Lbr("LBR"),
+  @SerializedName("LBR")
+  Lbr("LBR"),
 
-    @SerializedName("LBY")
-    Lby("LBY"),
+  @SerializedName("LBY")
+  Lby("LBY"),
 
-    @SerializedName("LCA")
-    Lca("LCA"),
+  @SerializedName("LCA")
+  Lca("LCA"),
 
-    @SerializedName("LIE")
-    Lie("LIE"),
+  @SerializedName("LIE")
+  Lie("LIE"),
 
-    @SerializedName("LKA")
-    Lka("LKA"),
+  @SerializedName("LKA")
+  Lka("LKA"),
 
-    @SerializedName("LSO")
-    Lso("LSO"),
+  @SerializedName("LSO")
+  Lso("LSO"),
 
-    @SerializedName("LTU")
-    Ltu("LTU"),
+  @SerializedName("LTU")
+  Ltu("LTU"),
 
-    @SerializedName("LUX")
-    Lux("LUX"),
+  @SerializedName("LUX")
+  Lux("LUX"),
 
-    @SerializedName("LVA")
-    Lva("LVA"),
+  @SerializedName("LVA")
+  Lva("LVA"),
 
-    @SerializedName("MAC")
-    Mac("MAC"),
+  @SerializedName("MAC")
+  Mac("MAC"),
 
-    @SerializedName("MAF")
-    Maf("MAF"),
+  @SerializedName("MAF")
+  Maf("MAF"),
 
-    @SerializedName("MAR")
-    Mar("MAR"),
+  @SerializedName("MAR")
+  Mar("MAR"),
 
-    @SerializedName("MCO")
-    Mco("MCO"),
+  @SerializedName("MCO")
+  Mco("MCO"),
 
-    @SerializedName("MDA")
-    Mda("MDA"),
+  @SerializedName("MDA")
+  Mda("MDA"),
 
-    @SerializedName("MDG")
-    Mdg("MDG"),
+  @SerializedName("MDG")
+  Mdg("MDG"),
 
-    @SerializedName("MDV")
-    Mdv("MDV"),
+  @SerializedName("MDV")
+  Mdv("MDV"),
 
-    @SerializedName("MEX")
-    Mex("MEX"),
+  @SerializedName("MEX")
+  Mex("MEX"),
 
-    @SerializedName("MHL")
-    Mhl("MHL"),
+  @SerializedName("MHL")
+  Mhl("MHL"),
 
-    @SerializedName("MKD")
-    Mkd("MKD"),
+  @SerializedName("MKD")
+  Mkd("MKD"),
 
-    @SerializedName("MLI")
-    Mli("MLI"),
+  @SerializedName("MLI")
+  Mli("MLI"),
 
-    @SerializedName("MLT")
-    Mlt("MLT"),
+  @SerializedName("MLT")
+  Mlt("MLT"),
 
-    @SerializedName("MMR")
-    Mmr("MMR"),
+  @SerializedName("MMR")
+  Mmr("MMR"),
 
-    @SerializedName("MNE")
-    Mne("MNE"),
+  @SerializedName("MNE")
+  Mne("MNE"),
 
-    @SerializedName("MNG")
-    Mng("MNG"),
+  @SerializedName("MNG")
+  Mng("MNG"),
 
-    @SerializedName("MNP")
-    Mnp("MNP"),
+  @SerializedName("MNP")
+  Mnp("MNP"),
 
-    @SerializedName("MOZ")
-    Moz("MOZ"),
+  @SerializedName("MOZ")
+  Moz("MOZ"),
 
-    @SerializedName("MRT")
-    Mrt("MRT"),
+  @SerializedName("MRT")
+  Mrt("MRT"),
 
-    @SerializedName("MSR")
-    Msr("MSR"),
+  @SerializedName("MSR")
+  Msr("MSR"),
 
-    @SerializedName("MTQ")
-    Mtq("MTQ"),
+  @SerializedName("MTQ")
+  Mtq("MTQ"),
 
-    @SerializedName("MUS")
-    Mus("MUS"),
+  @SerializedName("MUS")
+  Mus("MUS"),
 
-    @SerializedName("MWI")
-    Mwi("MWI"),
+  @SerializedName("MWI")
+  Mwi("MWI"),
 
-    @SerializedName("MYS")
-    Mys("MYS"),
+  @SerializedName("MYS")
+  Mys("MYS"),
 
-    @SerializedName("MYT")
-    Myt("MYT"),
+  @SerializedName("MYT")
+  Myt("MYT"),
 
-    @SerializedName("NAM")
-    Nam("NAM"),
+  @SerializedName("NAM")
+  Nam("NAM"),
 
-    @SerializedName("NCL")
-    Ncl("NCL"),
+  @SerializedName("NCL")
+  Ncl("NCL"),
 
-    @SerializedName("NER")
-    Ner("NER"),
+  @SerializedName("NER")
+  Ner("NER"),
 
-    @SerializedName("NFK")
-    Nfk("NFK"),
+  @SerializedName("NFK")
+  Nfk("NFK"),
 
-    @SerializedName("NGA")
-    Nga("NGA"),
+  @SerializedName("NGA")
+  Nga("NGA"),
 
-    @SerializedName("NIC")
-    Nic("NIC"),
+  @SerializedName("NIC")
+  Nic("NIC"),
 
-    @SerializedName("NIU")
-    Niu("NIU"),
+  @SerializedName("NIU")
+  Niu("NIU"),
 
-    @SerializedName("NLD")
-    Nld("NLD"),
+  @SerializedName("NLD")
+  Nld("NLD"),
 
-    @SerializedName("NOR")
-    Nor("NOR"),
+  @SerializedName("NOR")
+  Nor("NOR"),
 
-    @SerializedName("NPL")
-    Npl("NPL"),
+  @SerializedName("NPL")
+  Npl("NPL"),
 
-    @SerializedName("NRU")
-    Nru("NRU"),
+  @SerializedName("NRU")
+  Nru("NRU"),
 
-    @SerializedName("NZL")
-    Nzl("NZL"),
+  @SerializedName("NZL")
+  Nzl("NZL"),
 
-    @SerializedName("OMN")
-    Omn("OMN"),
+  @SerializedName("OMN")
+  Omn("OMN"),
 
-    @SerializedName("PAK")
-    Pak("PAK"),
+  @SerializedName("PAK")
+  Pak("PAK"),
 
-    @SerializedName("PAN")
-    Pan("PAN"),
+  @SerializedName("PAN")
+  Pan("PAN"),
 
-    @SerializedName("PCN")
-    Pcn("PCN"),
+  @SerializedName("PCN")
+  Pcn("PCN"),
 
-    @SerializedName("PER")
-    Per("PER"),
+  @SerializedName("PER")
+  Per("PER"),
 
-    @SerializedName("PHL")
-    Phl("PHL"),
+  @SerializedName("PHL")
+  Phl("PHL"),
 
-    @SerializedName("PLW")
-    Plw("PLW"),
+  @SerializedName("PLW")
+  Plw("PLW"),
 
-    @SerializedName("PNG")
-    Png("PNG"),
+  @SerializedName("PNG")
+  Png("PNG"),
 
-    @SerializedName("POL")
-    Pol("POL"),
+  @SerializedName("POL")
+  Pol("POL"),
 
-    @SerializedName("PRI")
-    Pri("PRI"),
+  @SerializedName("PRI")
+  Pri("PRI"),
 
-    @SerializedName("PRK")
-    Prk("PRK"),
+  @SerializedName("PRK")
+  Prk("PRK"),
 
-    @SerializedName("PRT")
-    Prt("PRT"),
+  @SerializedName("PRT")
+  Prt("PRT"),
 
-    @SerializedName("PRY")
-    Pry("PRY"),
+  @SerializedName("PRY")
+  Pry("PRY"),
 
-    @SerializedName("PSE")
-    Pse("PSE"),
+  @SerializedName("PSE")
+  Pse("PSE"),
 
-    @SerializedName("PYF")
-    Pyf("PYF"),
+  @SerializedName("PYF")
+  Pyf("PYF"),
 
-    @SerializedName("QAT")
-    Qat("QAT"),
+  @SerializedName("QAT")
+  Qat("QAT"),
 
-    @SerializedName("REU")
-    Reu("REU"),
+  @SerializedName("REU")
+  Reu("REU"),
 
-    @SerializedName("ROU")
-    Rou("ROU"),
+  @SerializedName("ROU")
+  Rou("ROU"),
 
-    @SerializedName("RUS")
-    Rus("RUS"),
+  @SerializedName("RUS")
+  Rus("RUS"),
 
-    @SerializedName("RWA")
-    Rwa("RWA"),
+  @SerializedName("RWA")
+  Rwa("RWA"),
 
-    @SerializedName("SAU")
-    Sau("SAU"),
+  @SerializedName("SAU")
+  Sau("SAU"),
 
-    @SerializedName("SDN")
-    Sdn("SDN"),
+  @SerializedName("SDN")
+  Sdn("SDN"),
 
-    @SerializedName("SEN")
-    Sen("SEN"),
+  @SerializedName("SEN")
+  Sen("SEN"),
 
-    @SerializedName("SGP")
-    Sgp("SGP"),
+  @SerializedName("SGP")
+  Sgp("SGP"),
 
-    @SerializedName("SGS")
-    Sgs("SGS"),
+  @SerializedName("SGS")
+  Sgs("SGS"),
 
-    @SerializedName("SHN")
-    Shn("SHN"),
+  @SerializedName("SHN")
+  Shn("SHN"),
 
-    @SerializedName("SJM")
-    Sjm("SJM"),
+  @SerializedName("SJM")
+  Sjm("SJM"),
 
-    @SerializedName("SLB")
-    Slb("SLB"),
+  @SerializedName("SLB")
+  Slb("SLB"),
 
-    @SerializedName("SLE")
-    Sle("SLE"),
+  @SerializedName("SLE")
+  Sle("SLE"),
 
-    @SerializedName("SLV")
-    Slv("SLV"),
+  @SerializedName("SLV")
+  Slv("SLV"),
 
-    @SerializedName("SMR")
-    Smr("SMR"),
+  @SerializedName("SMR")
+  Smr("SMR"),
 
-    @SerializedName("SOM")
-    Som("SOM"),
+  @SerializedName("SOM")
+  Som("SOM"),
 
-    @SerializedName("SPM")
-    Spm("SPM"),
+  @SerializedName("SPM")
+  Spm("SPM"),
 
-    @SerializedName("SRB")
-    Srb("SRB"),
+  @SerializedName("SRB")
+  Srb("SRB"),
 
-    @SerializedName("SSD")
-    Ssd("SSD"),
+  @SerializedName("SSD")
+  Ssd("SSD"),
 
-    @SerializedName("STP")
-    Stp("STP"),
+  @SerializedName("STP")
+  Stp("STP"),
 
-    @SerializedName("SUR")
-    Sur("SUR"),
+  @SerializedName("SUR")
+  Sur("SUR"),
 
-    @SerializedName("SVK")
-    Svk("SVK"),
+  @SerializedName("SVK")
+  Svk("SVK"),
 
-    @SerializedName("SVN")
-    Svn("SVN"),
+  @SerializedName("SVN")
+  Svn("SVN"),
 
-    @SerializedName("SWE")
-    Swe("SWE"),
+  @SerializedName("SWE")
+  Swe("SWE"),
 
-    @SerializedName("SWZ")
-    Swz("SWZ"),
+  @SerializedName("SWZ")
+  Swz("SWZ"),
 
-    @SerializedName("SXM")
-    Sxm("SXM"),
+  @SerializedName("SXM")
+  Sxm("SXM"),
 
-    @SerializedName("SYC")
-    Syc("SYC"),
+  @SerializedName("SYC")
+  Syc("SYC"),
 
-    @SerializedName("SYR")
-    Syr("SYR"),
+  @SerializedName("SYR")
+  Syr("SYR"),
 
-    @SerializedName("TCA")
-    Tca("TCA"),
+  @SerializedName("TCA")
+  Tca("TCA"),
 
-    @SerializedName("TCD")
-    Tcd("TCD"),
+  @SerializedName("TCD")
+  Tcd("TCD"),
 
-    @SerializedName("TGO")
-    Tgo("TGO"),
+  @SerializedName("TGO")
+  Tgo("TGO"),
 
-    @SerializedName("THA")
-    Tha("THA"),
+  @SerializedName("THA")
+  Tha("THA"),
 
-    @SerializedName("TJK")
-    Tjk("TJK"),
+  @SerializedName("TJK")
+  Tjk("TJK"),
 
-    @SerializedName("TKL")
-    Tkl("TKL"),
+  @SerializedName("TKL")
+  Tkl("TKL"),
 
-    @SerializedName("TKM")
-    Tkm("TKM"),
+  @SerializedName("TKM")
+  Tkm("TKM"),
 
-    @SerializedName("TLS")
-    Tls("TLS"),
+  @SerializedName("TLS")
+  Tls("TLS"),
 
-    @SerializedName("TON")
-    Ton("TON"),
+  @SerializedName("TON")
+  Ton("TON"),
 
-    @SerializedName("TTO")
-    Tto("TTO"),
+  @SerializedName("TTO")
+  Tto("TTO"),
 
-    @SerializedName("TUN")
-    Tun("TUN"),
+  @SerializedName("TUN")
+  Tun("TUN"),
 
-    @SerializedName("TUR")
-    Tur("TUR"),
+  @SerializedName("TUR")
+  Tur("TUR"),
 
-    @SerializedName("TUV")
-    Tuv("TUV"),
+  @SerializedName("TUV")
+  Tuv("TUV"),
 
-    @SerializedName("TWN")
-    Twn("TWN"),
+  @SerializedName("TWN")
+  Twn("TWN"),
 
-    @SerializedName("TZA")
-    Tza("TZA"),
+  @SerializedName("TZA")
+  Tza("TZA"),
 
-    @SerializedName("UGA")
-    Uga("UGA"),
+  @SerializedName("UGA")
+  Uga("UGA"),
 
-    @SerializedName("UKR")
-    Ukr("UKR"),
+  @SerializedName("UKR")
+  Ukr("UKR"),
 
-    @SerializedName("UMI")
-    Umi("UMI"),
+  @SerializedName("UMI")
+  Umi("UMI"),
 
-    @SerializedName("UNK")
-    Unk("UNK"),
+  @SerializedName("UNK")
+  Unk("UNK"),
 
-    @SerializedName("URY")
-    Ury("URY"),
+  @SerializedName("URY")
+  Ury("URY"),
 
-    @SerializedName("USA")
-    Usa("USA"),
+  @SerializedName("USA")
+  Usa("USA"),
 
-    @SerializedName("UZB")
-    Uzb("UZB"),
+  @SerializedName("UZB")
+  Uzb("UZB"),
 
-    @SerializedName("VAT")
-    Vat("VAT"),
+  @SerializedName("VAT")
+  Vat("VAT"),
 
-    @SerializedName("VCT")
-    Vct("VCT"),
+  @SerializedName("VCT")
+  Vct("VCT"),
 
-    @SerializedName("VEN")
-    Ven("VEN"),
+  @SerializedName("VEN")
+  Ven("VEN"),
 
-    @SerializedName("VGB")
-    Vgb("VGB"),
+  @SerializedName("VGB")
+  Vgb("VGB"),
 
-    @SerializedName("VIR")
-    Vir("VIR"),
+  @SerializedName("VIR")
+  Vir("VIR"),
 
-    @SerializedName("VNM")
-    Vnm("VNM"),
+  @SerializedName("VNM")
+  Vnm("VNM"),
 
-    @SerializedName("VUT")
-    Vut("VUT"),
+  @SerializedName("VUT")
+  Vut("VUT"),
 
-    @SerializedName("WLF")
-    Wlf("WLF"),
+  @SerializedName("WLF")
+  Wlf("WLF"),
 
-    @SerializedName("WSM")
-    Wsm("WSM"),
+  @SerializedName("WSM")
+  Wsm("WSM"),
 
-    @SerializedName("YEM")
-    Yem("YEM"),
+  @SerializedName("YEM")
+  Yem("YEM"),
 
-    @SerializedName("ZAF")
-    Zaf("ZAF"),
+  @SerializedName("ZAF")
+  Zaf("ZAF"),
 
-    @SerializedName("ZMB")
-    Zmb("ZMB"),
+  @SerializedName("ZMB")
+  Zmb("ZMB"),
 
-    @SerializedName("ZWE")
-    Zwe("ZWE");
+  @SerializedName("ZWE")
+  Zwe("ZWE");
 
-    private final String value;
+  private final String value;
 
-    PaymentMethodAccountV3Country(final String value) {
-        this.value = value;
-    }
+  PaymentMethodAccountV3Country(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

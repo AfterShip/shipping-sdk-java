@@ -4,31 +4,30 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class BillingV3 extends Resource {
 
-    @SerializedName("paid_by")
-    private BillingV3PaidBy paidBy;
+  @SerializedName("paid_by")
+  private BillingV3PaidBy paidBy;
 
-    @SerializedName("method")
-    private PaymentMethodAccountV3 method;
+  @SerializedName("method")
+  private PaymentMethodAccountV3 method;
 
-    public  BillingV3PaidBy getPaidBy() {
-        return paidBy;
-    }
+  public BillingV3PaidBy getPaidBy() {
+    return paidBy;
+  }
 
-    public void setPaidBy( BillingV3PaidBy paidBy) {
-        this.paidBy = paidBy;
-    }
+  public void setPaidBy(BillingV3PaidBy paidBy) {
+    this.paidBy = paidBy;
+  }
 
-    public  PaymentMethodAccountV3 getMethod() {
-        return method;
-    }
+  public PaymentMethodAccountV3 getMethod() {
+    return method;
+  }
 
-    public void setMethod( PaymentMethodAccountV3 method) {
-        this.method = method;
-    }
-
+  public void setMethod(PaymentMethodAccountV3 method) {
+    this.method = method;
+  }
 }

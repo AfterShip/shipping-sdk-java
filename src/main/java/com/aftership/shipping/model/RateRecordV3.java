@@ -4,64 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class RateRecordV3 extends Resource {
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    @SerializedName("status")
-    private RateRecordV3Status status;
+  @SerializedName("status")
+  private RateRecordV3Status status;
 
-    @SerializedName("rates")
-    private java.util.List<RateV3> rates;
+  @SerializedName("rates")
+  private java.util.List<RateV3> rates;
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 
-    public  RateRecordV3Status getStatus() {
-        return status;
-    }
+  public RateRecordV3Status getStatus() {
+    return status;
+  }
 
-    public void setStatus( RateRecordV3Status status) {
-        this.status = status;
-    }
+  public void setStatus(RateRecordV3Status status) {
+    this.status = status;
+  }
 
-    public java.util.List<RateV3>  getRates() {
-        return rates;
-    }
+  public java.util.List<RateV3> getRates() {
+    return rates;
+  }
 
-    public void setRates(java.util.List<RateV3>  rates) {
-        this.rates = rates;
-    }
-
+  public void setRates(java.util.List<RateV3> rates) {
+    this.rates = rates;
+  }
 }

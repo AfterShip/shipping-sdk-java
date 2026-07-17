@@ -4,218 +4,217 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class AddressV3 extends Resource {
 
-    @SerializedName("street1")
-    private String street1;
+  @SerializedName("street1")
+  private String street1;
 
-    @SerializedName("country")
-    private String country;
+  @SerializedName("country")
+  private String country;
 
-    @SerializedName("contact_name")
-    private String contactName;
+  @SerializedName("contact_name")
+  private String contactName;
 
-    @SerializedName("phone")
-    private String phone;
+  @SerializedName("phone")
+  private String phone;
 
-    @SerializedName("fax")
-    private String fax;
+  @SerializedName("fax")
+  private String fax;
 
-    @SerializedName("email")
-    private String email;
+  @SerializedName("email")
+  private String email;
 
-    @SerializedName("company_name")
-    private String companyName;
+  @SerializedName("company_name")
+  private String companyName;
 
-    @SerializedName("street2")
-    private String street2;
+  @SerializedName("street2")
+  private String street2;
 
-    @SerializedName("street3")
-    private String street3;
+  @SerializedName("street3")
+  private String street3;
 
-    @SerializedName("city")
-    private String city;
+  @SerializedName("city")
+  private String city;
 
-    @SerializedName("state")
-    private String state;
+  @SerializedName("state")
+  private String state;
 
-    @SerializedName("postal_code")
-    private String postalCode;
+  @SerializedName("postal_code")
+  private String postalCode;
 
-    @SerializedName("type")
-    private AddressV3Type type;
+  @SerializedName("type")
+  private AddressV3Type type;
 
-    @SerializedName("tax_id")
-    private String taxId;
+  @SerializedName("tax_id")
+  private String taxId;
 
-    @SerializedName("tax_id_type")
-    private AddressV3TaxIdType taxIdType;
+  @SerializedName("tax_id_type")
+  private AddressV3TaxIdType taxIdType;
 
-    @SerializedName("identification_number")
-    private String identificationNumber;
+  @SerializedName("identification_number")
+  private String identificationNumber;
 
-    @SerializedName("identification_type")
-    private AddressV3IdentificationType identificationType;
+  @SerializedName("identification_type")
+  private AddressV3IdentificationType identificationType;
 
-    @SerializedName("eori_number")
-    private String eoriNumber;
+  @SerializedName("eori_number")
+  private String eoriNumber;
 
-    @SerializedName("location")
-    private AddressV3Location location;
+  @SerializedName("location")
+  private AddressV3Location location;
 
-    public  String getStreet1() {
-        return street1;
-    }
+  public String getStreet1() {
+    return street1;
+  }
 
-    public void setStreet1( String street1) {
-        this.street1 = street1;
-    }
+  public void setStreet1(String street1) {
+    this.street1 = street1;
+  }
 
-    public  String getCountry() {
-        return country;
-    }
+  public String getCountry() {
+    return country;
+  }
 
-    public void setCountry( String country) {
-        this.country = country;
-    }
+  public void setCountry(String country) {
+    this.country = country;
+  }
 
-    public  String getContactName() {
-        return contactName;
-    }
+  public String getContactName() {
+    return contactName;
+  }
 
-    public void setContactName( String contactName) {
-        this.contactName = contactName;
-    }
+  public void setContactName(String contactName) {
+    this.contactName = contactName;
+  }
 
-    public  String getPhone() {
-        return phone;
-    }
+  public String getPhone() {
+    return phone;
+  }
 
-    public void setPhone( String phone) {
-        this.phone = phone;
-    }
+  public void setPhone(String phone) {
+    this.phone = phone;
+  }
 
-    public  String getFax() {
-        return fax;
-    }
+  public String getFax() {
+    return fax;
+  }
 
-    public void setFax( String fax) {
-        this.fax = fax;
-    }
+  public void setFax(String fax) {
+    this.fax = fax;
+  }
 
-    public  String getEmail() {
-        return email;
-    }
+  public String getEmail() {
+    return email;
+  }
 
-    public void setEmail( String email) {
-        this.email = email;
-    }
+  public void setEmail(String email) {
+    this.email = email;
+  }
 
-    public  String getCompanyName() {
-        return companyName;
-    }
+  public String getCompanyName() {
+    return companyName;
+  }
 
-    public void setCompanyName( String companyName) {
-        this.companyName = companyName;
-    }
+  public void setCompanyName(String companyName) {
+    this.companyName = companyName;
+  }
 
-    public  String getStreet2() {
-        return street2;
-    }
+  public String getStreet2() {
+    return street2;
+  }
 
-    public void setStreet2( String street2) {
-        this.street2 = street2;
-    }
+  public void setStreet2(String street2) {
+    this.street2 = street2;
+  }
 
-    public  String getStreet3() {
-        return street3;
-    }
+  public String getStreet3() {
+    return street3;
+  }
 
-    public void setStreet3( String street3) {
-        this.street3 = street3;
-    }
+  public void setStreet3(String street3) {
+    this.street3 = street3;
+  }
 
-    public  String getCity() {
-        return city;
-    }
+  public String getCity() {
+    return city;
+  }
 
-    public void setCity( String city) {
-        this.city = city;
-    }
+  public void setCity(String city) {
+    this.city = city;
+  }
 
-    public  String getState() {
-        return state;
-    }
+  public String getState() {
+    return state;
+  }
 
-    public void setState( String state) {
-        this.state = state;
-    }
+  public void setState(String state) {
+    this.state = state;
+  }
 
-    public  String getPostalCode() {
-        return postalCode;
-    }
+  public String getPostalCode() {
+    return postalCode;
+  }
 
-    public void setPostalCode( String postalCode) {
-        this.postalCode = postalCode;
-    }
+  public void setPostalCode(String postalCode) {
+    this.postalCode = postalCode;
+  }
 
-    public  AddressV3Type getType() {
-        return type;
-    }
+  public AddressV3Type getType() {
+    return type;
+  }
 
-    public void setType( AddressV3Type type) {
-        this.type = type;
-    }
+  public void setType(AddressV3Type type) {
+    this.type = type;
+  }
 
-    public  String getTaxId() {
-        return taxId;
-    }
+  public String getTaxId() {
+    return taxId;
+  }
 
-    public void setTaxId( String taxId) {
-        this.taxId = taxId;
-    }
+  public void setTaxId(String taxId) {
+    this.taxId = taxId;
+  }
 
-    public  AddressV3TaxIdType getTaxIdType() {
-        return taxIdType;
-    }
+  public AddressV3TaxIdType getTaxIdType() {
+    return taxIdType;
+  }
 
-    public void setTaxIdType( AddressV3TaxIdType taxIdType) {
-        this.taxIdType = taxIdType;
-    }
+  public void setTaxIdType(AddressV3TaxIdType taxIdType) {
+    this.taxIdType = taxIdType;
+  }
 
-    public  String getIdentificationNumber() {
-        return identificationNumber;
-    }
+  public String getIdentificationNumber() {
+    return identificationNumber;
+  }
 
-    public void setIdentificationNumber( String identificationNumber) {
-        this.identificationNumber = identificationNumber;
-    }
+  public void setIdentificationNumber(String identificationNumber) {
+    this.identificationNumber = identificationNumber;
+  }
 
-    public  AddressV3IdentificationType getIdentificationType() {
-        return identificationType;
-    }
+  public AddressV3IdentificationType getIdentificationType() {
+    return identificationType;
+  }
 
-    public void setIdentificationType( AddressV3IdentificationType identificationType) {
-        this.identificationType = identificationType;
-    }
+  public void setIdentificationType(AddressV3IdentificationType identificationType) {
+    this.identificationType = identificationType;
+  }
 
-    public  String getEoriNumber() {
-        return eoriNumber;
-    }
+  public String getEoriNumber() {
+    return eoriNumber;
+  }
 
-    public void setEoriNumber( String eoriNumber) {
-        this.eoriNumber = eoriNumber;
-    }
+  public void setEoriNumber(String eoriNumber) {
+    this.eoriNumber = eoriNumber;
+  }
 
-    public  AddressV3Location getLocation() {
-        return location;
-    }
+  public AddressV3Location getLocation() {
+    return location;
+  }
 
-    public void setLocation( AddressV3Location location) {
-        this.location = location;
-    }
-
+  public void setLocation(AddressV3Location location) {
+    this.location = location;
+  }
 }

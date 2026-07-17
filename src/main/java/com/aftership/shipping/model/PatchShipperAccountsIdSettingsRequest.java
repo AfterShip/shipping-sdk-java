@@ -4,31 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PatchShipperAccountsIdSettingsRequest extends Resource {
 
-    @SerializedName("commercial_invoice_letterhead")
-    private String commercialInvoiceLetterhead;
+  @SerializedName("electronic_trade_documents_enabled")
+  private Boolean electronicTradeDocumentsEnabled;
 
-    @SerializedName("commercial_invoice_signature")
-    private String commercialInvoiceSignature;
+  @SerializedName("commercial_invoice_letterhead")
+  private String commercialInvoiceLetterhead;
 
-    public  String getCommercialInvoiceLetterhead() {
-        return commercialInvoiceLetterhead;
-    }
+  @SerializedName("commercial_invoice_signature")
+  private String commercialInvoiceSignature;
 
-    public void setCommercialInvoiceLetterhead( String commercialInvoiceLetterhead) {
-        this.commercialInvoiceLetterhead = commercialInvoiceLetterhead;
-    }
+  public Boolean getElectronicTradeDocumentsEnabled() {
+    return electronicTradeDocumentsEnabled;
+  }
 
-    public  String getCommercialInvoiceSignature() {
-        return commercialInvoiceSignature;
-    }
+  public void setElectronicTradeDocumentsEnabled(Boolean electronicTradeDocumentsEnabled) {
+    this.electronicTradeDocumentsEnabled = electronicTradeDocumentsEnabled;
+  }
 
-    public void setCommercialInvoiceSignature( String commercialInvoiceSignature) {
-        this.commercialInvoiceSignature = commercialInvoiceSignature;
-    }
+  public String getCommercialInvoiceLetterhead() {
+    return commercialInvoiceLetterhead;
+  }
 
+  public void setCommercialInvoiceLetterhead(String commercialInvoiceLetterhead) {
+    this.commercialInvoiceLetterhead = commercialInvoiceLetterhead;
+  }
+
+  public String getCommercialInvoiceSignature() {
+    return commercialInvoiceSignature;
+  }
+
+  public void setCommercialInvoiceSignature(String commercialInvoiceSignature) {
+    this.commercialInvoiceSignature = commercialInvoiceSignature;
+  }
 }

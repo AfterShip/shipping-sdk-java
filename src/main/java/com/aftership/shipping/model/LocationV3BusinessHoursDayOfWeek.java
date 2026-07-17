@@ -7,39 +7,39 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum LocationV3BusinessHoursDayOfWeek {
-    @SerializedName("Mon")
-    Mon("Mon"),
+  @SerializedName("Mon")
+  Mon("Mon"),
 
-    @SerializedName("Tue")
-    Tue("Tue"),
+  @SerializedName("Tue")
+  Tue("Tue"),
 
-    @SerializedName("Wed")
-    Wed("Wed"),
+  @SerializedName("Wed")
+  Wed("Wed"),
 
-    @SerializedName("Thu")
-    Thu("Thu"),
+  @SerializedName("Thu")
+  Thu("Thu"),
 
-    @SerializedName("Fri")
-    Fri("Fri"),
+  @SerializedName("Fri")
+  Fri("Fri"),
 
-    @SerializedName("Sat")
-    Sat("Sat"),
+  @SerializedName("Sat")
+  Sat("Sat"),
 
-    @SerializedName("Sun")
-    Sun("Sun");
+  @SerializedName("Sun")
+  Sun("Sun");
 
-    private final String value;
+  private final String value;
 
-    LocationV3BusinessHoursDayOfWeek(final String value) {
-        this.value = value;
-    }
+  LocationV3BusinessHoursDayOfWeek(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

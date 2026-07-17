@@ -7,13 +7,15 @@ package com.aftership.shipping.cancel_pickups;
 import com.aftership.shipping.base.Resource;
 
 public class CancelPickupsResource extends Resource {
-    public static GetCancelPickupsFetcher getCancelPickups() {
-        return new GetCancelPickupsFetcher();
-    }
-    public static PostCancelPickupsCreator postCancelPickups() {
-        return new PostCancelPickupsCreator();
-    }
-    public static GetCancelPickupFetcher getCancelPickup() {
-        return new GetCancelPickupFetcher();
-    }
+  public static GetCancelPickupsFetcher getCancelPickups() {
+    return new GetCancelPickupsFetcher();
+  }
+
+  public static PostCancelPickupsCreator postCancelPickups() {
+    return new PostCancelPickupsCreator();
+  }
+
+  public static GetCancelPickupFetcher getCancelPickup() {
+    return new GetCancelPickupFetcher();
+  }
 }

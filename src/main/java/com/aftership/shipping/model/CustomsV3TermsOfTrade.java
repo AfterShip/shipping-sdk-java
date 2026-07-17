@@ -7,54 +7,54 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum CustomsV3TermsOfTrade {
-    @SerializedName("dat")
-    Dat("dat"),
+  @SerializedName("dat")
+  Dat("dat"),
 
-    @SerializedName("ddu")
-    Ddu("ddu"),
+  @SerializedName("ddu")
+  Ddu("ddu"),
 
-    @SerializedName("ddp")
-    Ddp("ddp"),
+  @SerializedName("ddp")
+  Ddp("ddp"),
 
-    @SerializedName("dap")
-    Dap("dap"),
+  @SerializedName("dap")
+  Dap("dap"),
 
-    @SerializedName("exw")
-    Exw("exw"),
+  @SerializedName("exw")
+  Exw("exw"),
 
-    @SerializedName("fca")
-    Fca("fca"),
+  @SerializedName("fca")
+  Fca("fca"),
 
-    @SerializedName("fob")
-    Fob("fob"),
+  @SerializedName("fob")
+  Fob("fob"),
 
-    @SerializedName("cip")
-    Cip("cip"),
+  @SerializedName("cip")
+  Cip("cip"),
 
-    @SerializedName("cif")
-    Cif("cif"),
+  @SerializedName("cif")
+  Cif("cif"),
 
-    @SerializedName("cpt")
-    Cpt("cpt"),
+  @SerializedName("cpt")
+  Cpt("cpt"),
 
-    @SerializedName("cfr")
-    Cfr("cfr"),
+  @SerializedName("cfr")
+  Cfr("cfr"),
 
-    @SerializedName("dpu")
-    Dpu("dpu");
+  @SerializedName("dpu")
+  Dpu("dpu");
 
-    private final String value;
+  private final String value;
 
-    CustomsV3TermsOfTrade(final String value) {
-        this.value = value;
-    }
+  CustomsV3TermsOfTrade(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

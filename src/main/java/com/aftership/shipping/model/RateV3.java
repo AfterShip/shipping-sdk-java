@@ -4,141 +4,140 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class RateV3 extends Resource {
 
-    @SerializedName("charge_weight")
-    private WeightV3 chargeWeight;
+  @SerializedName("charge_weight")
+  private WeightV3 chargeWeight;
 
-    @SerializedName("total_charge")
-    private MoneyV3 totalCharge;
+  @SerializedName("total_charge")
+  private MoneyV3 totalCharge;
 
-    @SerializedName("shipper_account")
-    private RateV3ShipperAccount shipperAccount;
+  @SerializedName("shipper_account")
+  private RateV3ShipperAccount shipperAccount;
 
-    @SerializedName("service_type")
-    private String serviceType;
+  @SerializedName("service_type")
+  private String serviceType;
 
-    @SerializedName("service_name")
-    private String serviceName;
+  @SerializedName("service_name")
+  private String serviceName;
 
-    @SerializedName("pickup_deadline")
-    private String pickupDeadline;
+  @SerializedName("pickup_deadline")
+  private String pickupDeadline;
 
-    @SerializedName("booking_cut_off")
-    private String bookingCutOff;
+  @SerializedName("booking_cut_off")
+  private String bookingCutOff;
 
-    @SerializedName("delivery_date")
-    private String deliveryDate;
+  @SerializedName("delivery_date")
+  private String deliveryDate;
 
-    @SerializedName("transit_time")
-    private Integer transitTime;
+  @SerializedName("transit_time")
+  private Integer transitTime;
 
-    @SerializedName("detailed_charges")
-    private java.util.List<RateV3DetailedCharges> detailedCharges;
+  @SerializedName("detailed_charges")
+  private java.util.List<RateV3DetailedCharges> detailedCharges;
 
-    @SerializedName("error_message")
-    private String errorMessage;
+  @SerializedName("error_message")
+  private String errorMessage;
 
-    @SerializedName("info_message")
-    private String infoMessage;
+  @SerializedName("info_message")
+  private String infoMessage;
 
-    public  WeightV3 getChargeWeight() {
-        return chargeWeight;
-    }
+  public WeightV3 getChargeWeight() {
+    return chargeWeight;
+  }
 
-    public void setChargeWeight( WeightV3 chargeWeight) {
-        this.chargeWeight = chargeWeight;
-    }
+  public void setChargeWeight(WeightV3 chargeWeight) {
+    this.chargeWeight = chargeWeight;
+  }
 
-    public  MoneyV3 getTotalCharge() {
-        return totalCharge;
-    }
+  public MoneyV3 getTotalCharge() {
+    return totalCharge;
+  }
 
-    public void setTotalCharge( MoneyV3 totalCharge) {
-        this.totalCharge = totalCharge;
-    }
+  public void setTotalCharge(MoneyV3 totalCharge) {
+    this.totalCharge = totalCharge;
+  }
 
-    public  RateV3ShipperAccount getShipperAccount() {
-        return shipperAccount;
-    }
+  public RateV3ShipperAccount getShipperAccount() {
+    return shipperAccount;
+  }
 
-    public void setShipperAccount( RateV3ShipperAccount shipperAccount) {
-        this.shipperAccount = shipperAccount;
-    }
+  public void setShipperAccount(RateV3ShipperAccount shipperAccount) {
+    this.shipperAccount = shipperAccount;
+  }
 
-    public  String getServiceType() {
-        return serviceType;
-    }
+  public String getServiceType() {
+    return serviceType;
+  }
 
-    public void setServiceType( String serviceType) {
-        this.serviceType = serviceType;
-    }
+  public void setServiceType(String serviceType) {
+    this.serviceType = serviceType;
+  }
 
-    public  String getServiceName() {
-        return serviceName;
-    }
+  public String getServiceName() {
+    return serviceName;
+  }
 
-    public void setServiceName( String serviceName) {
-        this.serviceName = serviceName;
-    }
+  public void setServiceName(String serviceName) {
+    this.serviceName = serviceName;
+  }
 
-    public  String getPickupDeadline() {
-        return pickupDeadline;
-    }
+  public String getPickupDeadline() {
+    return pickupDeadline;
+  }
 
-    public void setPickupDeadline( String pickupDeadline) {
-        this.pickupDeadline = pickupDeadline;
-    }
+  public void setPickupDeadline(String pickupDeadline) {
+    this.pickupDeadline = pickupDeadline;
+  }
 
-    public  String getBookingCutOff() {
-        return bookingCutOff;
-    }
+  public String getBookingCutOff() {
+    return bookingCutOff;
+  }
 
-    public void setBookingCutOff( String bookingCutOff) {
-        this.bookingCutOff = bookingCutOff;
-    }
+  public void setBookingCutOff(String bookingCutOff) {
+    this.bookingCutOff = bookingCutOff;
+  }
 
-    public  String getDeliveryDate() {
-        return deliveryDate;
-    }
+  public String getDeliveryDate() {
+    return deliveryDate;
+  }
 
-    public void setDeliveryDate( String deliveryDate) {
-        this.deliveryDate = deliveryDate;
-    }
+  public void setDeliveryDate(String deliveryDate) {
+    this.deliveryDate = deliveryDate;
+  }
 
-    public  Integer getTransitTime() {
-        return transitTime;
-    }
+  public Integer getTransitTime() {
+    return transitTime;
+  }
 
-    public void setTransitTime( Integer transitTime) {
-        this.transitTime = transitTime;
-    }
+  public void setTransitTime(Integer transitTime) {
+    this.transitTime = transitTime;
+  }
 
-    public java.util.List<RateV3DetailedCharges>  getDetailedCharges() {
-        return detailedCharges;
-    }
+  public java.util.List<RateV3DetailedCharges> getDetailedCharges() {
+    return detailedCharges;
+  }
 
-    public void setDetailedCharges(java.util.List<RateV3DetailedCharges>  detailedCharges) {
-        this.detailedCharges = detailedCharges;
-    }
+  public void setDetailedCharges(java.util.List<RateV3DetailedCharges> detailedCharges) {
+    this.detailedCharges = detailedCharges;
+  }
 
-    public  String getErrorMessage() {
-        return errorMessage;
-    }
+  public String getErrorMessage() {
+    return errorMessage;
+  }
 
-    public void setErrorMessage( String errorMessage) {
-        this.errorMessage = errorMessage;
-    }
+  public void setErrorMessage(String errorMessage) {
+    this.errorMessage = errorMessage;
+  }
 
-    public  String getInfoMessage() {
-        return infoMessage;
-    }
+  public String getInfoMessage() {
+    return infoMessage;
+  }
 
-    public void setInfoMessage( String infoMessage) {
-        this.infoMessage = infoMessage;
-    }
-
+  public void setInfoMessage(String infoMessage) {
+    this.infoMessage = infoMessage;
+  }
 }

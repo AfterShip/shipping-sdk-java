@@ -4,64 +4,63 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class CancelLabelV3 extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("status")
-    private CancelLabelV3Status status;
+  @SerializedName("status")
+  private CancelLabelV3Status status;
 
-    @SerializedName("label")
-    private ReferenceV3 label;
+  @SerializedName("label")
+  private ReferenceV3 label;
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    public  String getId() {
-        return id;
-    }
+  public String getId() {
+    return id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public  CancelLabelV3Status getStatus() {
-        return status;
-    }
+  public CancelLabelV3Status getStatus() {
+    return status;
+  }
 
-    public void setStatus( CancelLabelV3Status status) {
-        this.status = status;
-    }
+  public void setStatus(CancelLabelV3Status status) {
+    this.status = status;
+  }
 
-    public  ReferenceV3 getLabel() {
-        return label;
-    }
+  public ReferenceV3 getLabel() {
+    return label;
+  }
 
-    public void setLabel( ReferenceV3 label) {
-        this.label = label;
-    }
+  public void setLabel(ReferenceV3 label) {
+    this.label = label;
+  }
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 }

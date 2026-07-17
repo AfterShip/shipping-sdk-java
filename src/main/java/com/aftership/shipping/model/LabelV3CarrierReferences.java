@@ -4,31 +4,41 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class LabelV3CarrierReferences extends Resource {
 
-    @SerializedName("pickup_reference")
-    private String pickupReference;
+  @SerializedName("pickup_reference")
+  private String pickupReference;
 
-    @SerializedName("pickup_location_code")
-    private String pickupLocationCode;
+  @SerializedName("pickup_location_code")
+  private String pickupLocationCode;
 
-    public  String getPickupReference() {
-        return pickupReference;
-    }
+  @SerializedName("piece_tracking_numbers")
+  private java.util.List<String> pieceTrackingNumbers;
 
-    public void setPickupReference( String pickupReference) {
-        this.pickupReference = pickupReference;
-    }
+  public String getPickupReference() {
+    return pickupReference;
+  }
 
-    public  String getPickupLocationCode() {
-        return pickupLocationCode;
-    }
+  public void setPickupReference(String pickupReference) {
+    this.pickupReference = pickupReference;
+  }
 
-    public void setPickupLocationCode( String pickupLocationCode) {
-        this.pickupLocationCode = pickupLocationCode;
-    }
+  public String getPickupLocationCode() {
+    return pickupLocationCode;
+  }
 
+  public void setPickupLocationCode(String pickupLocationCode) {
+    this.pickupLocationCode = pickupLocationCode;
+  }
+
+  public java.util.List<String> getPieceTrackingNumbers() {
+    return pieceTrackingNumbers;
+  }
+
+  public void setPieceTrackingNumbers(java.util.List<String> pieceTrackingNumbers) {
+    this.pieceTrackingNumbers = pieceTrackingNumbers;
+  }
 }

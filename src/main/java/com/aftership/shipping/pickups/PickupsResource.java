@@ -7,13 +7,15 @@ package com.aftership.shipping.pickups;
 import com.aftership.shipping.base.Resource;
 
 public class PickupsResource extends Resource {
-    public static GetPickupsFetcher getPickups() {
-        return new GetPickupsFetcher();
-    }
-    public static PostPickupsCreator postPickups() {
-        return new PostPickupsCreator();
-    }
-    public static GetPickupFetcher getPickup() {
-        return new GetPickupFetcher();
-    }
+  public static GetPickupsFetcher getPickups() {
+    return new GetPickupsFetcher();
+  }
+
+  public static PostPickupsCreator postPickups() {
+    return new PostPickupsCreator();
+  }
+
+  public static GetPickupFetcher getPickup() {
+    return new GetPickupFetcher();
+  }
 }

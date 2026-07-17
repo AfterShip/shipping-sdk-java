@@ -4,86 +4,85 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class LocationV3Address extends Resource {
 
-    @SerializedName("street")
-    private String street;
+  @SerializedName("street")
+  private String street;
 
-    @SerializedName("postal_code")
-    private String postalCode;
+  @SerializedName("postal_code")
+  private String postalCode;
 
-    @SerializedName("city")
-    private String city;
+  @SerializedName("city")
+  private String city;
 
-    @SerializedName("state")
-    private String state;
+  @SerializedName("state")
+  private String state;
 
-    @SerializedName("country")
-    private String country;
+  @SerializedName("country")
+  private String country;
 
-    @SerializedName("latitude")
-    private Float latitude;
+  @SerializedName("latitude")
+  private Float latitude;
 
-    @SerializedName("longitude")
-    private Float longitude;
+  @SerializedName("longitude")
+  private Float longitude;
 
-    public  String getStreet() {
-        return street;
-    }
+  public String getStreet() {
+    return street;
+  }
 
-    public void setStreet( String street) {
-        this.street = street;
-    }
+  public void setStreet(String street) {
+    this.street = street;
+  }
 
-    public  String getPostalCode() {
-        return postalCode;
-    }
+  public String getPostalCode() {
+    return postalCode;
+  }
 
-    public void setPostalCode( String postalCode) {
-        this.postalCode = postalCode;
-    }
+  public void setPostalCode(String postalCode) {
+    this.postalCode = postalCode;
+  }
 
-    public  String getCity() {
-        return city;
-    }
+  public String getCity() {
+    return city;
+  }
 
-    public void setCity( String city) {
-        this.city = city;
-    }
+  public void setCity(String city) {
+    this.city = city;
+  }
 
-    public  String getState() {
-        return state;
-    }
+  public String getState() {
+    return state;
+  }
 
-    public void setState( String state) {
-        this.state = state;
-    }
+  public void setState(String state) {
+    this.state = state;
+  }
 
-    public  String getCountry() {
-        return country;
-    }
+  public String getCountry() {
+    return country;
+  }
 
-    public void setCountry( String country) {
-        this.country = country;
-    }
+  public void setCountry(String country) {
+    this.country = country;
+  }
 
-    public  Float getLatitude() {
-        return latitude;
-    }
+  public Float getLatitude() {
+    return latitude;
+  }
 
-    public void setLatitude( Float latitude) {
-        this.latitude = latitude;
-    }
+  public void setLatitude(Float latitude) {
+    this.latitude = latitude;
+  }
 
-    public  Float getLongitude() {
-        return longitude;
-    }
+  public Float getLongitude() {
+    return longitude;
+  }
 
-    public void setLongitude( Float longitude) {
-        this.longitude = longitude;
-    }
-
+  public void setLongitude(Float longitude) {
+    this.longitude = longitude;
+  }
 }

@@ -7,30 +7,30 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum WeightV3Unit {
-    @SerializedName("lb")
-    Lb("lb"),
+  @SerializedName("lb")
+  Lb("lb"),
 
-    @SerializedName("kg")
-    Kg("kg"),
+  @SerializedName("kg")
+  Kg("kg"),
 
-    @SerializedName("oz")
-    Oz("oz"),
+  @SerializedName("oz")
+  Oz("oz"),
 
-    @SerializedName("g")
-    G("g");
+  @SerializedName("g")
+  G("g");
 
-    private final String value;
+  private final String value;
 
-    WeightV3Unit(final String value) {
-        this.value = value;
-    }
+  WeightV3Unit(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }

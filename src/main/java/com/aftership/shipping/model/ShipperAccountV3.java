@@ -4,119 +4,107 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class ShipperAccountV3 extends Resource {
 
-    @SerializedName("id")
-    private String id;
+  @SerializedName("id")
+  private String id;
 
-    @SerializedName("address")
-    private AddressV3 address;
+  @SerializedName("address")
+  private AddressV3 address;
 
-    @SerializedName("slug")
-    private String slug;
+  @SerializedName("slug")
+  private String slug;
 
-    @SerializedName("status")
-    private ShipperAccountV3Status status;
+  @SerializedName("status")
+  private ShipperAccountV3Status status;
 
-    @SerializedName("description")
-    private String description;
+  @SerializedName("description")
+  private String description;
 
-    @SerializedName("type")
-    private ShipperAccountV3Type type;
+  @SerializedName("type")
+  private ShipperAccountV3Type type;
 
-    @SerializedName("timezone")
-    private String timezone;
+  @SerializedName("timezone")
+  private String timezone;
 
-    @SerializedName("settings")
-    private ShipperAccountV3Settings settings;
+  @SerializedName("created_at")
+  private String createdAt;
 
-    @SerializedName("created_at")
-    private String createdAt;
+  @SerializedName("updated_at")
+  private String updatedAt;
 
-    @SerializedName("updated_at")
-    private String updatedAt;
+  public String getId() {
+    return id;
+  }
 
-    public  String getId() {
-        return id;
-    }
+  public void setId(String id) {
+    this.id = id;
+  }
 
-    public void setId( String id) {
-        this.id = id;
-    }
+  public AddressV3 getAddress() {
+    return address;
+  }
 
-    public  AddressV3 getAddress() {
-        return address;
-    }
+  public void setAddress(AddressV3 address) {
+    this.address = address;
+  }
 
-    public void setAddress( AddressV3 address) {
-        this.address = address;
-    }
+  public String getSlug() {
+    return slug;
+  }
 
-    public  String getSlug() {
-        return slug;
-    }
+  public void setSlug(String slug) {
+    this.slug = slug;
+  }
 
-    public void setSlug( String slug) {
-        this.slug = slug;
-    }
+  public ShipperAccountV3Status getStatus() {
+    return status;
+  }
 
-    public  ShipperAccountV3Status getStatus() {
-        return status;
-    }
+  public void setStatus(ShipperAccountV3Status status) {
+    this.status = status;
+  }
 
-    public void setStatus( ShipperAccountV3Status status) {
-        this.status = status;
-    }
+  public String getDescription() {
+    return description;
+  }
 
-    public  String getDescription() {
-        return description;
-    }
+  public void setDescription(String description) {
+    this.description = description;
+  }
 
-    public void setDescription( String description) {
-        this.description = description;
-    }
+  public ShipperAccountV3Type getType() {
+    return type;
+  }
 
-    public  ShipperAccountV3Type getType() {
-        return type;
-    }
+  public void setType(ShipperAccountV3Type type) {
+    this.type = type;
+  }
 
-    public void setType( ShipperAccountV3Type type) {
-        this.type = type;
-    }
+  public String getTimezone() {
+    return timezone;
+  }
 
-    public  String getTimezone() {
-        return timezone;
-    }
+  public void setTimezone(String timezone) {
+    this.timezone = timezone;
+  }
 
-    public void setTimezone( String timezone) {
-        this.timezone = timezone;
-    }
+  public String getCreatedAt() {
+    return createdAt;
+  }
 
-    public  ShipperAccountV3Settings getSettings() {
-        return settings;
-    }
+  public void setCreatedAt(String createdAt) {
+    this.createdAt = createdAt;
+  }
 
-    public void setSettings( ShipperAccountV3Settings settings) {
-        this.settings = settings;
-    }
+  public String getUpdatedAt() {
+    return updatedAt;
+  }
 
-    public  String getCreatedAt() {
-        return createdAt;
-    }
-
-    public void setCreatedAt( String createdAt) {
-        this.createdAt = createdAt;
-    }
-
-    public  String getUpdatedAt() {
-        return updatedAt;
-    }
-
-    public void setUpdatedAt( String updatedAt) {
-        this.updatedAt = updatedAt;
-    }
-
+  public void setUpdatedAt(String updatedAt) {
+    this.updatedAt = updatedAt;
+  }
 }

@@ -4,75 +4,85 @@
  */
 package com.aftership.shipping.model;
 
-import com.google.gson.annotations.SerializedName;
 import com.aftership.shipping.base.Resource;
+import com.google.gson.annotations.SerializedName;
 
 public class PostRatesRequest extends Resource {
 
-    @SerializedName("async")
-    private Boolean async;
+  @SerializedName("async")
+  private Boolean async;
 
-    @SerializedName("is_document")
-    private Boolean isDocument;
+  @SerializedName("is_document")
+  private Boolean isDocument;
 
-    @SerializedName("ship_date")
-    private String shipDate;
+  @SerializedName("ship_date")
+  private String shipDate;
 
-    @SerializedName("shipper_accounts")
-    private java.util.List<PostRatesRequestShipperAccounts> shipperAccounts;
+  @SerializedName("shipper_accounts")
+  private java.util.List<PostRatesRequestShipperAccounts> shipperAccounts;
 
-    @SerializedName("shipment")
-    private ShipmentV3 shipment;
+  @SerializedName("shipment")
+  private ShipmentV3 shipment;
 
-    @SerializedName("expected_delivery_date")
-    private String expectedDeliveryDate;
+  @SerializedName("expected_delivery_date")
+  private String expectedDeliveryDate;
 
-    public  Boolean getAsync() {
-        return async;
-    }
+  @SerializedName("order_id")
+  private String orderId;
 
-    public void setAsync( Boolean async) {
-        this.async = async;
-    }
+  public Boolean getAsync() {
+    return async;
+  }
 
-    public  Boolean getIsDocument() {
-        return isDocument;
-    }
+  public void setAsync(Boolean async) {
+    this.async = async;
+  }
 
-    public void setIsDocument( Boolean isDocument) {
-        this.isDocument = isDocument;
-    }
+  public Boolean getIsDocument() {
+    return isDocument;
+  }
 
-    public  String getShipDate() {
-        return shipDate;
-    }
+  public void setIsDocument(Boolean isDocument) {
+    this.isDocument = isDocument;
+  }
 
-    public void setShipDate( String shipDate) {
-        this.shipDate = shipDate;
-    }
+  public String getShipDate() {
+    return shipDate;
+  }
 
-    public java.util.List<PostRatesRequestShipperAccounts>  getShipperAccounts() {
-        return shipperAccounts;
-    }
+  public void setShipDate(String shipDate) {
+    this.shipDate = shipDate;
+  }
 
-    public void setShipperAccounts(java.util.List<PostRatesRequestShipperAccounts>  shipperAccounts) {
-        this.shipperAccounts = shipperAccounts;
-    }
+  public java.util.List<PostRatesRequestShipperAccounts> getShipperAccounts() {
+    return shipperAccounts;
+  }
 
-    public  ShipmentV3 getShipment() {
-        return shipment;
-    }
+  public void setShipperAccounts(java.util.List<PostRatesRequestShipperAccounts> shipperAccounts) {
+    this.shipperAccounts = shipperAccounts;
+  }
 
-    public void setShipment( ShipmentV3 shipment) {
-        this.shipment = shipment;
-    }
+  public ShipmentV3 getShipment() {
+    return shipment;
+  }
 
-    public  String getExpectedDeliveryDate() {
-        return expectedDeliveryDate;
-    }
+  public void setShipment(ShipmentV3 shipment) {
+    this.shipment = shipment;
+  }
 
-    public void setExpectedDeliveryDate( String expectedDeliveryDate) {
-        this.expectedDeliveryDate = expectedDeliveryDate;
-    }
+  public String getExpectedDeliveryDate() {
+    return expectedDeliveryDate;
+  }
 
+  public void setExpectedDeliveryDate(String expectedDeliveryDate) {
+    this.expectedDeliveryDate = expectedDeliveryDate;
+  }
+
+  public String getOrderId() {
+    return orderId;
+  }
+
+  public void setOrderId(String orderId) {
+    this.orderId = orderId;
+  }
 }

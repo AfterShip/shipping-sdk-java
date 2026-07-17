@@ -7,24 +7,24 @@ package com.aftership.shipping.model;
 import com.google.gson.annotations.SerializedName;
 
 public enum FilesV3QrCodePaperSize {
-    @SerializedName("1x1")
-    _1x1("1x1"),
+  @SerializedName("1x1")
+  _1x1("1x1"),
 
-    @SerializedName("2x2")
-    _2x2("2x2");
+  @SerializedName("2x2")
+  _2x2("2x2");
 
-    private final String value;
+  private final String value;
 
-    FilesV3QrCodePaperSize(final String value) {
-        this.value = value;
-    }
+  FilesV3QrCodePaperSize(final String value) {
+    this.value = value;
+  }
 
-    public String getValue() {
-        return value;
-    }
+  public String getValue() {
+    return value;
+  }
 
-    @Override
-    public String toString() {
-        return String.valueOf(value);
-    }
+  @Override
+  public String toString() {
+    return String.valueOf(value);
+  }
 }
