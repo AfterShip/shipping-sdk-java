@@ -27,6 +27,9 @@ public class PostRatesRequest extends Resource {
     @SerializedName("expected_delivery_date")
     private String expectedDeliveryDate;
 
+    @SerializedName("order_id")
+    private String orderId;
+
     public  Boolean getAsync() {
         return async;
     }
@@ -73,6 +76,14 @@ public class PostRatesRequest extends Resource {
 
     public void setExpectedDeliveryDate( String expectedDeliveryDate) {
         this.expectedDeliveryDate = expectedDeliveryDate;
+    }
+
+    public  String getOrderId() {
+        return orderId;
+    }
+
+    public void setOrderId( String orderId) {
+        this.orderId = orderId;
     }
 
 }

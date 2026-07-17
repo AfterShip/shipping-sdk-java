@@ -11,7 +11,7 @@ import com.aftership.shipping.http.AfterShipClient;
 
 public class ShippingSdk {
     private static final String DEFAULT_DOMAIN = "https://sandbox-api.aftership.com";
-	private static final int DEFAULT_TIMEOUT = 10000;
+	private static final int DEFAULT_TIMEOUT = 30000;
     private static final int DEFAULT_MAX_RETRY = 2;
     private static AfterShipClient client;
 

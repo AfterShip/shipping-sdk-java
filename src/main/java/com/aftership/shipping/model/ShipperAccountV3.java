@@ -30,9 +30,6 @@ public class ShipperAccountV3 extends Resource {
     @SerializedName("timezone")
     private String timezone;
 
-    @SerializedName("settings")
-    private ShipperAccountV3Settings settings;
-
     @SerializedName("created_at")
     private String createdAt;
 
@@ -93,14 +90,6 @@ public class ShipperAccountV3 extends Resource {
 
     public void setTimezone( String timezone) {
         this.timezone = timezone;
-    }
-
-    public  ShipperAccountV3Settings getSettings() {
-        return settings;
-    }
-
-    public void setSettings( ShipperAccountV3Settings settings) {
-        this.settings = settings;
     }
 
     public  String getCreatedAt() {

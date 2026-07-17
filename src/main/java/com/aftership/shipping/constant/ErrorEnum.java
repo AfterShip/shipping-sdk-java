@@ -16,6 +16,9 @@ public enum ErrorEnum {
     UNKNOWN_ERROR,
     OK,
     UNAUTHORIZED,
+    REQUEST_NOT_ALLOWED,
+    NOT_FOUND,
+    CONFLICT,
     TOO_MANY_REQUESTS,
     INTERNAL_SERVER_ERROR,
     BAD_GATEWAY,
@@ -36,6 +39,10 @@ public enum ErrorEnum {
     PAYMENT_INVALID_REQUEST_ERROR,
     OPERATION_NOT_ALLOWED_COURIER,
     TOO_MANY_CUSTOM_REQUESTS,
+    NETWORK_ERROR,
+    INSUFFICIENT_BALANCE,
+    INVALID_TRANSACTION_ID,
+    TRANSACTION_ALREADY_REFUNDED,
     RESPONSE_ERROR,
     NO_RESPONSE,
     RATE_REQUEST_FAILED,
@@ -57,6 +64,9 @@ public enum ErrorEnum {
         {
             put(200, OK);
             put(401, UNAUTHORIZED);
+            put(403, REQUEST_NOT_ALLOWED);
+            put(404, NOT_FOUND);
+            put(409, CONFLICT);
             put(429, TOO_MANY_REQUESTS);
             put(500, INTERNAL_SERVER_ERROR);
             put(502, BAD_GATEWAY);
@@ -78,6 +88,10 @@ public enum ErrorEnum {
             put(4164, PAYMENT_INVALID_REQUEST_ERROR);
             put(4171, OPERATION_NOT_ALLOWED_COURIER);
             put(4172, TOO_MANY_CUSTOM_REQUESTS);
+            put(4312, NETWORK_ERROR);
+            put(4500, INSUFFICIENT_BALANCE);
+            put(4508, INVALID_TRANSACTION_ID);
+            put(4510, TRANSACTION_ALREADY_REFUNDED);
             put(4703, RESPONSE_ERROR);
             put(4705, NO_RESPONSE);
             put(4713, RATE_REQUEST_FAILED);

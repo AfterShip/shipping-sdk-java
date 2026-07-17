@@ -42,6 +42,9 @@ public class LocationV3 extends Resource {
     @SerializedName("business_classification")
     private String businessClassification;
 
+    @SerializedName("courier_specific")
+    private LocationV3CourierSpecific courierSpecific;
+
     public  String getLocationId() {
         return locationId;
     }
@@ -128,6 +131,14 @@ public class LocationV3 extends Resource {
 
     public void setBusinessClassification( String businessClassification) {
         this.businessClassification = businessClassification;
+    }
+
+    public  LocationV3CourierSpecific getCourierSpecific() {
+        return courierSpecific;
+    }
+
+    public void setCourierSpecific( LocationV3CourierSpecific courierSpecific) {
+        this.courierSpecific = courierSpecific;
     }
 
 }

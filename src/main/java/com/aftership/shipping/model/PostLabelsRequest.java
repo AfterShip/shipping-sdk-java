@@ -63,6 +63,9 @@ public class PostLabelsRequest extends Resource {
     @SerializedName("print_options")
     private PostLabelsRequestPrintOptions printOptions;
 
+    @SerializedName("automatic")
+    private Boolean automatic;
+
     public  BillingV3 getBilling() {
         return billing;
     }
@@ -205,6 +208,14 @@ public class PostLabelsRequest extends Resource {
 
     public void setPrintOptions( PostLabelsRequestPrintOptions printOptions) {
         this.printOptions = printOptions;
+    }
+
+    public  Boolean getAutomatic() {
+        return automatic;
+    }
+
+    public void setAutomatic( Boolean automatic) {
+        this.automatic = automatic;
     }
 
 }
