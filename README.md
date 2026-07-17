@@ -63,7 +63,7 @@ Create AfterShip instance with options
 | api_key    | string | ✔        | Your AfterShip API key                                                                                                            |
 | auth_type  | enum   |          | Default value: `AuthType.API_KEY` <br > AES authentication: `AuthType.AES` <br > RSA authentication: `AuthType.RSA`               |
 | api_secret | string |          | Required if the authentication type is `AuthType.AES` or `AuthType.RSA`                                                           |
-| domain     | string |          | AfterShip API domain. Default value: https://api.aftership.com                                                                    |
+| domain     | string |          | AfterShip API domain. Default value: https://sandbox-api.aftership.com                                                                    |
 | user_agent | string |          | User-defined user-agent string, please follow [RFC9110](https://www.rfc-editor.org/rfc/rfc9110#field.user-agent) format standard. |
 | proxy      | string |          | HTTP proxy URL to use for requests. <br > Default value: `null` <br > Example: `http://192.168.0.100:8888`                        |
 | max_retry  | number |          | Number of retries for each request. Default value: 2. Min is 0, Max is 10.                                                        |
